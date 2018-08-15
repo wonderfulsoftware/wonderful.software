@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "vuepress": "^0.14.2"
+  },
+  "scripts": {
+    "start": "vuepress dev"
+  },
+  "dependencies": {
+    "markdown-it-footnote": "^3.0.1",
+    "twemoji": "^2.5.1"
+  }
+}
