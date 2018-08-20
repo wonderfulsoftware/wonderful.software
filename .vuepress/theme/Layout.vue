@@ -1,6 +1,10 @@
 <template>
   <div class="wondersoft">
-    <DefaultThemeLayout />
+    <DefaultThemeLayout>
+      <template slot="page-bottom">
+        <Utterances :path="$page.path" :title="$page.title" />
+      </template>
+    </DefaultThemeLayout>
   </div>
 </template>
 
