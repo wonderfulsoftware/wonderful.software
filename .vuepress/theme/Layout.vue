@@ -2,7 +2,10 @@
   <div class="wondersoft">
     <DefaultThemeLayout>
       <template slot="page-bottom">
-        <Utterances :path="$page.path" :title="$page.title" />
+        <div :key="$page.path">
+          <Like :path="$page.path" :title="$page.title" />
+          <Utterances :path="$page.path" :title="$page.title" />
+        </div>
       </template>
       <template slot="sidebar-top">
         <div class="wondersoft-sidebar-contents">
@@ -19,10 +22,11 @@
 import Vue from 'vue'
 import DefaultThemeLayout from '../../node_modules/vuepress/lib/default-theme/Layout.vue'
 import Utterances from './Utterances.vue'
+import Like from './Like.vue'
 import './fonts/cschatthaiui.css'
 
 export default {
-  components: { DefaultThemeLayout, Utterances }
+  components: { DefaultThemeLayout, Utterances, Like }
 }
 </script>
 
