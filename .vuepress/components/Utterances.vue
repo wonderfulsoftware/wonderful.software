@@ -11,7 +11,7 @@
 .utterances {
   position: relative;
   width: 100%;
-  max-width: 740px;
+  max-width: 760px;
   margin: 0 auto;
 }
 .utterances-frame {
