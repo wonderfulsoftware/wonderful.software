@@ -1,6 +1,7 @@
 <template>
   <div class="utterances">
     <iframe
+      v-if="inBrowser"
       class="utterances-frame"
       :src="src"
     />
@@ -32,6 +33,12 @@ export default {
     path: String,
     title: String,
   },
+  data() {
+    return { inBrowser: false }
+  },
+  mounted() {
+    this.inBrowser = true
+  },
   computed: {
     src() {
       const params = [
@@ -48,15 +55,17 @@ export default {
   }
 }
 
-window.addEventListener('message', event => {
-  if (event.origin !== 'https://utteranc.es') {
-    return
-  }
-  const data = event.data
-  if (data && data.type === 'resize' && data.height) {
-    const container = document.querySelector('.utterances-frame')
-    if (!container) return
-    container.style.height = `${data.height}px`
-  }
-})
+if (typeof window !== 'undefined') {
+  window.addEventListener('message', event => {
+    if (event.origin !== 'https://utteranc.es') {
+      return
+    }
+    const data = event.data
+    if (data && data.type === 'resize' && data.height) {
+      const container = document.querySelector('.utterances-frame')
+      if (!container) return
+      container.style.height = `${data.height}px`
+    }
+  })
+}
 </script>

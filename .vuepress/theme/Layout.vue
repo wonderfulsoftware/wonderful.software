@@ -11,9 +11,10 @@
 <script>
 import Vue from 'vue'
 import DefaultThemeLayout from '../../node_modules/vuepress/lib/default-theme/Layout.vue'
+import Utterances from './Utterances.vue'
 import './fonts/cschatthaiui.css'
 
 export default {
-  components: { DefaultThemeLayout }
+  components: { DefaultThemeLayout, Utterances }
 }
 </script>
