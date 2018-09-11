@@ -11,6 +11,7 @@
 <script>
 import Vue from 'vue'
 import DefaultThemeLayout from '../../node_modules/vuepress/lib/default-theme/Layout.vue'
+import './fonts/cschatthaiui.css'
 
 export default {
   components: { DefaultThemeLayout }
