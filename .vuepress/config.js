@@ -4,6 +4,7 @@ module.exports = {
   description: 'a website about software engineering',
   ga: 'UA-77075731-1',
   port: 3457,
+  head: [['link', { rel: 'icon', href: '/resources/favicon.png' }]],
   locales: {
     '/': {
       lang: 'th',
@@ -27,9 +28,8 @@ module.exports = {
   },
   themeConfig: {
     logo: '/resources/logo.svg',
-    // sidebar: [
-    // ],
     search: false,
-    nav: [{ text: 'หน้าแรก', link: '/' }],
+    // sidebar: [],
+    // nav: [{ text: 'หน้าแรก', link: '/' }],
   },
 }
