@@ -1,5 +1,8 @@
 ---
 topics: [React]
+meta:
+  - name: description
+    content: setState() ไม่ได้อัพเดต​ this.state ทันทีเสมอไป และจะทำการรวม state เก่าเข้ากับข้อมูลใหม่เสมอ
 ---
 
 # React: `setState({…})` กับ `setState(prevState => ({…}))` ต่างกันยังไง
