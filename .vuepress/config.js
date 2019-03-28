@@ -29,7 +29,26 @@ module.exports = {
   themeConfig: {
     logo: '/resources/logo.svg',
     search: false,
-    // sidebar: [],
+    sidebar: {
+      '/elect-live/': [
+        '',
+        {
+          title: 'Setting up the project for success',
+          collapsable: false,
+          children: [
+            'freehand/',
+            'user-survey/',
+            'mobile-first/',
+            // 'mvp/',
+            'gatsby/',
+            // 'code-style/',
+            // 'netlify/',
+            // 'pdd/',
+            // 'open-source/',
+          ],
+        },
+      ],
+    },
     // nav: [{ text: 'หน้าแรก', link: '/' }],
   },
 }

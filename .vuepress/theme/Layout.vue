@@ -3,14 +3,15 @@
     <DefaultThemeLayout>
       <template slot="page-bottom">
         <div :key="$page.path">
-          <Like :path="$page.path" :title="$page.title" />
-          <Utterances :path="$page.path" :title="$page.title" />
+          <Like :path="$page.path" :title="$page.title"/>
+          <Utterances :path="$page.path" :title="$page.title"/>
         </div>
       </template>
-      <template slot="sidebar-top">
+      <template slot="sidebar-bottom">
         <div class="wondersoft-sidebar-contents">
           <div class="wondersoft-sidebar-contents-smiley">
-            hello!<br />:)
+            hello!
+            <br>:)
           </div>
         </div>
       </template>
@@ -26,7 +27,7 @@ import Like from './Like.vue'
 import './fonts/cschatthaiui.css'
 
 export default {
-  components: { DefaultThemeLayout, Utterances, Like }
+  components: { DefaultThemeLayout, Utterances, Like },
 }
 </script>
 
@@ -46,5 +47,9 @@ export default {
     opacity: 0.5;
     font-size: 5em;
   }
+}
+
+.sidebar-links ~ .wondersoft-sidebar-contents {
+  display: none;
 }
 </style>
