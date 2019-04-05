@@ -10,8 +10,9 @@
 ใช้เวลาพัฒนาเพียง 8 วันก่อนการเลือกตั้ง (ซึ่งเป็นเวลาส่วนตัวของอาสาสมัคร ไม่ใช่งานแบบ Full-time)
 
 เราพัฒนาเว็บนี้กันแบบโอเพนซอร์ส
-โดยมีการวางระบบเพื่อให้ทุกคนสามารถเข้ามาร่วมพัฒนาได้ ถึงแม้ไม่ได้อยู่ในทีมงานหลัก
+โดยมีการวางระบบการทำงาน เพื่อให้ทุกคนสามารถเข้ามาร่วมพัฒนาได้ ถึงแม้ไม่ได้อยู่ในทีมงานหลัก
 จน[มีอาสาสมัครมาร่วมพัฒนาเว็บเรากว่า 20 คน](https://elect.thematter.co/about#contributors)
+และสามารถ[ปิด issue ได้กว่า 100 issue](https://github.com/codeforthailand/election-live/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed) ภายในเวลา 8 วัน
 โดยสามารถเข้าไปดูโค้ดได้ที่โปรเจค [codeforthailand/election-live](https://github.com/codeforthailand/election-live) บน GitHub
 
 ในวันที่ 24 มีนาคม 2562
