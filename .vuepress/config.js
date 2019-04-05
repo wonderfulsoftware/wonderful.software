@@ -46,7 +46,8 @@ module.exports = {
             'pdd/',
             'open-source/',
             'static-caching/',
-            'component-naming/'
+            'component-naming/',
+            'componentization/',
           ],
         },
       ],
