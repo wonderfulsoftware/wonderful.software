@@ -26,7 +26,7 @@ authors:
 
 สุดท้ายผมเลือกใช้ Gatsby สำหรับโปรเจคนี้ เพราะว่า…
 
-# ลงปุ๊ปใช้ได้เลย
+## ลงปุ๊ปใช้ได้เลย
 
 ทันทีที่เซ็ตอัพโปรเจคด้วย Gatsby เราสามารถสั่ง `yarn start` แล้วเริ่มเขียนโค้ดได้เลย
 โดยสามารถใช้ ES2018+, JSX, CSS (ทั้งแบบธรรมดาและ CSS modules) ได้ทันทีโดยไม่ต้องตั้งค่าอะไรเพิ่ม
@@ -38,7 +38,7 @@ authors:
 
 ตัว Gatsby รวม Tools หลายๆ ตัวเข้าด้วยกัน โดยที่เราไม่ต้องยุ่งกับไฟล์ Config ของแต่ละตัว (เช่น `webpack.config.js`, `.babelrc`) เลย
 
-# เพิ่มเพจเพียงสร้างไฟล์ใน src/pages
+## เพิ่มเพจเพียงสร้างไฟล์ใน `src/pages`
 
 ปกติเวลาทำเว็บด้วย React ถ้าต้องการทำให้เว็บมีหลายๆ หน้า ก็ต้องไปหา Router มาใช้อีก
 แต่สำหรับ Gatsby แค่เพิ่มไฟล์ใหม่ในโฟลเดอร์​ `src/pages` ก็จะได้หน้าใหม่มาเลย
@@ -46,7 +46,7 @@ authors:
 นอกจากนี้เรายังสามารถ Generate หน้าเว็บหลายๆ หน้า จากไฟล์ข้อมูลได้อีกด้วย
 ทำให้แทบทุกหน้าในเว็บ ELECT Live! มี URL ของมันเอง
 
-# มีคู่มือครบครัน
+## มีคู่มือครบครัน
 
 หนึ่งในจุดแข็งสุดๆ ของ Gatsby คือ Documentation ของมันรวมหลากหลายหัวข้อไว้ และมี [Recipe](https://www.gatsbyjs.org/docs/recipes/) หรือสูตรสำเร็จสำหรับการทำสิ่งต่างๆ ใน Gatsby เช่น
 
@@ -54,7 +54,7 @@ authors:
 - [การจัดสไตล์หน้าเว็บ](https://www.gatsbyjs.org/docs/recipes/#styling) ไม่ว่าจะใช้[ไฟล์ CSS ธรรมดา](https://www.gatsbyjs.org/docs/creating-global-styles/#how-to-add-global-styles-in-gatsby-with-standard-css-files), [CSS module](https://www.gatsbyjs.org/tutorial/part-two/#css-modules), [Styled Components](https://www.gatsbyjs.org/docs/styled-components/) หรือ [Emotion](https://www.gatsbyjs.org/docs/emotion/)
 - [การเตรียมหน้าเว็บสำหรับอัพโหลดขึ้นเซิฟเวอร์](https://www.gatsbyjs.org/docs/recipes/#deploying) ไม่ว่าจะเป็นการ [Optimize เพิ่มเติม](https://www.gatsbyjs.org/docs/performance/), [การตั้งค่า Caching](https://www.gatsbyjs.org/docs/caching/) และ[การอัพโหลดขึ้นเซิฟเวอร์ชนิดต่างๆ](https://www.gatsbyjs.org/docs/deploying-and-hosting/)
 
-# มีปลั๊กอินให้ใช้หลากหลาย
+## มีปลั๊กอินให้ใช้หลากหลาย
 
 เราสามารถเพิ่มความสามารถให้ Gatsby หลายๆ อย่าง ผ่านการติดตั้งปลั๊กอิน
 เมื่อติดตั้งแล้ว ก็สามารถเรียกใช้ โดยการแก้ไฟล์​ `gatsby-config.js` เพียงไฟล์เดียว

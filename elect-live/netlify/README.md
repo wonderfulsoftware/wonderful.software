@@ -8,7 +8,7 @@
 
 ![](-cb02bdd0-c78d-4420-b15b-aeb6cdecb53auntitled)
 
-# Deploy preview
+## Deploy preview
 
 นอกจากเป็นแค่ Web hosting แล้ว มันยังสามารถช่วยสร้าง Deploy preview ให้เราเวลามีคนส่ง Pull request มาให้เรารีวิวด้วย โดยเมื่อมีคนส่ง Pull Request เข้ามา ตัว Netlify จะนำโค้ดที่ส่งเข้ามาไป build และ deploy ขึ้นไปบนโดเมนเฉพาะกิจให้เลย
 
