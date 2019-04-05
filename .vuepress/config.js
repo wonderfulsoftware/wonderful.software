@@ -43,7 +43,7 @@ module.exports = {
             'gatsby/',
             'code-style/',
             'netlify/',
-            // 'pdd/',
+            'pdd/',
             // 'open-source/',
             // 'deploy-early/',
             // 'static-caching/',
