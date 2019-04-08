@@ -5,6 +5,8 @@ authors:
 
 # นึกถึง User experience (UX) แล้วอย่าลืมนึกถึง Developer experience (DX) ด้วย
 
+<author-list></author-list>
+
 User ได้เห็นหน้าเว็บสวยๆ ข้อมูลเข้าใจง่าย
 แล้วทำไม Developer ถึงต้องมาอ่านข้อมูลภาษา JSON เองล่ะ?
 

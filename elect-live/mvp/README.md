@@ -5,6 +5,8 @@ authors:
 
 # ทำ MVP ทีละหน้า แทนที่จะแบ่งหน้ากันทำแล้วอาจจะไม่เสร็จสักหน้า
 
+<author-list></author-list>
+
 <figure>
   <a href="https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp">
     <img alt="" src="./mvp.png" />

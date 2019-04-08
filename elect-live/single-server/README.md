@@ -5,6 +5,8 @@ authors:
 
 # ทำไมเราถึงรับ Traffic ทั้งหมดด้วยเครื่องเดียว ไม่ใช้พวก Firebase/S3/Google Cloud Storage หรือพวกระบบเก็บข้อมูลที่มัน Auto-scale ได้
 
+<author-list></author-list>
+
 ความจริงแล้วเราก็มีแผนสำรองที่จะ Deploy ไปบน Google Cloud Stoarge (ต่อไปจะขอเรียกว่า GCS)
 แต่ก็ไม่ได้ใช้ ใช้แค่สำรองข้อมูลไว้ก็พอ
 

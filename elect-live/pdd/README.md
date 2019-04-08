@@ -5,6 +5,8 @@ authors:
 
 # แบ่งงานใหญ่ๆ เป็นงานย่อยๆ ด้วย Puzzle-Driven Development
 
+<author-list></author-list>
+
 ปกติเวลาทำ Software
 เราก็มักจะแบ่งงาน และดูความคืบหน้าโดยการนำ Project management tool เข้ามาช่วย
 ในขณะเดียวกัน ส่วนที่ยังเขียนไม่เสร็จ ก็มักจะใส่คอมเม้นต์ `// TODO` ไว้
