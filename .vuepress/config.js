@@ -58,12 +58,12 @@ module.exports = {
         {
           title: 'Engineering and development',
           collapsable: false,
-          children: ['dx/', 'immutable/'],
+          children: ['dx/', 'immutable/', 'jsdoc/'],
         },
         {
           title: 'Operations and preparing for potential problems',
           collapsable: false,
-          children: ['control-sheet/'],
+          children: ['control-sheet/', 'error-boundary/'],
         },
       ],
     },
