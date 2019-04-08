@@ -29,7 +29,58 @@ module.exports = {
   themeConfig: {
     logo: '/resources/logo.svg',
     search: false,
-    // sidebar: [],
+    authors: {
+      dtinth: {
+        name: 'Thai Pangsakulyanont'
+      },
+      heytitle: {
+        name: 'Pattarawat Chormai'
+      },
+      mishari: {
+        name: 'Mishari Muqbil'
+      },
+      unnawut: {
+        name: 'Unnawut Leepaisalsuwanna'
+      }
+    },
+    sidebar: {
+      '/elect-live/': [
+        '',
+        {
+          title: 'Overview',
+          collapsable: false,
+          children: ['overview/'],
+        },
+        {
+          title: 'Setting up the project for success',
+          collapsable: false,
+          children: [
+            'freehand/',
+            'user-survey/',
+            'mobile-first/',
+            'mvp/',
+            'gatsby/',
+            'code-style/',
+            'netlify/',
+            'pdd/',
+            'open-source/',
+            'static-caching/',
+            'component-naming/',
+            'componentization/',
+          ],
+        },
+        {
+          title: 'Engineering and development',
+          collapsable: false,
+          children: ['dx/', 'immutable/', 'jsdoc/'],
+        },
+        {
+          title: 'Operations and preparing for potential problems',
+          collapsable: false,
+          children: ['control-sheet/', 'error-boundary/', 'single-server/'],
+        },
+      ],
+    },
     // nav: [{ text: 'หน้าแรก', link: '/' }],
   },
 }
