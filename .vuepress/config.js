@@ -50,6 +50,11 @@ module.exports = {
             'componentization/',
           ],
         },
+        {
+          title: 'Engineering and development',
+          collapsable: false,
+          children: ['dx/'],
+        },
       ],
     },
     // nav: [{ text: 'หน้าแรก', link: '/' }],
