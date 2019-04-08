@@ -41,6 +41,9 @@ module.exports = {
       },
       unnawut: {
         name: 'Unnawut Leepaisalsuwanna'
+      },
+      phoneee: {
+        name: 'Dollapak Suwanpunya'
       }
     },
     sidebar: {
