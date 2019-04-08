@@ -58,7 +58,7 @@ module.exports = {
         {
           title: 'Engineering and development',
           collapsable: false,
-          children: ['dx/'],
+          children: ['dx/', 'immutable/'],
         },
         {
           title: 'Operations and preparing for potential problems',
