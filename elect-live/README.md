@@ -1,3 +1,11 @@
+---
+meta:
+  - name: description
+    content: เบื้องหลังการพัฒนาเว็บ ELECT Live! ตั้งแต่การออกแบบ เซ็ตอัพโปรเจค แบ่งงาน การสร้างคอมมูนิตี้โอเพนซอร์ส การทำ CI/CD เทคนิคการเขียนโค้ด และบทเรียนต่างๆ
+  - property: og:image
+    content: /share-images/elect-live-v1.png
+---
+
 # บันทึกการพัฒนาเว็บ ELECT Live!
 
 เว็บไซต์ [ELECT Live!](https://elect.thematter.co/)
