@@ -55,6 +55,11 @@ module.exports = {
           collapsable: false,
           children: ['dx/'],
         },
+        {
+          title: 'Operations and preparing for potential problems',
+          collapsable: false,
+          children: ['control-sheet/'],
+        },
       ],
     },
     // nav: [{ text: 'หน้าแรก', link: '/' }],
