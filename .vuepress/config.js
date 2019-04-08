@@ -33,6 +33,11 @@ module.exports = {
       '/elect-live/': [
         '',
         {
+          title: 'Overview',
+          collapsable: false,
+          children: ['overview/'],
+        },
+        {
           title: 'Setting up the project for success',
           collapsable: false,
           children: [
