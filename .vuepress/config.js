@@ -80,7 +80,12 @@ module.exports = {
         {
           title: 'Operations and preparing for potential problems',
           collapsable: false,
-          children: ['control-sheet/', 'error-boundary/', 'single-server/'],
+          children: [
+            'control-sheet/',
+            'error-boundary/',
+            'single-server/',
+            'chat-ops/',
+          ],
         },
       ],
     },
