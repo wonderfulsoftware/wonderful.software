@@ -2,6 +2,11 @@
 authors:
   - heytitle
   - dtinth
+meta:
+  - name: description
+    content: เนื่องจากตัวระบบ ELECT Live มีผู้ร่วมพัฒนาหลายคน และทำงานแข่งกับเวลา เราจึงได้นำแนวคิด ChatOps มาใช้ โดยการสร้างบอท Slack เพื่อเพิ่มความสะดวกเวลาจะ​ deploy เวอร์ชั่นใหม่
+  - property: og:image
+    content: /share-images/elect-live-chatops-v1.png
 ---
 
 # ถ้าปล่อยให้ทุกคนปล่อยเวอร์ชั่นใหม่กันเอง สับสนแน่นอน สร้างบอท ChatOps มาทำหน้าที่ Release manager แทนคนดีกว่า
