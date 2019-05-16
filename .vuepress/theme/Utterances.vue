@@ -1,10 +1,6 @@
 <template>
   <div class="utterances">
-    <iframe
-      v-if="inBrowser"
-      class="utterances-frame"
-      :src="src"
-    />
+    <iframe v-if="inBrowser" class="utterances-frame" :src="src"/>
   </div>
 </template>
 
@@ -31,6 +27,7 @@
 export default {
   props: {
     path: String,
+    issueTerm: String,
     title: String,
   },
   data() {
@@ -42,7 +39,7 @@ export default {
   computed: {
     src() {
       const params = [
-        'issue-term=pathname',
+        `issue-term=${encodeURIComponent(this.issueTerm)}`,
         'repo=wonderfulsoftware/wonderful.software',
         `pathname=${encodeURIComponent(this.path)}`,
         `origin=${encodeURIComponent(location.origin)}`,
@@ -51,8 +48,8 @@ export default {
         `description=`,
       ].join('&')
       return `https://utteranc.es/utterances.html?${params}`
-    }
-  }
+    },
+  },
 }
 
 if (typeof window !== 'undefined') {

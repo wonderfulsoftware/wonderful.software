@@ -4,7 +4,11 @@
       <template slot="page-bottom">
         <div :key="$page.path">
           <Like :path="$page.path" :title="$page.title"/>
-          <Utterances :path="$page.path" :title="$page.title"/>
+          <Utterances
+            :path="$page.path"
+            :title="$page.title"
+            :issueTerm="$page.path + ' comments'"
+          />
         </div>
       </template>
       <template slot="sidebar-bottom">
