@@ -84,7 +84,7 @@ export default {
     sidebarItems () {
       return resolveSidebarItems(
         this.$page,
-        this.$route,
+        this.$page.regularPath,
         this.$site,
         this.$localePath
       )
