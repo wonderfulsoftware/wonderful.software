@@ -3,7 +3,8 @@
 </template>
 
 <script>
-import {initializeFacebook}from'./facebook'
+import { initializeFacebook } from '../util'
+
 export default {
   props: {
     path: String,
@@ -20,7 +21,7 @@ export default {
       data-share="true"
     ></div>`
     FB.XFBML.parse()
-  }
+  },
 }
 </script>
 

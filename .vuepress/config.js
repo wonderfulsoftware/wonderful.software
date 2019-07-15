@@ -11,7 +11,7 @@ module.exports = {
     },
   },
   markdown: {
-    config: md => {
+    extendMarkdown: md => {
       md.use(require('markdown-it-footnote'))
       md.renderer.rules.softbreak = () =>
         '<span class="เว้นวรรคใหญ่">&#10;</span>'
@@ -29,23 +29,7 @@ module.exports = {
   themeConfig: {
     logo: '/resources/logo.svg',
     search: false,
-    authors: {
-      dtinth: {
-        name: 'Thai Pangsakulyanont'
-      },
-      heytitle: {
-        name: 'Pattarawat Chormai'
-      },
-      mishari: {
-        name: 'Mishari Muqbil'
-      },
-      unnawut: {
-        name: 'Unnawut Leepaisalsuwanna'
-      },
-      phoneee: {
-        name: 'Dollapak Suwanpunya'
-      }
-    },
+    authors: require('./authors'),
     sidebar: {
       '/elect-live/': [
         '',
