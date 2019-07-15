@@ -26,9 +26,9 @@
 <script>
 import Vue from 'vue'
 import DefaultThemeLayout from '@parent-theme/layouts/Layout.vue'
-import Utterances from './Utterances.vue'
-import Like from './Like.vue'
-import './fonts/cschatthaiui.css'
+import Utterances from '@theme/components/Utterances.vue'
+import Like from '@theme/components/Like.vue'
+import '../fonts/cschatthaiui.css'
 
 export default {
   components: { DefaultThemeLayout, Utterances, Like },

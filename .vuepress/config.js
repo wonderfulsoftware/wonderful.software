@@ -11,7 +11,7 @@ module.exports = {
     },
   },
   markdown: {
-    config: md => {
+    extendMarkdown: md => {
       md.use(require('markdown-it-footnote'))
       md.renderer.rules.softbreak = () =>
         '<span class="เว้นวรรคใหญ่">&#10;</span>'
@@ -31,20 +31,20 @@ module.exports = {
     search: false,
     authors: {
       dtinth: {
-        name: 'Thai Pangsakulyanont'
+        name: 'Thai Pangsakulyanont',
       },
       heytitle: {
-        name: 'Pattarawat Chormai'
+        name: 'Pattarawat Chormai',
       },
       mishari: {
-        name: 'Mishari Muqbil'
+        name: 'Mishari Muqbil',
       },
       unnawut: {
-        name: 'Unnawut Leepaisalsuwanna'
+        name: 'Unnawut Leepaisalsuwanna',
       },
       phoneee: {
-        name: 'Dollapak Suwanpunya'
-      }
+        name: 'Dollapak Suwanpunya',
+      },
     },
     sidebar: {
       '/elect-live/': [
