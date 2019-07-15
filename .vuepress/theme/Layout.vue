@@ -25,7 +25,7 @@
 
 <script>
 import Vue from 'vue'
-import DefaultThemeLayout from '../../node_modules/vuepress/lib/default-theme/Layout.vue'
+import DefaultThemeLayout from '@parent-theme/layouts/Layout.vue'
 import Utterances from './Utterances.vue'
 import Like from './Like.vue'
 import './fonts/cschatthaiui.css'

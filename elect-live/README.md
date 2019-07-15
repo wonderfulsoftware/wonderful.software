@@ -74,7 +74,7 @@ meta:
 </style>
 
 <script>
-import { resolveSidebarItems } from '../node_modules/vuepress/lib/default-theme/util'
+import { resolveSidebarItems } from '@parent-theme/util'
 
 export default {
   mounted() {
