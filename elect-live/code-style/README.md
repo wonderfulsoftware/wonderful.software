@@ -37,7 +37,7 @@ authors:
 
 :arrow_up: ตัวอย่างการจัดโค้ดด้วย Prettier — ด้านซ้าย: ก่อนจัด, ด้านขวา: หลังจัด
 
-โดยที่ตัว Gatsby เอง ก็มี [Prettier config มาตรฐาน](https://github.com/gatsbyjs/gatsby-starter-hello-world/blob/4ee9f6a76cda86e434109776f0f31b9d3333fb39/.prettierrc)มาให้ตั้งแต่เริ่มเซ็ตอัพโปรเจค
+โดยที่ตัว Gatsby เอง ก็มี [Prettier config มาตรฐาน](https://github.com/gatsbyjs/gatsby-starter-hello-world/blob/4ee9f6a76cda86e434109776f0f31b9d3333fb39/.prettierrc)มาให้ตั้งแต่เริ่มเซ็ตอัพโปรเจกต์
 
 ## Husky + lint-staged
 
@@ -56,12 +56,12 @@ Git นั่นเอง!
 
 [แพ็กเกจ lint-staged บน npm](https://www.npmjs.com/package/lint-staged) เป็นเครื่องมือที่สามารถช่วยทำการเช็ค และจัดรูปแบบโค้ดแบบอัตโนมัติเวลาที่เราสั่ง `git commit`
 
-อย่างเช่นของโปรเจค ELECT Live!
+อย่างเช่นของโปรเจกต์ ELECT Live!
 เมื่อนักพัฒนาสั่ง `git commit` จะมีการรัน Prettier โดยอัตโนมัติทันที:
 
 <video src="./husky.webm" muted autoplay loop></video>
 
-โดยวิธีการ Set up `lint-staged` ในโปรเจคก็ง่ายมาก
+โดยวิธีการ Set up `lint-staged` ในโปรเจกต์ก็ง่ายมาก
 คือเมื่อหลังจากติดตั้ง Prettier เรียบร้อยแล้ว ก็สั่งคำสั่ง
 
     npx mrm lint-staged
