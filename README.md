@@ -14,6 +14,7 @@ pages:
 <ul>
   <li v-for="page of childPages">
     <router-link :to="page.path">{{page.title}}</router-link>
+    <author-list :secondary="true" :authors="page.frontmatter.authors"></author-list>
   </li>
 </ul>
 
@@ -31,9 +32,9 @@ export default {
 
 <style scoped>
 .homepage-content {
-  margin: 3em 0;
+  margin: 4em 0;
 }
 .homepage-content li {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 </style>
