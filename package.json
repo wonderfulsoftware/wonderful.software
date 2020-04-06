@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.4.0",
     "remark-cli": "^7.0.0",
     "remark-lint-thai": "dtinth/remark-lint-thai",
     "vuepress": "^1.0.2"
