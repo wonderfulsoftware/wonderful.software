@@ -2,7 +2,7 @@ const twemoji = require('twemoji')
 module.exports = {
   title: 'wonderful.software',
   description: 'a website about software engineering',
-  ga: 'UA-77075731-1',
+  plugins: [['@vuepress/google-analytics', { ga: 'UA-77075731-1' }]],
   port: 3457,
   head: [['link', { rel: 'icon', href: '/resources/favicon.png' }]],
   locales: {
