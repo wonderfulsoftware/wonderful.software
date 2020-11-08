@@ -10,8 +10,13 @@ import DefaultThemePage from '@parent-theme/components/Page.vue'
 import littlefoot from 'littlefoot'
 import 'littlefoot/dist/littlefoot.css'
 
+let latestLf
+
 function setupFootnotes() {
-  littlefoot({
+  if (latestLf) {
+    latestLf.unmount()
+  }
+  latestLf = littlefoot({
     buttonTemplate: `<button
   aria-expanded="false"
   aria-label="Footnote <% number %>"
@@ -23,6 +28,8 @@ function setupFootnotes() {
 </button>`,
   })
 }
+
+window.setupFootnotes = setupFootnotes
 
 export default {
   props: ['sidebarItems'],
