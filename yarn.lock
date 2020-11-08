@@ -682,6 +682,23 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@pacote/get-style@^1.0.0", "@pacote/get-style@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@pacote/get-style/-/get-style-1.1.3.tgz#17b7970713001645e674141dd15c3c44e2a53757"
+  integrity sha512-kDCFOWQbJr619wICRcy+Y15yRIDSwjg0iFJLZTpsMMnyL9wxdScn5RqYWssliNgZzQw2cXoS3p28/yczZDB4zA==
+
+"@pacote/pixels@^1.0.0":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@pacote/pixels/-/pixels-1.1.3.tgz#17571da012c282544b97aa34f15c8a6d2eb3dee1"
+  integrity sha512-q6qbY43euvig+E39LoLYMYvzgYeOBEZmnL1GKIALT75LNaLAPYAtOEQChx/K6gdkbhgZ3KPbqJhzYZfl8/GQYg==
+  dependencies:
+    "@pacote/get-style" "^1.1.3"
+
+"@pacote/throttle@^1.0.0":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@pacote/throttle/-/throttle-1.0.4.tgz#d8819feb4a64f63f5d2d70f0e6be68d272f12d47"
+  integrity sha512-iKAwXA8h9WQtfw5pRnM7hVMRQuiyKU4eu9pQMyMq1t2uxbEansPYvy/elhH4t0yQpu8JS4IWY/AuI6znHU1mDQ==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -2417,6 +2434,13 @@ delegate@^3.1.2:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
 
+delegated-events@^1.0.10:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/delegated-events/-/delegated-events-1.1.2.tgz#741a4ba320718096fb8f7db4ddfaadcb0daa5986"
+  integrity sha512-PjEw4Z5mrvXimyf60HGqMJ3BMcqqWZpBqSDGnEMBdkAtF4P7ltoa6N+UJXhbMMUxPLYFtykCmRs6Ra8I8pwzPQ==
+  dependencies:
+    selector-set "^1.1.5"
+
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
@@ -4074,6 +4098,16 @@ linkify-it@^2.0.0:
   resolved "https://registry.yarnpkg.com/linkify-it/-/linkify-it-2.0.3.tgz#d94a4648f9b1c179d64fa97291268bdb6ce9434f"
   dependencies:
     uc.micro "^1.0.1"
+
+littlefoot@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/littlefoot/-/littlefoot-3.4.1.tgz#f0bd43d2ba07ad9689ef4fe11fc844de2266816e"
+  integrity sha512-P5gVZCqRLWPn5WndTQT+bTiGtWv6cEuhTYjDaDAH2vwLvRIK4q2WoD10SuI8NytRKgGdR3vUIW2G7vLUHJR5jQ==
+  dependencies:
+    "@pacote/get-style" "^1.0.0"
+    "@pacote/pixels" "^1.0.0"
+    "@pacote/throttle" "^1.0.0"
+    delegated-events "^1.0.10"
 
 load-plugin@^2.0.0:
   version "2.3.1"
@@ -6102,6 +6136,11 @@ select-hose@^2.0.0:
 select@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+
+selector-set@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/selector-set/-/selector-set-1.1.5.tgz#60c135aea482b6f46a2d95ad72058927690a8634"
+  integrity sha512-6SQw6yMew5iOZ8/cDHDEnJWRM4ot2mxP6szZyF5ptrBogw4AcS4EXRj/8BUfgAMwVfdL84qpModlBMOl2NVrsQ==
 
 selfsigned@^1.10.4:
   version "1.10.4"

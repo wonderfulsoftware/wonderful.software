@@ -10,6 +10,7 @@
     "build": "vuepress build"
   },
   "dependencies": {
+    "littlefoot": "^3.4.1",
     "markdown-it-footnote": "^3.0.1",
     "twemoji": "^2.5.1"
   }
