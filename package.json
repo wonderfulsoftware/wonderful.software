@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.4.0",
+    "dotenv": "^8.2.0",
     "remark-cli": "^7.0.0",
     "remark-lint-thai": "dtinth/remark-lint-thai",
     "vuepress": "^1.0.2"
@@ -10,6 +11,7 @@
     "build": "vuepress build"
   },
   "dependencies": {
+    "jsonwebtoken": "^8.5.1",
     "littlefoot": "^3.4.1",
     "markdown-it-footnote": "^3.0.1",
     "twemoji": "^2.5.1"

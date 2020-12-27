@@ -2,7 +2,18 @@ const twemoji = require('twemoji')
 module.exports = {
   title: 'wonderful.software',
   description: 'a website about software engineering',
-  plugins: [['@vuepress/google-analytics', { ga: 'UA-77075731-1' }]],
+  plugins: [
+    ['@vuepress/google-analytics', { ga: 'UA-77075731-1' }],
+    [
+      require('./plugins/personal-puppeteer-og-image'),
+      {
+        base: 'https://wonderful.software',
+        iss: 'wonderful.software',
+        key: process.env.PERSONAL_PUPPETEER_PRIVATE_KEY_BASE64,
+        css: `.wondersoft .theme-default-content { margin-top: 80px; }`
+      },
+    ],
+  ],
   port: 3457,
   head: [['link', { rel: 'icon', href: '/resources/favicon.png' }]],
   locales: {
