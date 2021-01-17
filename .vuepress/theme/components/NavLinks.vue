@@ -3,7 +3,7 @@
     <NavLinks />
     <a
       class="dtinthのwebring"
-      href="https://webring.wonderful.software"
+      href="https://webring.wonderful.software#wonderful.software"
       title="วงแหวนเว็บ"
     >
       <svg
