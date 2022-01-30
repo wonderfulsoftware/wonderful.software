@@ -10,9 +10,10 @@ module.exports = {
         base: 'https://wonderful.software',
         iss: 'wonderful.software',
         key: process.env.PERSONAL_PUPPETEER_PRIVATE_KEY_BASE64,
-        css: `.wondersoft .theme-default-content { margin-top: 80px; }`
+        css: `.wondersoft .theme-default-content { margin-top: 80px; }`,
       },
     ],
+    [require('./plugins/rss')],
   ],
   port: 3457,
   head: [['link', { rel: 'icon', href: '/resources/favicon.png' }]],

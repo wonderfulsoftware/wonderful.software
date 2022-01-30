@@ -2,9 +2,14 @@
 home: true
 heroImage: /resources/logo.svg
 pages:
+  - path: /programming-and-motivation/
+    date: 2021-03-14
   - path: /elect-live/
+    date: 2019-03-29
   - path: /answers/2018-09-11-React-setState.html
+    date: 2018-09-11
   - path: /answers/2017-11-14-JavaScript-semicolon.html
+    date: 2017-11-14
 ---
 
 <div class="homepage-content">
