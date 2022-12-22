@@ -12,7 +12,7 @@
     "build": "vuepress build"
   },
   "dependencies": {
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "littlefoot": "^3.4.1",
     "markdown-it-footnote": "^3.0.1",
     "rss": "^1.2.2",
