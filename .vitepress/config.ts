@@ -7,6 +7,7 @@ export default defineConfig({
   description: 'a website about software engineering',
   head: [['link', { rel: 'icon', href: '/resources/favicon.png' }]],
   appearance: false,
+  srcExclude: ['README.md'],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -194,5 +195,14 @@ export default defineConfig({
           return twemoji.parse(original.apply(this, arguments))
         })(md.renderer.render)
     },
+  },
+
+  buildEnd: async (siteConfig) => {
+    const { generateRss } = await import('./rss')
+    await generateRss()
+  },
+
+  transformHead: async ({}) => {
+    return []
   },
 })
