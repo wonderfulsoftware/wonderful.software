@@ -206,21 +206,22 @@ export default defineConfig({
     await generateRss()
   },
 
-  transformHead: async ({ page, head }) => {
+  transformHead: async ({ page, head, pageData }) => {
     const hasMetaProperty = (property: string) => {
       return head.find(([tag, m]) => tag === 'meta' && m.property === property)
     }
+    const hasMetaName = (name: string) => {
+      return head.find(([tag, m]) => tag === 'meta' && m.name === name)
+    }
     const out: HeadConfig[] = []
     if (!hasMetaProperty('og:image')) {
-      out.push([
-        'meta',
-        {
-          property: 'og:image',
-          content:
-            'https://screenshot.source.in.th/image/_/wonderfulsoftware/' +
-            page.replace(/\.md$/, ''),
-        },
-      ])
+      const image =
+        'https://screenshot.source.in.th/image/_/wonderfulsoftware/' +
+        page.replace(/\.md$/, '')
+      out.push(['meta', { property: 'og:image', content: image }])
+    }
+    if (pageData.title && !hasMetaName('twitter:title')) {
+      out.push(['meta', { name: 'twitter:title', content: pageData.title }])
     }
     return out
   },
