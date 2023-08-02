@@ -20,5 +20,5 @@ export async function generateRss() {
     }
     feed.item(options)
   }
-  fs.writeFileSync('.vitepress/dist/rss.xml', feed.xml({ indent: true }))
+  fs.writeFileSync('.vuepress/dist/rss.xml', feed.xml({ indent: true }))
 }
