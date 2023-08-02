@@ -6,11 +6,13 @@ authors:
   - mishari
   - unnawut
   - phoneee
-meta:
-  - name: description
-    content: เบื้องหลังการพัฒนาเว็บ ตั้งแต่การออกแบบ เซ็ตอัพโปรเจกต์ แบ่งงาน การสร้างคอมมูนิตี้โอเพนซอร์ซ การทำ CI/CD เทคนิคการเขียนโค้ด และบทเรียนต่างๆ
-  - property: og:image
-    content: /share-images/elect-live-v1.png
+head:
+  - - meta
+    - name: description
+      content: เบื้องหลังการพัฒนาเว็บ ตั้งแต่การออกแบบ เซ็ตอัพโปรเจกต์ แบ่งงาน การสร้างคอมมูนิตี้โอเพนซอร์ซ การทำ CI/CD เทคนิคการเขียนโค้ด และบทเรียนต่างๆ
+  - - meta
+    - property: og:image
+      content: /share-images/elect-live-v1.png
 ---
 
 # บันทึกการพัฒนาเว็บ ELECT Live!

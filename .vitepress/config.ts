@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { HeadConfig, defineConfig } from 'vitepress'
 import twemoji from 'twemoji'
 
 // https://vitepress.dev/reference/site-config
@@ -206,7 +206,22 @@ export default defineConfig({
     await generateRss()
   },
 
-  transformHead: async ({}) => {
-    return []
+  transformHead: async ({ page, head }) => {
+    const hasMetaProperty = (property: string) => {
+      return head.find(([tag, m]) => tag === 'meta' && m.property === property)
+    }
+    const out: HeadConfig[] = []
+    if (!hasMetaProperty('og:image')) {
+      out.push([
+        'meta',
+        {
+          property: 'og:image',
+          content:
+            'https://screenshot.source.in.th/image/_/wonderfulsoftware/' +
+            page.replace(/\.md$/, ''),
+        },
+      ])
+    }
+    return out
   },
 })
