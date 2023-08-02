@@ -13,6 +13,8 @@ export default defineConfig({
   outDir: '.vuepress/dist',
 
   themeConfig: {
+    logo: '/resources/logo.svg',
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       // { text: 'Home', link: '/' },
