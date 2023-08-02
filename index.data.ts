@@ -50,12 +50,14 @@ export default createContentLoader(
             {
               url: '#',
               title: `NOT FOUND - ${url}`,
+              authors: [],
             },
           ]
         return [
           {
             url: pageData.url,
             title: pageData.frontmatter.title,
+            authors: pageData.frontmatter.authors,
           },
         ]
       })

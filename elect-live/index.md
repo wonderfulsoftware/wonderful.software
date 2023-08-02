@@ -37,9 +37,9 @@ meta:
 มีหลายเรื่องที่เราอยากจะเล่าเกี่ยวกับการพัฒนาเว็บนี้
 บันทึกนี้จึงแบ่งเป็นหลายๆ หัวข้อย่อย
 
----
+<!-- Old VuePress code -->
 
-<section v-for="(item, index) of sidebarItems" :key="index" v-if="item.type === 'group'">
+<!-- <section v-for="(item, index) of sidebarItems" :key="index" v-if="item.type === 'group'">
   <h2>{{ item.title }}</h2>
   <ul>
     <li v-for="page of item.children" :key="page.key">
@@ -57,7 +57,7 @@ meta:
       </span>
     </li>
   </ul>
-</section>
+</section> -->
 
 <style scoped>
 .article-author {
@@ -81,20 +81,17 @@ meta:
 </style>
 
 <script>
-import { resolveSidebarItems } from '@parent-theme/util'
-
 export default {
   mounted() {
-    console.log(this.sidebarItems)
   },
   computed: {
     sidebarItems () {
-      return resolveSidebarItems(
-        this.$page,
-        this.$page.regularPath,
-        this.$site,
-        this.$localePath
-      )
+      // return resolveSidebarItems(
+      //   this.$page,
+      //   this.$page.regularPath,
+      //   this.$site,
+      //   this.$localePath
+      // )
     },
   }
 }

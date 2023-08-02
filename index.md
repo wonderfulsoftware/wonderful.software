@@ -17,7 +17,7 @@ hero:
 <ul>
   <li v-for="page of childPages">
     <a :href="page.url">{{page.title}}</a>
-    <!-- <author-list :secondary="true" :authors="page.frontmatter.authors"></author-list> -->
+    <author-list :secondary="true" :authors="page.authors"></author-list>
   </li>
 </ul>
 
