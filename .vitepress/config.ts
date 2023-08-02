@@ -8,6 +8,10 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/resources/favicon.png' }]],
   appearance: false,
   srcExclude: ['README.md'],
+
+  // Set to VuePress's dist directory for backward compatibility
+  outDir: '.vuepress/dist',
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
