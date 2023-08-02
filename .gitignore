@@ -45,3 +45,5 @@ Icon
 .Spotlight-V100
 .Trashes
 
+/.vitepress/cache
+/.vitepress/dist

@@ -1,15 +1,18 @@
 ---
+title: บันทึกการพัฒนาเว็บ ELECT Live!
 authors:
   - dtinth
   - heytitle
   - mishari
   - unnawut
   - phoneee
-meta:
-  - name: description
-    content: เบื้องหลังการพัฒนาเว็บ ตั้งแต่การออกแบบ เซ็ตอัพโปรเจกต์ แบ่งงาน การสร้างคอมมูนิตี้โอเพนซอร์ซ การทำ CI/CD เทคนิคการเขียนโค้ด และบทเรียนต่างๆ
-  - property: og:image
-    content: /share-images/elect-live-v1.png
+head:
+  - - meta
+    - name: description
+      content: เบื้องหลังการพัฒนาเว็บ ตั้งแต่การออกแบบ เซ็ตอัพโปรเจกต์ แบ่งงาน การสร้างคอมมูนิตี้โอเพนซอร์ซ การทำ CI/CD เทคนิคการเขียนโค้ด และบทเรียนต่างๆ
+  - - meta
+    - property: og:image
+      content: /share-images/elect-live-v1.png
 ---
 
 # บันทึกการพัฒนาเว็บ ELECT Live!
@@ -36,9 +39,9 @@ meta:
 มีหลายเรื่องที่เราอยากจะเล่าเกี่ยวกับการพัฒนาเว็บนี้
 บันทึกนี้จึงแบ่งเป็นหลายๆ หัวข้อย่อย
 
----
+<!-- Old VuePress code -->
 
-<section v-for="(item, index) of sidebarItems" :key="index" v-if="item.type === 'group'">
+<!-- <section v-for="(item, index) of sidebarItems" :key="index" v-if="item.type === 'group'">
   <h2>{{ item.title }}</h2>
   <ul>
     <li v-for="page of item.children" :key="page.key">
@@ -56,7 +59,7 @@ meta:
       </span>
     </li>
   </ul>
-</section>
+</section> -->
 
 <style scoped>
 .article-author {
@@ -80,20 +83,17 @@ meta:
 </style>
 
 <script>
-import { resolveSidebarItems } from '@parent-theme/util'
-
 export default {
   mounted() {
-    console.log(this.sidebarItems)
   },
   computed: {
     sidebarItems () {
-      return resolveSidebarItems(
-        this.$page,
-        this.$page.regularPath,
-        this.$site,
-        this.$localePath
-      )
+      // return resolveSidebarItems(
+      //   this.$page,
+      //   this.$page.regularPath,
+      //   this.$site,
+      //   this.$localePath
+      // )
     },
   }
 }

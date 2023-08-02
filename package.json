@@ -1,21 +1,25 @@
 {
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.4.0",
     "dotenv": "^8.2.0",
     "remark-cli": "^7.0.0",
     "remark-lint-thai": "dtinth/remark-lint-thai",
-    "vuepress": "^1.8.0"
+    "vitepress": "1.0.0-beta.7"
   },
   "scripts": {
-    "start": "vuepress dev",
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "vitepress dev --port=${PORT:-7747}",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
     "littlefoot": "^3.4.1",
     "markdown-it-footnote": "^3.0.1",
     "rss": "^1.2.2",
-    "twemoji": "^2.5.1"
-  }
+    "twemoji": "^14.0.2",
+    "vue": "^3.3.4"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "packageManager": "pnpm@8.6.7"
 }

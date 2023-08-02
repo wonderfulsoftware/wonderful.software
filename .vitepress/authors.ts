@@ -1,4 +1,4 @@
-module.exports = {
+export const authors: Record<string, Author> = {
   dtinth: {
     name: 'Thai Pangsakulyanont',
   },
@@ -14,4 +14,8 @@ module.exports = {
   phoneee: {
     name: 'Dollapak Suwanpunya',
   },
+}
+
+interface Author {
+  name: string
 }
