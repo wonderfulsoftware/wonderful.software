@@ -10,6 +10,7 @@ hero:
   tagline: "a website about software engineering"
 ---
 
+<div style="padding: 0 24px">
 <div class="homepage-content vp-doc" style="max-width: 1152px; margin: 0 auto 1em">
 
 ## Contents
@@ -21,6 +22,7 @@ hero:
   </li>
 </ul>
 
+</div>
 </div>
 
 <script setup>
