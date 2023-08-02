@@ -3,23 +3,29 @@
 layout: home
 
 hero:
+  image:
+    src: /resources/logo.svg
+    alt: wonderful.software
   name: "wonderful.software"
-  text: "a website about software engineering"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  tagline: "a website about software engineering"
 ---
 
+<div class="homepage-content vp-doc" style="max-width: 1152px; margin: 0 auto 1em">
+
+## Contents
+
+<ul>
+  <li v-for="page of childPages">
+    <a :href="page.url">{{page.title}}</a>
+    <!-- <author-list :secondary="true" :authors="page.frontmatter.authors"></author-list> -->
+  </li>
+</ul>
+
+</div>
+
+<script setup>
+import { computed } from 'vue'
+import { data } from './index.data'
+
+const childPages = data
+</script>

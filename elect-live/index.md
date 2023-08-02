@@ -1,4 +1,5 @@
 ---
+title: บันทึกการพัฒนาเว็บ ELECT Live!
 authors:
   - dtinth
   - heytitle
