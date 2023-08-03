@@ -5,7 +5,18 @@ import twemoji from 'twemoji'
 export default defineConfig({
   title: 'wonderful.software',
   description: 'a website about software engineering',
-  head: [['link', { rel: 'icon', href: '/resources/favicon.png' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/resources/favicon.png' }],
+    [
+      'script',
+      {
+        src: 'https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js',
+        integrity: 'sha256-LGPziMiBHh/kxb4WDqOig3cAG03zDunDiHD/1T85K6o=',
+        crossorigin: 'anonymous',
+        async: '',
+      },
+    ],
+  ],
   appearance: false,
   srcExclude: ['README.md'],
 

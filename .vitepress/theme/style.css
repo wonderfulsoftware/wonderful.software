@@ -111,11 +111,11 @@ html:root {
 
 @media (min-width: 640px) {
   .vp-doc {
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 32px;
   }
   .vp-doc p {
-    line-height: 34px;
+    line-height: 32px;
   }
 }
 
