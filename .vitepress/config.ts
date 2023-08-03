@@ -184,6 +184,12 @@ export default defineConfig({
         ariaLabel: 'วงแหวนเว็บ',
       },
     ],
+    search: {
+      provider: 'local',
+      options: {
+        exclude: (path) => path.startsWith('/js/'),
+      },
+    },
   },
 
   markdown: {
