@@ -130,3 +130,8 @@ html:root {
 .ๆ {
   margin-left: 0.1em;
 }
+
+.DocSearch-Button {
+  background-color: transparent;
+  border-color: var(--vp-c-bg-alt);
+}
