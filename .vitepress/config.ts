@@ -184,6 +184,9 @@ export default defineConfig({
         ariaLabel: 'วงแหวนเว็บ',
       },
     ],
+    search: {
+      provider: 'local',
+    },
   },
 
   markdown: {
