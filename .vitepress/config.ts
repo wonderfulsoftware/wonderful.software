@@ -186,6 +186,9 @@ export default defineConfig({
     ],
     search: {
       provider: 'local',
+      options: {
+        exclude: (path) => path.startsWith('/js/'),
+      },
     },
   },
 
