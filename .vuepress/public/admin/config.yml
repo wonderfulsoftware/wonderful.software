@@ -1,0 +1,7 @@
+backend:
+  name: github
+  repo: wonderfulsoftware/wonderful.software
+  open_authoring: true
+publish_mode: editorial_workflow
+media_folder: ".vuepress/public/uploads"
+public_folder: "/uploads"
