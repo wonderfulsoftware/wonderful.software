@@ -21,7 +21,8 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         text: 'Appendices',
         items: [
           {
-            // TODO
+            text: 'แหล่งความรู้',
+            link: '/js/resources/',
           },
         ],
       },
