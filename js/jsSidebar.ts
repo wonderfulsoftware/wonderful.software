@@ -21,7 +21,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
           },
           {
             text: 'คอร์สนี้จะได้เรียนรู้อะไรบ้าง',
-            link: '/js/overview.html',
+            link: '/js/scope.html',
           },
           {
             text: 'การเรียนรู้การเขียนโปรแกรม',
