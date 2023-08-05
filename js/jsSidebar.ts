@@ -15,6 +15,10 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             text: 'ตัวอย่างการใช้ JavaScript Console ในชีวิตประจำวัน',
             link: '/js/daily-life-console.html',
           },
+          {
+            text: 'พื้นฐานที่ควรมี',
+            link: '/js/prerequisites.html',
+          },
         ],
       },
       {
@@ -27,8 +31,12 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         ],
       },
       {
-        text: 'Appendices',
+        text: 'บทเสริม',
         items: [
+          {
+            text: 'การพิมพ์ดีด',
+            link: '/js/typing.html',
+          },
           {
             text: 'แหล่งเรียนรู้อื่นๆ',
             link: '/js/resources.html',
