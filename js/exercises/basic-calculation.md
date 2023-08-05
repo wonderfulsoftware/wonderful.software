@@ -34,5 +34,5 @@ This is a draft content and may be incomplete or inaccurate.
 <JsExercise :questions="$frontmatter.questions" />
 
 <script setup>
-  import JsExercise from '../JsExercise.vue'
+  import JsExercise from './JsExercise.vue'
 </script>
