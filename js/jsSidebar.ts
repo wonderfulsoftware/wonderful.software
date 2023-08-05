@@ -19,6 +19,14 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             text: 'พื้นฐานที่ควรมี',
             link: '/js/prerequisites.html',
           },
+          {
+            text: 'คอร์สนี้จะได้เรียนรู้อะไรบ้าง',
+            link: '/js/overview.html',
+          },
+          {
+            text: 'การเรียนรู้การเขียนโปรแกรม',
+            link: '/js/learning.html',
+          },
         ],
       },
       {
@@ -36,6 +44,10 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
           {
             text: 'การพิมพ์ดีด',
             link: '/js/typing.html',
+          },
+          {
+            text: 'ทำไมถึงเลือกภาษา JavaScript',
+            link: '/js/why.html',
           },
           {
             text: 'แหล่งเรียนรู้อื่นๆ',
