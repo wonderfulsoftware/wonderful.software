@@ -6,14 +6,23 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
     items: [
       {
         text: '0. Introduction',
-        link: '/js/intro/',
+        items: [
+          {
+            text: 'เขียนโปรแกรมเป็นแล้วทำอะไรได้',
+            link: '/js/intro.html',
+          },
+          {
+            text: 'ตัวอย่างการใช้ JavaScript Console ในชีวิตประจำวัน',
+            link: '/js/daily-life-console.html',
+          },
+        ],
       },
       {
         text: '1. Basic Calculation',
         items: [
           {
             text: 'Basic Calculation Exercises',
-            link: '/js/exercises/basic-calculation/',
+            link: '/js/exercises/basic-calculation.html',
           },
         ],
       },
@@ -22,7 +31,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         items: [
           {
             text: 'แหล่งเรียนรู้อื่นๆ',
-            link: '/js/resources/',
+            link: '/js/resources.html',
           },
         ],
       },

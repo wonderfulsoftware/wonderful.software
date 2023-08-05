@@ -1,5 +1,9 @@
 # แหล่งเรียนรู้อื่นๆ
 
+:::warning DRAFT
+This is a draft content and may be incomplete or inaccurate.
+:::
+
 ## การคิดเชิงคำนวณ
 
 - หากคุณไม่เคยเขียนโปรแกรม และไม่มีพื้นฐานด้านการคิดเชิงคำนวณมาก่อน
