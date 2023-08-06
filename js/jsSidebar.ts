@@ -30,11 +30,54 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         ],
       },
       {
-        text: '1. Basic Calculation',
+        text: '1. ทำความรู้จักกับภาษา JavaScript',
         items: [
           {
-            text: 'Basic Calculation Exercises',
+            text: 'การคำนวณเบื้องต้น',
+          },
+          {
+            text: '[แบบฝึกหัด] การคำนวณเบื้องต้น',
             link: '/js/exercises/basic-calculation.html',
+          },
+          {
+            text: 'ตัวเลข ข้อความ และตัวดำเนินการ (Numbers, Strings, Operators)',
+          },
+          {
+            text: 'ตัวแปร (Variables)',
+          },
+          {
+            text: 'ฟังก์ชัน (Functions)',
+          },
+        ],
+      },
+      {
+        text: '2. ลองสร้างเว็บแอปพลิเคชัน',
+        items: [
+          {
+            text: 'แนะนำเว็บ Glitch',
+          },
+          {
+            text: 'HTML แบบเบื้องต้นสุดๆ',
+          },
+          {
+            text: 'Input',
+          },
+          {
+            text: 'สร้างเว็บไซต์ของตัวเองบน Neocities',
+          },
+        ],
+      },
+      {
+        text: '3. โครงสร้างภาษา',
+        items: [
+          {
+            text: 'เงื่อนไข (Conditionals): if, else, else if',
+          },
+          {
+            text: 'เงื่อนไขแบบหลายตัวเลือก: switch, case',
+          },
+          {
+            text: 'การทำซ้ำ (Loops): while, for',
           },
         ],
       },
@@ -46,8 +89,16 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/typing.html',
           },
           {
+            text: 'ความสำคัญของชั่วโมงบิน',
+            link: '/js/quantity.html',
+          },
+          {
             text: 'ทำไมถึงเลือกภาษา JavaScript',
             link: '/js/why.html',
+          },
+          {
+            text: 'เหตุเกิดจากความขี้เกียจ',
+            link: '/js/lazy.html',
           },
           {
             text: 'แหล่งเรียนรู้อื่นๆ',
