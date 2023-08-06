@@ -113,14 +113,11 @@ html:root {
   .vp-doc {
     font-size: 18px;
     line-height: 32px;
+    font-synthesis: weight style;
   }
   .vp-doc p {
     line-height: 32px;
   }
-}
-
-.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
-  font-synthesis: weight style;
 }
 
 .เว้นวรรคใหญ่ {
