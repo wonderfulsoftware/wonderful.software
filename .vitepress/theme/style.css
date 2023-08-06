@@ -132,3 +132,15 @@ html:root {
   background-color: transparent;
   border-color: var(--vp-c-bg-alt);
 }
+
+.footnote-item, .footnote-item p {
+  line-height: 24px;
+  font-size: 14px;
+}
+
+sup.footnote-ref {
+  vertical-align: baseline;
+  display: inline-block;
+  position: relative;
+  top: -0.5em;
+}
