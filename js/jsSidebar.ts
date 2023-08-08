@@ -17,6 +17,9 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/daily-life-console.html',
           },
           {
+            text: '⠀ การเขียนโปรแกรมคืออะไร',
+          },
+          {
             text: '⠿ พื้นฐานที่ควรมี',
             link: '/js/prerequisites.html',
           },
@@ -25,7 +28,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/scope.html',
           },
           {
-            text: '⠿ การเรียนรู้การเขียนโปรแกรม',
+            text: '⠶ การเรียนรู้การเขียนโปรแกรม',
             link: '/js/learning.html',
           },
         ],
@@ -90,7 +93,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/typing.html',
           },
           {
-            text: '⠤ ความสำคัญของชั่วโมงบิน',
+            text: '⠿ ความสำคัญของชั่วโมงบิน',
             link: '/js/quantity.html',
           },
           {
