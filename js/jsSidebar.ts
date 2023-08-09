@@ -38,6 +38,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         items: [
           {
             text: '⠀ การคำนวณเบื้องต้น',
+            link: '/js/basic-calculation.html',
           },
           {
             text: '⠶ [แบบฝึกหัด] การคำนวณเบื้องต้น',
