@@ -30,6 +30,7 @@ This is a draft content and may be incomplete or inaccurate.
 
 ลองใช้ JavaScript Console คำนวณคำตอบของโจทย์ต่อไปนี้
 แล้วนำคำตอบที่ได้ มาใส่ในช่องคำตอบ
+เพื่อเช็คว่าถูกต้องหรือไม่
 
 <JsExercise :questions="$frontmatter.questions" />
 
