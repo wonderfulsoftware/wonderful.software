@@ -1,0 +1,6 @@
+version: 0.5
+processes:
+  dev:
+    command: 'pnpm dev'
+    availability:
+      restart: on_failure
