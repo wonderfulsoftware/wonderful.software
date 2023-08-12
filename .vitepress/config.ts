@@ -185,6 +185,13 @@ export default defineConfig({
         })(md.renderer.render)
     },
   },
+  vite: {
+    server: {
+      headers: {
+        'X-Robots-Tag': 'noindex',
+      },
+    },
+  },
 
   buildEnd: async (siteConfig) => {
     const { generateRss } = await import('./rss')

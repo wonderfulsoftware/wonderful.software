@@ -17,7 +17,8 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/daily-life-console.html',
           },
           {
-            text: '⠀ การเขียนโปรแกรมคืออะไร',
+            text: '⠶ การเขียนโปรแกรมคืออะไร',
+            link: '/js/programming.html',
           },
           {
             text: '⠿ พื้นฐานที่ควรมี',
@@ -37,7 +38,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         text: '1. ทำความรู้จักกับภาษา JavaScript',
         items: [
           {
-            text: '⠀ การคำนวณเบื้องต้น',
+            text: '⠶ การคำนวณเบื้องต้น',
             link: '/js/basic-calculation.html',
           },
           {
@@ -46,6 +47,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
           },
           {
             text: '⠀ ตัวเลข ข้อความ และตัวดำเนินการ (Numbers, Strings, Operators)',
+            link: '/js/exercises/values-and-operators.html',
           },
           {
             text: '⠀ ตัวแปร (Variables)',
