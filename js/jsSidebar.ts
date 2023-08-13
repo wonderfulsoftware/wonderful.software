@@ -46,8 +46,8 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/exercises/basic-calculation.html',
           },
           {
-            text: '⠀ ตัวเลข ข้อความ และตัวดำเนินการ (Numbers, Strings, Operators)',
-            link: '/js/exercises/values-and-operators.html',
+            text: '⠶ ตัวเลขและตัวดำเนินการ (Numbers and Operators)',
+            link: '/js/numbers-and-operators.html',
           },
           {
             text: '⠀ ตัวแปร (Variables)',
