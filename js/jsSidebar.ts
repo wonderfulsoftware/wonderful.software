@@ -50,6 +50,10 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/numbers-and-operators.html',
           },
           {
+            text: '⠀ ข้อความและชนิดข้อมูล (Strings and Data Types)',
+            link: '/js/strings-and-data-types.html',
+          },
+          {
             text: '⠀ ตัวแปร (Variables)',
           },
           {
