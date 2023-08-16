@@ -18,6 +18,8 @@ This is a draft content and may be incomplete or inaccurate.
 
 ## ดึงข้อมูลจากหน้าเว็บ
 
+- เรื่องต่อไป — เมื่อประมาณ 6 ปีที่แล้ว ผมจัดเวิร์คช็อปที่งานนึงครับ
+
 - ทีนี้ใกล้เวลาพักเทียงก็เพิ่งรู้ตัวว่า ยังไม่ได้สั่งอาหารกลางวันเลย เลยคิดว่า สั่งพิซซ่าดีกว่า แต่จะเอาหน้าอะไรดี? ก็เลยอยากจะทำโพลให้คนที่มาร่วมงานได้โหวตกันครับ
 
   ![](https://im.dt.in.th/ipfs/bafybeicziqeguwwqdpftdglhnj5r3cf5suksts7xcdp3sopajxdgmgmo7q/image.png)
@@ -31,7 +33,7 @@ This is a draft content and may be incomplete or inaccurate.
   :::
 
   ```js
-  Array.from($$('.item-name'), x => x.innerText).join('\n')
+  Array.from($$('.item-name'), (x) => x.innerText).join('\n')
   ```
 
 - สุดท้าย ใช้เวลาไม่ถึง 1 นาที
