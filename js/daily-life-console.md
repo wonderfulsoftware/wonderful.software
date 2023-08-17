@@ -12,31 +12,58 @@ This is a draft content and may be incomplete or inaccurate.
 
 - อย่างแรกเลย — คือเดี๋ยวนี้ ผมแทบไม่ต้องใช้เครื่องคิดเลขแล้ว เมื่อไหร่ก็ตามที่ผมต้องการคิดเลข ผมก็เปิด JavaScript Console ขึ้นมา แล้วก็คิดเลขในนี้ไปเลย
 
+  <!-- prettier-ignore -->
   ```js
-  ;(500 * 1080) / 720
+  (500 * 1080) / 720
   ```
 
 ## ดึงข้อมูลจากหน้าเว็บ
 
-- เรื่องต่อไป — เมื่อประมาณ 6 ปีที่แล้ว ผมจัดเวิร์คช็อปที่งานนึงครับ
+- เรื่องต่อไป — เมื่อประมาณปี 2017
+  ผมจัดเวิร์คช็อปที่งานนึงครับ
 
 - ทีนี้ใกล้เวลาพักเทียงก็เพิ่งรู้ตัวว่า ยังไม่ได้สั่งอาหารกลางวันเลย เลยคิดว่า สั่งพิซซ่าดีกว่า แต่จะเอาหน้าอะไรดี? ก็เลยอยากจะทำโพลให้คนที่มาร่วมงานได้โหวตกันครับ
 
-  ![](https://im.dt.in.th/ipfs/bafybeicziqeguwwqdpftdglhnj5r3cf5suksts7xcdp3sopajxdgmgmo7q/image.png)
+  ![](https://im.dt.in.th/ipfs/bafybeig7pj2efhwfgpfuv4ser3ziepeteeisybwu7ha57sewybppsf3y24/image.webp)
 
-- แต่ถ้าผมต้องสร้างแบบฟอร์ม แล้วใส่ตัวเลือกเข้าไปทีละหน้า คงจะใช้เวลาหลายนาที ตอนนั้นผมจึงตัดสินใจเขียนโค้ดครับ
+- แต่พิซซ่าก็มีหลายหน้าให้เลือกมาก
+  ถ้าผมต้องสร้างแบบฟอร์ม แล้วใส่ตัวเลือกเข้าไปทีละอัน
+  คงจะใช้เวลาสักพักใหญ่ครับ
+  ถึงจะใช้คีย์ลัดต่างๆ เป็น แต่ก็ยังกินเวลาเยอะพอสมควรอยู่ดี
 
-- เข้ามาที่เว็บพิซซ่า คลิกขวาที่หน้าพิซซ่าสักหน้า สังเกตโครงสร้างของหน้าเว็บ แล้วก็ไปที่ Console แล้วก็พิมพ์โค้ดเพื่อดึงออบเจกต์ที่อยู่บนหน้าเว็บนั้นออกมา หลังจากนั้นก็ดึงข้อความมาจากแต่ละอัน สุดท้ายก็รวมข้อความทั้งหมดเข้าด้วยกัน ให้กลายเป็นข้อความเดียวครับ… ผมสามารถ Copy ข้อความนี้ไปแปะในฟอร์มได้ทันที เสร็จแล้วก็เอาตัวเลือกที่ไม่ต้องการออก
+- แต่ผมเขียนโค้ดเป็น ผมเลยมีตัวเลือกที่จะแก้ปัญหานี้ด้วยโค้ดครับ
 
   ::: info
-  ในบทเรียนของจริงจะมีวีดีโอให้ดูเพื่อให้เห็นภาพมากขึ้น แต่ผมเคยทำคลิปเกี่ยวกับตัวอย่างนี้ไว้แล้ว [ดูได้บน YouTube](https://www.youtube.com/watch?v=IdFX7nwD744&t=1414s)
+  ผมเคยทำคลิปเกี่ยวกับตัวอย่างนี้ไว้แล้ว [ดูได้บน YouTube](https://www.youtube.com/watch?v=IdFX7nwD744&t=1414s) ครับ
   :::
+
+- ผมเริ่มจากเข้ามาที่เว็บพิซซ่า
+  (1) คลิกขวาที่หน้าพิซซ่าสักหน้า
+  (2) แล้วกด Inspect
+  (3) เสร็จแล้วสังเกตโครงสร้างของหน้าเว็บ
+  (4) แล้วก็ไปที่ Console
+
+  ![](https://im.dt.in.th/ipfs/bafybeigavjhwysjp25p4pnjtwk6mwvczf527nu5ye7k44uxpbgzmgl7l2a/image.webp)
+
+- ข้างใน Console
+  (1) ผมพิมพ์โค้ดเพื่อดึงของที่อยู่บนหน้าเว็บที่เขาเรียกกันว่า Element ออกมา
+  (2) หลังจากนั้นผมก็เขียนโค้ดต่อ ให้แกะข้อความออกมาจาก Element แต่ละอันครับ — จะเห็นว่าในโค้ดที่เขียนมีสัญลักษณ์แปลกๆ เต็มไปหมดเลย
+  แต่ถ้าเขียนถูก ก็จะได้ชื่อหน้าพิซซ่าต่างๆ ออกมาครับ — (3) ผมเอาข้อความทั้งหมดรวมเข้าด้วยกัน ให้กลายเป็นข้อความเดียวครับ
+  (4) เสร็จแล้วผมก็ Copy ข้อความออกมา
+
+  ![](https://im.dt.in.th/ipfs/bafybeihualypbme55lzjujlfbjudppfmmemkizk542vpxljh7bogsmpe4i/image.webp)
 
   ```js
   Array.from($$('.item-name'), (x) => x.innerText).join('\n')
   ```
 
-- สุดท้าย ใช้เวลาไม่ถึง 1 นาที
+- และเอาข้อความที่ได้ ไปแปะในฟอร์มได้ทันที
+  ที่เหลือก็คือ ตรวจทาน และเอาตัวเลือกที่ไม่ต้องการออก
+
+  ![](https://im.dt.in.th/ipfs/bafybeiactt3pbf6hgjpqt27ck3e6zrifuazfbwv5tymhsvs2ke45j4afta/image.webp)
+
+- แค่นี้ฟอร์มที่เอาไว้ให้โหวตหน้าพิซซ่าก็พร้อมใช้งานแล้ว โดยใช้เวลาทำไม่ถึงนาที
+  จะเห็นว่าถ้าเขียนโค้ดเป็นก็ช่วยประหยัดเวลาได้ โดยเฉพาะเรื่องที่ต้องทำซ้ำๆ ครับ
 
 ## ดึงข้อมูลจากไฟล์
 
@@ -44,26 +71,36 @@ This is a draft content and may be incomplete or inaccurate.
   อันนี้เป็นตัวอย่างข้อมูลจากบัญชีนึงที่ใช้จัดงานอีเวนต์ครับ
   ผมอยากจะเอาข้อมูลในไฟล์นี้มาใส่ Google Sheet เพื่อความสะดวกในการเอาไปวิเคราะห์ต่อ
 
-![](https://im.dt.in.th/ipfs/bafybeidk6gyrudcp2panl4pwscswdwhzcpucagsk4hwgeb2vtfddtsztxu/image.png)
+  ![](https://im.dt.in.th/ipfs/bafybeidk6gyrudcp2panl4pwscswdwhzcpucagsk4hwgeb2vtfddtsztxu/image.png)
 
 - สิ่งที่ผมอยากได้ คือ อยากได้ตารางที่มี 3 คอลัมน์ — คอลัมน์แรกคือวันที่ แต่อยากให้มันอยู่ในรูปแบบ ISO หรือ ปี-เดือน-วัน
   คอลัมน์ที่สองคือเวลา
   ส่วนคอลัมน์สุดท้ายคือค่าใช้จ่ายครับ
 
-  ![](https://im.dt.in.th/ipfs/bafybeid7l5zkvgy3rxub6jojb35rsqwe6f52nrpxehfo3xbxvm6rojuiou/image.png)
+  ![](https://im.dt.in.th/ipfs/bafybeiebnwxi6ofohgj6k2gva33q4x5ab2x5w3oylgvfxqqvhbehfxsauq/image.webp)
 
-- ทีแรก ผมลองก๊อปข้อมูลออกมาจากไฟล์ PDF ตรงๆแล้วเอามาแปะใน Google Sheet แล้วก็พบว่า เวลากับวันที่มันรวมกันอยู่ในคอลัมน์เดียวเลย ส่วนจำนวนเงิน ตอนที่เอามาแปะ มันก็เอาข้อมูลทั้งหมดมากองอยู่ในช่องเดียว
+- ทีแรก ผมลองก๊อปข้อมูลออกมาจากไฟล์ PDF ตรงๆแล้วเอามาแปะใน Google Sheet แล้วก็พบว่า
+  (1) เวลากับวันที่มันรวมกันอยู่ในคอลัมน์เดียวเลย
+  (2) ส่วนจำนวนเงินทั้งหมดมากองอยู่ในช่องเดียว
 
-  ![](https://im.dt.in.th/ipfs/bafybeidt3byg7uwulytmmwddlzdj6wnasbuhqez2mj4o3uvkqx3dph7rta/image.png)
+  ![](https://im.dt.in.th/ipfs/bafybeichzg5hhiu2r7qcpx5vznmextksomvpturyev6natrx5jdvrjzxoa/image.webp)
 
-- ถ้าจะต้องให้มานั่งพิมพ์ก็คงจะใช้เวลานาน ยิ่งไฟล์นี้เป็นแค่หน้าแรกจากหลายๆ หน้า ผมจึงตัดสินใจเขียนโค้ดครับ
+- ถ้าต้องนั่งกรอกข้อมูลทั้งหมดเองก็น่าจะเสียเวลา
+  แค่นั้นไม่พอ — มันไม่ได้มีแค่ไฟล์เดียวครับ
+  ตัวอย่างที่ให้ดูคือแค่ 1 หน้า จาก 1 ไฟล์
+
+  ![](https://im.dt.in.th/ipfs/bafybeiengwb6thyn4o7vksodvgrianolnctzkfwelflx4mdxz3v3pb2lbu/pasted-image.webp)
+
+- ผมเลยคิดว่า เขียนโค้ดแก้ดีกว่าครับ
 
 - เริ่มจากการก๊อบข้อมูลจาก PDF มาแปะใส่ JavaScript Console ก่อน
 
+  ![](https://im.dt.in.th/ipfs/bafybeiasftbjcsp2vgbsmbadrrmeosc23ymizoh2wdnzrc4mbtun3f6vrm/image.webp)
+
   ::: details See code
 
-  ````js
-  x=`25/03/23 16:28
+  ```js
+  x = `25/03/23 16:28
   25/03/23 18:24
   25/03/23 18:44
   25/03/23 21:46
@@ -82,18 +119,16 @@ This is a draft content and may be incomplete or inaccurate.
   X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET X2/ENET
   4,240.00
   3,693.00 273.00 769.00 769.00 1,236.00 438.00 1,297.00 1,100.00 138.00 65.00 4,442.00 958.00 640.00 4,401.00`
-  ```js
+  ```
 
   :::
-
-  ````
 
 - หลังจากนั้นเขียนโค้ดให้คอมพิวเตอร์ (1) ช่วยหา หรือ match ข้อมูลที่ดูเหมือนวันที่ออกมา — ถ้าอ่านโค้ดนี้ไม่เข้าใจไม่เป็นไรนะครับ แค่จะให้ดูภาพรวมขั้นตอนการทำงานของโปรแกรมเมอร์เฉยๆ — (2) โอเค ตอนนี้ได้ข้อมูลละ
   (3) ทำการจัดเรียงวันที่ให้อยู่ในรูปแบบ ปี-เดือน-วัน
   (4) พอได้ข้อมูลที่ต้องการแล้ว ก็สั่งให้มันรวมกันเป็นก้อนข้อความเดียว
   (5) แล้วก็ Copy ออกมาแปะใน Google Sheets ได้เลย
 
-  ![](https://im.dt.in.th/ipfs/bafybeigg3u7dht76k5qddtci54ilcgsnwi5fwkssp4t7zltxewow5m5nka/image.png)
+  ![](https://im.dt.in.th/ipfs/bafybeibxteao52b5kqhqdeiirguk3xwsjun3rt7vwvcxb7qawyft5jpzhy/image.webp)
 
   ::: details See code
 
@@ -113,7 +148,7 @@ This is a draft content and may be incomplete or inaccurate.
   ถ้าไปถูกทางก็เขียนโค้ดต่อ
   ถ้าไปผิดทางก็แก้ครับ
 
-  ![](https://im.dt.in.th/ipfs/bafybeigun6n2g77a4t4edokjehxrpv3ivzimjcozfjw4l6iuje7vhslfwa/image.png)
+  ![](https://im.dt.in.th/ipfs/bafybeicwip2oifvzqcojceexmyufmirjlmqtxwue6l7ovmfpmfgjon74jm/image.webp)
 
   ::: details See code
 
@@ -126,7 +161,7 @@ This is a draft content and may be incomplete or inaccurate.
 - สุดท้ายก็ทำกับคอลัมน์ที่ 3 ครับ
   ดึงข้อมูลที่เป็นจุดทศนิยมออกมา ซึ่งก็คือจำนวนเงินนั่นเอง
 
-  ![](https://im.dt.in.th/ipfs/bafybeidatqmb4nfpyntvzqh2rymwoy72nwk3upclwjox4fpvaadjecnzny/image.png)
+  ![](https://im.dt.in.th/ipfs/bafybeihbfk63h5djatw5i5as436ats5rrgrk5ov2ze2lt4z3rxxyddsjoe/image.webp)
 
 - แต่ผมพอเอาคำตอบที่ได้มาแปะใน Google Sheet ก็รู้สึกว่าตัวเลขมันน้อยแปลกๆ
   พอมองสักพักก็ อ๋อ! ลืมไปว่าจำนวนเงินอาจจะมีเครื่องหมาย `,` (comma) คั่นด้วย แต่โค้ดที่เขียนไม่ได้รองรับกรณีนี้ไว้ครับ
@@ -134,7 +169,7 @@ This is a draft content and may be incomplete or inaccurate.
   คำตอบที่ได้เลยไม่ตรงกับที่เราต้องการแค่นั้นเอง
   เวลาเกิดเหตุการณ์แบบนี้อาจจะเรียกได้ว่าโปรแกรมของเรามี Bug ครับ
 
-  ![](https://im.dt.in.th/ipfs/bafybeibemyqxaj4meydhllbfd64wikwpgsk5ct6y2zemjdjrfjsmjm52d4/image.png)
+  ![](https://im.dt.in.th/ipfs/bafybeicijacvirgyntg7j7enoaeamwg7lhpbnpmceivc5ttn7ya4eteoxa/image.webp)
 
 - สุดท้ายก็แก้บั๊ก ทำให้ตอนดึงข้อมูลที่เป็นตัวเลข รองรับกรณีที่มีเครื่องหมาย `,` แค่นี้ผมก็ได้ตารางตามที่ต้องการแล้ว
 

@@ -17,13 +17,13 @@ This is a draft content and may be incomplete or inaccurate.
 
 ## Input &rarr; Process &rarr; Output
 
-- เราสามารถมองโปรแกรมที่เราเขียนได้ว่าเป็น “กระบวนการ” ที่ใช้ในการแปลง อินพุต (ข้อมูลนำเข้า) ให้กลายเป็นเอาท์พุต (ผลลัพธ์) ตามที่เราต้องการ
+- เราสามารถมองโปรแกรมที่เราเขียนได้ว่าเป็น “กระบวนการ” เพื่อแปรรูป “อินพุต” (ข้อมูลนำเข้า) ให้กลายเป็น “เอาท์พุต” (ผลลัพธ์ หรือข้อมูลส่งออก) ตามที่เราต้องการ[^ipo]
 
 - ในตัวอย่างจากตอนก่อนหน้า:
 
   - **อินพุต** ก็คือ หน้าเว็บสั่งพิซซ่า
 
-  - **โปรแกรม** คือ โค้ดนี้ที่เขียนไป
+  - **กระบวนการ** คือ โค้ดนี้ที่เขียนไป
 
     ```js
     Array.from($$('.item-name'), (x) => x.innerText).join('\n')
@@ -31,4 +31,6 @@ This is a draft content and may be incomplete or inaccurate.
 
   - **เอาท์พุต** คือ ข้อความหลายบรรทัด ที่มีชื่อเมนูพิซซ่าทั้งหมด โดย 1 บรรทัดแทน 1 เมนู
 
-  ![](https://im.dt.in.th/ipfs/bafybeibsfyvbozhu5d7ccls7xkdre3tl5lbmltk4rhdzctzydtcvv5pahy/image.webp)
+  ![](https://im.dt.in.th/ipfs/bafybeiebdmjwg2ngytljdckqifyzfgvp2coqsdxjobcqiqbi5d27hkqx2e/image.webp)
+
+[^ipo]: มุมมองนี้เรียกว่า [IPO model](https://en.wikipedia.org/wiki/IPO_model) หรือ “Input-Process-Output model”
