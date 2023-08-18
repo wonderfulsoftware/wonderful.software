@@ -81,8 +81,6 @@ async function sendMessage() {
     })
     if (response.ok) {
       messageStatus.value = 'sent'
-      message.value = '';
-      name.value = '';
     } else {
       messageStatus.value = 'error'
     }
