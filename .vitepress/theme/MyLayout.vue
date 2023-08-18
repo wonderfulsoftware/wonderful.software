@@ -27,7 +27,8 @@ const feedback = computed(() => {
           <strong>This page is a draft.</strong> It may be incomplete or contain inaccuracies.
           <span v-if="feedback">
             {{ ' ' }}
-            Please feel free to <a href="#feedback-form" style="font-weight: 500">leave some feedback</a>!
+            If you have any comment, please feel free to <a href="#feedback-form" style="font-weight: 500">leave some
+              feedback</a>!
           </span>
         </div>
       </template>
