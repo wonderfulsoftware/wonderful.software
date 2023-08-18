@@ -1,8 +1,8 @@
-# คอร์สนี้จะได้เรียนรู้อะไรบ้าง
+---
+draft: true
+---
 
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
+# คอร์สนี้จะได้เรียนรู้อะไรบ้าง
 
 ## เรื่องที่สอนในคอร์สนี้
 

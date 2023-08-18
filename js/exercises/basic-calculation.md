@@ -1,4 +1,5 @@
 ---
+draft: true
 questions:
   - prompt: ซื้อของราคา 20, 15, 18, 30, 25 บาท รวมกันทั้งหมดกี่บาท
     code: 20 + 15 + 18 + 30 + 25
@@ -23,10 +24,6 @@ questions:
 ---
 
 # Exercise
-
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
 
 ลองใช้ JavaScript Console คำนวณคำตอบของโจทย์ต่อไปนี้
 แล้วนำคำตอบที่ได้ มาใส่ในช่องคำตอบ

@@ -1,8 +1,8 @@
-# เหตุเกิดจากความขี้เกียจ
+---
+draft: true
+---
 
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
+# เหตุเกิดจากความขี้เกียจ
 
 > “I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.” —Bill Gates
 

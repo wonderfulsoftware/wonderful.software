@@ -1,8 +1,8 @@
-# พื้นฐานที่ควรมี
+---
+draft: true
+---
 
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
+# พื้นฐานที่ควรมี
 
 - สำหรับคอร์สนี้ เราคาดว่าคุณจะมีพื้นฐานต่อไปนี้ครับ:
 

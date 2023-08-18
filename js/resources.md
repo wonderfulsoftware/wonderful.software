@@ -1,8 +1,8 @@
-# แหล่งเรียนรู้อื่นๆ
+---
+draft: true
+---
 
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
+# แหล่งเรียนรู้อื่นๆ
 
 ## การคิดเชิงคำนวณ
 

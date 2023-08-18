@@ -1,5 +1,5 @@
-# ข้อความและชนิดข้อมูล (Strings and Data Types)
+---
+draft: true
+---
 
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
+# ข้อความและชนิดข้อมูล (Strings and Data Types)

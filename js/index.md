@@ -1,8 +1,8 @@
-# Intro to Programming with JavaScript
+---
+draft: true
+---
 
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
+# Intro to Programming with JavaScript
 
 :::tip Legend
 

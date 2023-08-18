@@ -1,4 +1,5 @@
 ---
+draft: true
 questions:
   - prompt: '20 - 5 - 1'
     choices:
@@ -15,10 +16,6 @@ questions:
 ---
 
 # Exercise
-
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
 
 ทักษะนึงที่ควรมีเวลาเขียนโปรแกรม
 คือเวลาเราเห็นโค้ด เราสามารถคาดเดาได้ว่าโค้ดนั้นจะทำอะไร หรือได้ผลลัพธ์อะไรออกมา

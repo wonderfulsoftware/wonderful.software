@@ -1,8 +1,8 @@
-# ความสำคัญของชั่วโมงบิน
+---
+draft: true
+---
 
-:::warning DRAFT
-This is a draft content and may be incomplete or inaccurate.
-:::
+# ความสำคัญของชั่วโมงบิน
 
 ## “Quantity Always Trumps Quality”
 

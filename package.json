@@ -16,6 +16,7 @@
     "markdown-it-footnote": "^3.0.1",
     "rss": "^1.2.2",
     "twemoji": "^14.0.2",
+    "ulid": "^2.3.0",
     "vue": "^3.3.4"
   },
   "engines": {
