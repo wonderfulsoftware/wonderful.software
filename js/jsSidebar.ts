@@ -13,11 +13,11 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/intro.html',
           },
           {
-            text: '⠶ ตัวอย่างการใช้ JavaScript Console ในชีวิตประจำวัน',
+            text: '⠿ ตัวอย่างการใช้ JavaScript Console ในชีวิตประจำวัน',
             link: '/js/daily-life-console.html',
           },
           {
-            text: '⠶ การเขียนโปรแกรมคืออะไร',
+            text: '⠿ การเขียนโปรแกรมคืออะไร',
             link: '/js/programming.html',
           },
           {
