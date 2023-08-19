@@ -107,13 +107,13 @@ html:root {
 
 .vp-doc {
   font-family: CS ChatThai,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-synthesis: weight style;
 }
 
 @media (min-width: 640px) {
   .vp-doc {
     font-size: 18px;
     line-height: 32px;
-    font-synthesis: weight style;
   }
   .vp-doc p {
     line-height: 32px;
