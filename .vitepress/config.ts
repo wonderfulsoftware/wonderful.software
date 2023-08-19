@@ -179,10 +179,10 @@ export default defineConfig({
           const text = original.apply(this, arguments)
           return text.replace(/ๆ/g, '<span class="ๆ">ๆ</span>')
         })(md.renderer.rules.text)
-      md.renderer.render = ((original: any) =>
-        function () {
-          return twemoji.parse(original.apply(this, arguments))
-        })(md.renderer.render)
+      // md.renderer.render = ((original: any) =>
+      //   function () {
+      //     return twemoji.parse(original.apply(this, arguments))
+      //   })(md.renderer.render)
     },
   },
   vite: {
