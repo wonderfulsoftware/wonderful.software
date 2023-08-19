@@ -3,6 +3,9 @@ draft: true
 questions:
   - prompt: ซื้อของราคา 20, 15, 18, 30, 25 บาท รวมกันทั้งหมดกี่บาท
     code: 20 + 15 + 18 + 30 + 25
+    hints:
+      - whenAnswerIs: 20 + 15 + 18 + 30 + 25
+        showText: ให้นำโค้ดไปรันใน JavaScript console แล้วค่อยเอาผลลัพธ์ที่ได้มาใส่ในช่องตอบ
     answer: '108'
     type: number
   - prompt: หนึ่งวันมีกี่นาที
@@ -13,7 +16,7 @@ questions:
     code: 120 * 0.75
     answer: '90'
     type: number
-  - prompt: อาหาร 128 บาท มี + Service Charge 10% และ + VAT 7% (ให้ปัดเศษขึ้น)
+  - prompt: อาหาร 128 บาท มี + Service Charge 10% และ + VAT 7% (ให้ปัดเศษขึ้นเป็นจำนวนเต็ม)
     code: 128 * 1.1 * 1.07
     answer: '151'
     type: number

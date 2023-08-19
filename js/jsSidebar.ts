@@ -29,7 +29,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/scope.html',
           },
           {
-            text: '⠶ การเรียนรู้การเขียนโปรแกรม',
+            text: '⠿ การเรียนรู้การเขียนโปรแกรม',
             link: '/js/learning.html',
           },
         ],
