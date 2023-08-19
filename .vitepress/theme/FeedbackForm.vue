@@ -116,7 +116,8 @@ async function sendMessage() {
       <template v-if="messageStatus === 'waiting' || messageStatus === 'sending'">
         Is there anything else you'd like to tell me? (Optional)
         <div class="message-form">
-          <textarea placeholder="Type your message here, e.g. what you liked or disliked about this page."
+          <textarea
+            placeholder="Type your message here, e.g. what you liked or disliked about this page, or anything that confused you.?"
             :disabled="messageStatus === 'sending'" v-model="message"></textarea>
           <div style="display: flex; gap: 8px; margin-top: 8px">
             <input type="text" placeholder="Your name (optional)" v-model="name" :disabled="messageStatus === 'sending'">
