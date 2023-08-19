@@ -5,7 +5,7 @@ questions:
     code: 20 + 15 + 18 + 30 + 25
     hints:
       - whenAnswerIs: 20 + 15 + 18 + 30 + 25
-        showText: ให้นำโค้ดไปรันใน JavaScript console แล้วค่อยเอาผลลัพธ์ที่ได้มาใส่ในช่องตอบ
+        showText: ให้นำโค้ดไปรันใน JavaScript Console ก่อน แล้วค่อยเอาผลลัพธ์ที่ได้มาใส่ในช่องตอบ
     answer: '108'
     type: number
   - prompt: หนึ่งวันมีกี่นาที

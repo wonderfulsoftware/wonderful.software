@@ -38,15 +38,15 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         text: '1. ทำความรู้จักกับภาษา JavaScript',
         items: [
           {
-            text: '⠶ การคำนวณเบื้องต้น',
+            text: '⠿ การคำนวณเบื้องต้น',
             link: '/js/basic-calculation.html',
           },
           {
-            text: '⠶ [แบบฝึกหัด] การคำนวณเบื้องต้น',
+            text: '⠿ [แบบฝึกหัด] การคำนวณเบื้องต้น',
             link: '/js/exercises/basic-calculation.html',
           },
           {
-            text: '⠶ ตัวเลขและตัวดำเนินการ (Numbers and Operators)',
+            text: '⠿ ตัวเลขและตัวดำเนินการ (Numbers and Operators)',
             link: '/js/numbers-and-operators.html',
           },
           {
