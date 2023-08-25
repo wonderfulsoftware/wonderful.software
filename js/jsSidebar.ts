@@ -46,18 +46,24 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/exercises/basic-calculation.html',
           },
           {
-            text: '⠿ ตัวเลขและตัวดำเนินการ (Numbers and Operators)',
-            link: '/js/numbers-and-operators.html',
+            text: '⠿ เอกซ์เพรสชันและตัวดำเนินการ (Expressions and Operators)',
+            link: '/js/expressions-and-operators.html',
           },
           {
-            text: '⠀ ข้อความและชนิดข้อมูล (Strings and Data Types)',
-            link: '/js/strings-and-data-types.html',
-          },
-          {
-            text: '⠀ ตัวแปร (Variables)',
+            text: '⠀ ตัวแปรและชนิดข้อมูล (Variables and Data Types)',
+            link: '/js/variables-and-data-types.html',
           },
           {
             text: '⠀ ฟังก์ชัน (Functions)',
+            // link: '/js/function.html',
+          },
+          {
+            text: '⠿ ความรู้เพิ่มเติมเกี่ยวกับตัวเลข (Numbers in depth)',
+            link: '/js/number.html',
+          },
+          {
+            text: '⠀ ความรู้เพิ่มเติมเกี่ยวกับข้อความ (Strings in depth)',
+            // link: '/js/string.html',
           },
         ],
       },
