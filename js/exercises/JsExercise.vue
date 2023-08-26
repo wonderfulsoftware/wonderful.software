@@ -7,7 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import JsExerciseQuestion, { JsQuestion } from './JsExerciseQuestion.vue';
+import JsExerciseQuestion from './JsExerciseQuestion.vue';
+import { JsQuestion } from './JsQuestion';
 
 const props = defineProps<{
   questions: JsQuestion[]
