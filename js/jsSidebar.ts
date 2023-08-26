@@ -50,6 +50,10 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/expressions-and-operators.html',
           },
           {
+            text: '⠿ [แบบฝึกหัด] ลำดับของตัวดำเนินการ',
+            link: '/js/exercises/operator-precedence.html',
+          },
+          {
             text: '⠀ ตัวแปรและชนิดข้อมูล (Variables and Data Types)',
             link: '/js/variables-and-data-types.html',
           },

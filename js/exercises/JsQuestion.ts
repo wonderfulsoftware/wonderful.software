@@ -12,6 +12,7 @@ export interface JsInputQuestion extends BaseJsQuestion {
 export interface JsChoiceQuestion extends BaseJsQuestion {
   type: 'choice'
   choices: { answer: string; correct?: boolean }[]
+  explanation?: string
 }
 
 export type JsQuestion = JsInputQuestion | JsChoiceQuestion
