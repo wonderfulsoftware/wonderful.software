@@ -62,11 +62,11 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             // link: '/js/function.html',
           },
           {
-            text: '⠿ ความรู้เพิ่มเติมเกี่ยวกับตัวเลข (Numbers in depth)',
+            text: '⠿ ลงลึกเรื่องตัวเลข (Numbers in depth)',
             link: '/js/number.html',
           },
           {
-            text: '⠀ ความรู้เพิ่มเติมเกี่ยวกับข้อความ (Strings in depth)',
+            text: '⠀ ลงลึกเรื่องข้อความ (Strings in depth)',
             // link: '/js/string.html',
           },
         ],
