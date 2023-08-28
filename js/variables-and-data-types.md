@@ -4,6 +4,10 @@ draft: true
 
 # ตัวแปรและชนิดข้อมูล (Variables and Data Types)
 
+<script setup>
+  import JsConsole from './components/JsConsole.vue'
+</script>
+
 ## ข้อความ (String)
 
 - ในตอนก่อนหน้า เราได้เขียนโค้ดเพื่อให้คอมพิวเตอร์ทำงานกับตัวเลขได้แล้ว
@@ -11,46 +15,30 @@ draft: true
 
 - ลองเปิด JavaScript Console แล้วพิมพ์ `"Hello, world!"` ดูครับ
 
-  ```js
-  > "Hello, world!"
-  ```
+  <div><JsConsole input='"Hello, world!"' :output="{value: 'Hello, world!'}" /></div>
 
 - จะเห็นว่าเราสามารถสร้างสตริงได้ โดยการใช้เครื่องหมายอัญประกาศคู่ `"` (double quotes) ครอบข้อความ
 
 - ถ้าเราลืมใส่ double quotes ก็จะเกิดสิ่งที่เรียกว่า SyntaxError ครับ
   (หมายความว่า โค้ดที่เราเขียนไม่ถูกต้องตามไวยากรณ์ของภาษา ทำให้คอมพิวเตอร์ไม่สามารถเข้าใจได้)
 
-  ```js
-  > Hello, world!
-  ```
-
-  ❌ Uncaught SyntaxError: Unexpected token '!'
+  <div><JsConsole input='Hello, world!' error="Uncaught SyntaxError: Unexpected token '!'" /></div>
 
 - หรือถ้าเราใส่ double quotes ไว้ข้างหน้าแล้ว แต่ลืมใส่ข้างหลัง ก็ SyntaxError เช่นกัน
 
-  ```js
-  > "Hello, world!
-  ```
-
-  ❌ Uncaught SyntaxError: Invalid or unexpected token
+  <div><JsConsole input='"Hello, world!' error="Uncaught SyntaxError: Invalid or unexpected token" /></div>
 
 - นอกจาก double quotes แล้ว เรายังสามารถใช้ single quotes `'` ครอบข้อความได้เช่นกันครับ[^singlequotes]
 
-  ```js
-  > 'Hello, world!'
-  ```
+  <div><JsConsole input="'Hello, world!'" :output="{value: 'Hello, world!'}"  /></div>
 
 - แปลว่า ถ้าข้อความของเรามี single quotes อยู่ในนั้น ก็สามารถใช้ double quotes ครอบข้อความได้
 
-  ```js
-  > "It's dangerous to go alone! Take this."
-  ```
+  <div><JsConsole input="&quot;It's dangerous to go alone! Take this.&quot;" /></div>
 
 - และถ้าข้อความของเรามี double quotes อยู่ในนั้น ก็สามารถใช้ single quotes ครอบข้อความได้
 
-  ```js
-  > '"Who are you?" said the Caterpillar.'
-  ```
+  <div><JsConsole input="'&quot;Who are you?&quot; said the Caterpillar.'" /></div>
 
 - …แล้วถ้าข้อความของเรา มีทั้ง double quotes และ single quotes ล่ะ จะทำยังไงดี?
   เดี๋ยวคำถามนี้ และคำถามอื่นๆ ที่เกี่ยวกับ string เราจะมาตอบกันในหัวข้อ “Strings in depth” ครับ

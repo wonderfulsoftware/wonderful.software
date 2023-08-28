@@ -1,4 +1,12 @@
+---
+draft: true
+---
+
 # Numbers in depth
+
+<script setup>
+  import JsConsole from './components/JsConsole.vue'
+</script>
 
 - ในบทนี้ เราจะมาเรียนรู้เกี่ยวกับเรื่องตัวเลขให้ละเอียดขึ้นกันนิดนึงดีกว่าครับ
 
@@ -11,38 +19,23 @@
 - ในภาษา javascript เราสามารถเขียนตัวเลขได้หลายวิธีครับ
   อันนี้คือเบสิคสุด คือจำนวนเต็มธรรมดาครับ
 
-  ```js
-  > 123
-  123
-  ```
+  <div><JsConsole input='123' :output="{value: 123}" /></div>
 
 - จำนวนทศนิยม ก็เขียนได้ โดยใส่เครื่องหมาย . เข้าไปครับ
 
-  ```js
-  > 3.14
-  3.14
-  ```
+  <div><JsConsole input='3.14' :output="{value: 3.14}" /></div>
 
 - ถ้าใส่เครื่องหมายลบข้างหน้า ก็จะได้เป็นตัวเลขติดลบครับ
 
-  ```js
-  > -128
-  -128
-  ```
+  <div><JsConsole input='-128' :output="{value: -128}" /></div>
 
 - เราสามารถเอาตัวเลขมาบวก ลบ คูณ หารกันได้
 
-  ```js
-  > 25 * 25
-  625
-  ```
+  <div><JsConsole input='25 * 25' :output="{value: 625}" /></div>
 
 - หรือถ้าเราเอา `0.1` มาบวกกับ `0.2` เราก็จะได้…
 
-  ```js
-  > 0.1 + 0.2
-  0.30000000000000004
-  ```
+  <div><JsConsole input='0.1 + 0.2' :output="{value: 0.30000000000000004}" /></div>
 
   …อ้าว ทำไมเป็นแบบนี้ล่ะ?
   ทำไม 0.1 + 0.2 ไม่ได้ 0.3 ล่ะ
@@ -94,55 +87,33 @@
 - เวลาตัวเลขมีจำนวนหลักมากๆ แล้วถ้ามันอ่านยาก
   เราสามารถใส่เครื่องหมาย `_` คั่นไว้ เพื่อให้อ่านง่ายขึ้นได้ครับ
 
-  ```js
-  > 1_000_000
-  1000000
-  ```
+  <div><JsConsole input='1_000_000' :output="{value: 1_000_000}" /></div>
 
   แต่ห้ามใส่เครื่องหมายเว้นวรรค ก่อนหรือหลังตัว underscore
 
-  ```js
-  > 1 _ 000 _ 000
-  // ! Uncaught SyntaxError: Unexpected identifier '_'
-  ```
+  <div><JsConsole input='1 _ 000 _ 000' error="Uncaught SyntaxError: Unexpected identifier '_'" /></div>
 
 - ตัวเลขจำนวนเต็มที่ขึ้นต้นด้วย `0` จะถือว่าเป็นตัวเลขที่เขียนในรูปของเลขฐานแปด (octal)
 
-  ```js
-  > 031
-  25
-  ```
+  <div><JsConsole input='031' :output="{value: 25}" /></div>
 
 - จำนวนเต็มที่ขึ้นต้นด้วย `0b` จะถือว่าเป็นตัวเลขที่เขียนในรูปของเลขฐานสอง (binary)
 
-  ```js
-  > 0b01100001
-  97
-  ```
+  <div><JsConsole input='0b01100001' :output="{value: 0b01100001}" /></div>
 
 - และจำนวนเต็มที่ขึ้นต้นด้วย `0x` จะถือว่าเป็นตัวเลขที่เขียนในรูปของเลขฐานสิบหก (hexadecimal)
 
-  ```js
-  > 0x61
-  97
-  ```
+  <div><JsConsole input='0x61' :output="{value: 0x61}" /></div>
 
 - เราสามารถใส่ตัว `e` เพื่อเขียนตัวเลขในรูปแบบของสัญลักษณ์วิทยาศาสตร์ได้
 
-  ```js
-  > 1.2e6
-  1200000
+  <div><JsConsole input='1.2e6' :output="{value: 1.2e6}" /></div>
 
-  > 1e-2
-  0.01
-  ```
+  <div><JsConsole input='1e-2' :output="{value: 1e-2}" /></div>
 
   โดยห้ามมีช่องว่างระหว่าง `e` กับตัวเลขครับ
 
-  ```js
-  > 1e - 2
-  // ! Uncaught SyntaxError: Invalid or unexpected token
-  ```
+  <div><JsConsole input='1e - 2' error="Uncaught SyntaxError: Invalid or unexpected token" /></div>
 
 [^double]:
     ถ้าอยากเข้าใจแบบละเอียดมากขึ้น
