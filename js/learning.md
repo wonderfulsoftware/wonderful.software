@@ -57,8 +57,8 @@ draft: true
   ผมเคยคุยกับมืออาชีพ หลายๆ คน
   สุดท้ายก็เหมือนว่า ความชอบอย่างเดียวมันไม่พอ
   ทุกคนต่างก็ต้องทุ่มเท
-  หาเวลามาซ้อมไล่สเกลแต่ละคีย์ ศึกษาทฤษฎีดนตรี รวมถึงซ้อมเทคนิคต่างๆ ซ้ำแล้วซ้ำอีกจนชำนาญ
-  ผมก็ยังไม่ได้อินพอที่จะไปฝึกขนาดนั้น
+  หาเวลามาซ้อมไล่สเกลแต่ละคีย์ ศึกษาทฤษฎีดนตรี รวมถึงซ้อมเทคนิคต่างๆ ซ้ำแล้วซ้ำอีกจนชำนาญ[^deliberate]
+  ผมก็ยังไม่ได้อินพอที่จะไปฝึกขนาดนั้น[^tist]
 
   ![](https://im.dt.in.th/ipfs/bafybeieuxlqnnjrxcrxpkohwn54mrmcnjkyw4xafbkhxvggsgpxxqcdpli/image.webp)
 
@@ -68,6 +68,9 @@ draft: true
   ซึ่งสำหรับผมก็คิดว่าโอเคแล้วแหละ
 
   ![](https://im.dt.in.th/ipfs/bafybeibc5732fway4lkcwkgl2zs4vxxo35svdp7nvlut7ujsonnpjcqn3m/image.webp)
+
+[^deliberate]: อาจจะเรียกการฝึกฝนแบบนี้ว่า [“Deliberate practice”](https://jamesclear.com/beginners-guide-deliberate-practice)
+[^tist]: ไม่แน่ใจว่าแบบนี้เรียกว่า [“ติสต์แตก”](https://www.facebook.com/watch/?v=840458374085119) หรือเปล่า
 
 ## แรงบันดาลใจสำหรับการเขียนโค้ด
 

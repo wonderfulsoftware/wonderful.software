@@ -54,6 +54,14 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/exercises/operator-precedence.html',
           },
           {
+            text: '⠤ รู้จักกับ String',
+            link: '/js/string-intro.html',
+          },
+          {
+            text: '⠤ รู้จักกับชนิดข้อมูล (Data Types)',
+            link: '/js/data-types.html',
+          },
+          {
             text: '⠀ ตัวแปรและชนิดข้อมูล (Variables and Data Types)',
             link: '/js/variables-and-data-types.html',
           },
@@ -62,11 +70,11 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             // link: '/js/function.html',
           },
           {
-            text: '⠿ ลงลึกเรื่องตัวเลข (Numbers in depth)',
+            text: '⠿ ลงลึกเรื่องตัวเลข',
             link: '/js/number.html',
           },
           {
-            text: '⠀ ลงลึกเรื่องข้อความ (Strings in depth)',
+            text: '⠀ ลงลึกเรื่อง Strings',
             // link: '/js/string.html',
           },
         ],

@@ -12,7 +12,7 @@
   <p class="oops" v-if="oops">
     <strong>คำใบ้:</strong> {{ oops.showText }}
   </p>
-  <p class="hint">
+  <p class="hint" v-if="!!props.question.code">
     <button class="hint-btn" :class="hintVisible ? 'is-shown' : ''" @click="showHint">{{ hintVisible ? 'ซ่อนโค้ด' :
       'ดูโค้ด' }}</button>
     <span v-show="hintVisible">
@@ -41,10 +41,13 @@ const answer = computed(() => {
   return value
 })
 const correct = computed(() => {
+  if (Array.isArray(props.question.answer)) {
+    return props.question.answer.includes(answer.value)
+  }
   return answer.value === props.question.answer
 })
 const incorrect = computed(() => {
-  return !!answer.value && answer.value !== props.question.answer
+  return !!answer.value && !correct.value
 })
 const oops = computed(() => {
   const normalize = (str: string) => str.toLowerCase().replace(/\s+/g, '')

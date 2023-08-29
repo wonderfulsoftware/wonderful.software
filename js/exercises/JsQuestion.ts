@@ -5,7 +5,7 @@ export interface BaseJsQuestion {
 export interface JsInputQuestion extends BaseJsQuestion {
   type: 'number' | 'string'
   code: string
-  answer: string
+  answer: string | string[]
   hints?: { whenAnswerIs: string; showText: string }[]
 }
 
