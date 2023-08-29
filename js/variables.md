@@ -2,7 +2,11 @@
 draft: true
 ---
 
-# ตัวแปรและชนิดข้อมูล (Variables and Data Types)
+# ตัวแปร
+
+<script setup>
+  import JsConsole from './components/JsConsole.vue'
+</script>
 
 ## ตัวแปร (Variables)
 
@@ -11,60 +15,38 @@ draft: true
 
 - ลองเปิด JavaScript Console แล้วพิมพ์ตัว `a`
 
-  ```js
-  > a
-  ```
-
-  ::: danger Uncaught ReferenceError: a is not defined
+  <div><JsConsole input='a' error="Uncaught ReferenceError: a is not defined" /></div>
 
   ข้อความ Error นี้บอกว่าตัวแปร “a” ยังไม่ได้ถูกกำหนดค่า
 
-  :::
-
 - ลองพิมพ์ว่า `let a`
 
-  ```js
-  > let a
-  ```
+  <div><JsConsole input='let a' :output="{value: undefined}" /></div>
 
   นี่คือการสร้างตัวแปร “a” โดยใช้คำสั่ง `let`
 
 - เสร็จแล้วลองพิมพ์ `a` ใหม่อีกครั้ง:
 
-  ```js
-  > a
-  // undefined
-  ```
+  <div><JsConsole input='a' :output="{value: undefined}" /></div>
 
   จากเดิมที่เกิด Error ตอนนี้เราจะเห็นคำว่า `undefined` แทน
   เพราะว่าตอนนี้มีตัวแปร “a” แล้ว แต่ยังไม่มีค่าใดๆ ในตัวแปรนั้น
 
 - ลองกำหนดค่าให้ตัวแปร:
 
-  ```js
-  > a = 123
-  ```
+  <div><JsConsole input='a = 123' :output="{value: 123}" /></div>
 
 - หลังจากนั้นลองพิมพ์ `a` อีกครั้ง:
 
-  ```js
-  > a
-  // 123
-  ```
+  <div><JsConsole input='a' :output="{value: 123}" /></div>
 
   จะเห็นว่าตอนนี้ตัวแปร “a” มีค่าเป็น 123 แล้ว
 
-- ตอนที่รันโค้ด `let a = 123` สิ่งที่เกิดขึ้นคือ เราสั่งให้ชื่อ “a” แทนค่า 123
-
 - ลองสร้างตัวแปรและเอามาใช้เพิ่ม
 
-  ```js
-  > let b = 456
-  // undefined
+  <div><JsConsole input='let b = 456' :output="{value: undefined}" /></div>
 
-  > a * b
-  // 56088
-  ```
+  <div><JsConsole input='a * b' :output="{value: 56088}" /></div>
 
 - ตัวแปรที่เราสร้างใน JavaScript Console จะอยู่แค่ภายในหน้าเว็บนั้นๆ
   ถ้ากดปุ่ม Refresh หน้าเว็บ

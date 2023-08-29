@@ -62,8 +62,8 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/data-types.html',
           },
           {
-            text: '⠀ ตัวแปรและชนิดข้อมูล (Variables and Data Types)',
-            link: '/js/variables-and-data-types.html',
+            text: '⠀ ตัวแปร (Variables)',
+            link: '/js/variables.html',
           },
           {
             text: '⠀ ฟังก์ชัน (Functions)',
