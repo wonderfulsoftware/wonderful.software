@@ -53,6 +53,30 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             text: '⠿ [แบบฝึกหัด] ลำดับของตัวดำเนินการ',
             link: '/js/exercises/operator-precedence.html',
           },
+        ],
+      },
+      {
+        text: '2. ลองสร้างเว็บแอปพลิเคชัน',
+        items: [
+          {
+            text: '⠿ แนะนำเว็บ Glitch',
+            link: '/js/hello-glitch.html',
+          },
+          {
+            text: '⠀ HTML แบบเบื้องต้นสุดๆ',
+            link: '/js/hello-html.html',
+          },
+          {
+            text: '⠀ Input',
+          },
+          {
+            text: '⠀ สร้างเว็บไซต์ของตัวเองบน Neocities',
+          },
+        ],
+      },
+      {
+        text: '3. โครงสร้างภาษา',
+        items: [
           {
             text: '⠤ รู้จักกับ String',
             link: '/js/string-intro.html',
@@ -77,28 +101,6 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             text: '⠀ ลงลึกเรื่อง Strings',
             // link: '/js/string.html',
           },
-        ],
-      },
-      {
-        text: '2. ลองสร้างเว็บแอปพลิเคชัน',
-        items: [
-          {
-            text: '⠀ แนะนำเว็บ Glitch',
-          },
-          {
-            text: '⠀ HTML แบบเบื้องต้นสุดๆ',
-          },
-          {
-            text: '⠀ Input',
-          },
-          {
-            text: '⠀ สร้างเว็บไซต์ของตัวเองบน Neocities',
-          },
-        ],
-      },
-      {
-        text: '3. โครงสร้างภาษา',
-        items: [
           {
             text: '⠀ เงื่อนไข (Conditionals): if, else, else if',
           },
