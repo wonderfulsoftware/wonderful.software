@@ -31,7 +31,7 @@ draft: true
   ![](https://im.dt.in.th/ipfs/bafybeia4cjscbkdgtxbhmqeq34gvp74kvbnvc4f5ukvyytnrjiehwntcja/image.webp)
 
 - อ่านดูในไฟล์ `README.md` ก็จะเห็นว่าโปรเจคนี้เป็นเว็บที่เอาไว้สร้าง Links Page ของตัวเอง
-  ในนี้เขียนไว้ว่า ให้ลองกด **Preview** ตรงข้างล่างแล้วเลือก **Preview in new window** ดู…
+  ในนี้เขียนไว้ว่า ให้ลองกด **Preview** ตรงข้างล่างแล้วเลือก **Preview in a new window** ดู…
 
   ![](https://im.dt.in.th/ipfs/bafybeihzfku47uwftiv25y65in7mgausuu4vxmpvppgyyvy75iavh73jvm/image.webp)
 
