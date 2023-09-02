@@ -69,7 +69,8 @@ draft: true
   - `<mark>`
   - `<del>`
   - `<ul>` `<ol>` `<li>`
+  - `<hr>`
 
 - เมื่อทำแบบฝึกหัดนี้แล้ว จะได้รู้จักกับ HTML elements เพิ่มเติมจากบทก่อนหน้า
 
-  <div><HtmlTagList introduced="html,head,body,h1,a,br,title" acquired="h2,h3,h4,h5,h6,strong,em,img,mark,del,ul,ol,li" /></div>
+  <div><HtmlTagList introduced="html,head,body,h1,a,br,title" acquired="h2,h3,h4,h5,h6,strong,em,img,mark,del,ul,ol,li,hr" /></div>
