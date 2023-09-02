@@ -8,7 +8,8 @@
 import { computed } from 'vue';
 
 const props = defineProps<{
-  introduced: string
+  introduced?: string
+  acquired?: string
 }>()
 
 const allTags = ["a",
@@ -127,12 +128,15 @@ const allTags = ["a",
 const introduced = computed(() => {
   return new Set((props.introduced || '').split(','))
 })
+const acquired = computed(() => {
+  return new Set((props.acquired || '').split(','))
+})
 
 const classes = (tag: string) => {
-  if (introduced.value.has(tag)) {
-    return 'is-introduced'
+  return {
+    'is-introduced': introduced.value.has(tag),
+    'is-acquired': acquired.value.has(tag)
   }
-  return ''
 }
 </script>
 
@@ -150,15 +154,23 @@ const classes = (tag: string) => {
 
 .html-tag-list-item {
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.25em 0.5em;
   border-radius: 4px;
-  background: #F2D176;
   color: black;
   opacity: 0.32;
+  box-shadow: inset 0 0 0 2px var(--html-tag-list-item-color);
+  --html-tag-list-item-color: var(--vp-c-brand);
 }
 
 .html-tag-list-item.is-introduced {
   opacity: 1;
+}
+
+.html-tag-list-item.is-acquired {
+  opacity: 1;
+  box-shadow: 0 0 5px var(--html-tag-list-item-color);
+  background: var(--html-tag-list-item-color);
+  color: white;
 }
 </style>

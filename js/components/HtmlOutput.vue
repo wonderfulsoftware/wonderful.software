@@ -1,7 +1,7 @@
 <template>
   <div class="html-output" :style="style">
     <div class="title-bar">
-      {{ props.filename || 'index.html' }}
+      {{ props.title || 'index.html' }}
     </div>
     <iframe :srcdoc="props.html" style="width: 100%; height: 100%; border: none;"></iframe>
   </div>
@@ -12,7 +12,7 @@ import { computed } from 'vue';
 
 const props = defineProps<{
   html: string
-  filename?: string
+  title?: string
   height?: number
 }>()
 

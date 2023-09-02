@@ -63,8 +63,12 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/hello-glitch.html',
           },
           {
-            text: '⠀ HTML แบบเบื้องต้นสุดๆ',
+            text: '⠿ HTML แบบเบื้องต้นสุดๆ',
             link: '/js/hello-html.html',
+          },
+          {
+            text: '⠿ [แบบฝึกหัด] HTML เบื้องต้น',
+            link: '/js/hello-html-exercises.html',
           },
           {
             text: '⠀ Input',

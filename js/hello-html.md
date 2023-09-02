@@ -1,6 +1,5 @@
 ---
 draft: true
-examples:
 ---
 
 # HTML แบบเบื้องต้นสุดๆ
@@ -326,9 +325,11 @@ examples:
      - เครื่องหมายมากกว่า `>`
   3. **เนื้อหา (content)** คือโค้ดทั้งหมดที่อยู่ระหว่างแท็กเปิดกับแท็กปิด
 
-- ภาษา HTML มี element ให้เลือกใช้เยอะมาก และตอนนี้เรารู้จักไปแล้ว 4 ตัว!
+- ภาษา HTML มี element ให้เลือกใช้เยอะมาก
+  เดี๋ยวเราจะได้รู้จักกับ element ชนิดอื่นๆ เพิ่มเติม เมื่อเราทำโปรเจคที่ซับซ้อนขึ้น
+  แต่ไม่ได้จำเป็นต้องรู้จักให้ครบทั้งหมด (ผมเขียนโค้ดมาเป็นสิบปีแล้วบางอันก็ยังไม่เคยใช้ครับ)
 
-  <div><HtmlTagList introduced="html,head,body,h1" /></div>
+  <div><HtmlTagList acquired="html,head,body,h1" /></div>
 
   | ชื่อ element | หน้าที่                                                                             |
   | ------------ | ----------------------------------------------------------------------------------- |
@@ -339,6 +340,7 @@ examples:
 
 - อีกอย่างนึงที่เห็นในโค้ดนี้คือสิ่งที่เรียกว่า comment ครับ
   สิ่งที่เขียนอยู่ใน comment จะไม่ถูกนำไปประมวลผลครับ
+  ดังนั้นเราสามารถใช้ comment เพื่อเขียนข้อความเพิ่มเติมในโค้ดได้
 
   ```html
   <!-- this is a comment -->
@@ -351,31 +353,32 @@ examples:
 
 - ในโค้ด HTML ที่เราเขียน จะเห็นว่ามีการเยื้องบรรทัด (indent) และการขึ้นบรรทัดใหม่เพื่อให้โค้ดอ่านง่าย
 
+  ![](https://im.dt.in.th/ipfs/bafybeihp25t6ayqr5mdvter64dr5r35zq7ulsud6nzhrqknygjsdqtewaq/image.webp)
+
+- ในกรณีส่วนใหญ่ การจัดรูปแบบโค้ดจะไม่มีผลกับผลลัพธ์ที่เราเห็นในหน้าเว็บครับ[^whitespace-sensitivity]
+  เราจะจัดยังไงก็ได้
+
   <!-- prettier-ignore -->
   ```html
   <!doctype html>
-  <html>
-    <head>
-    </head>
-    <body>
-
-      <!-- this is a comment -->
-      <h1>
-        big text
-      </h1>
-      hello
-      welcome to my website
-
-    </body>
-  </html>
+  <html> <head> </head>
+         <body> <!--    this   is   a   comment   -->
+                <h1>        big     text        </h1>
+                hello
+                welcome to my website </body> </html>
   ```
 
-- แต่เราสามารถเขียนทุกอย่างในบรรทัดเดียวได้เช่นกัน แต่โค้ดก็จะอ่านยากและแก้ยากหน่อย
+- หรือจะเขียนทุกอย่างในบรรทัดเดียว ก็ได้เช่นกัน
 
   <!-- prettier-ignore -->
   ```html
   <!doctype html><html><head></head><body><!-- this is a comment --><h1>big text</h1>hello welcome to my website</html>
   ```
+
+- แต่โค้ดก็จะอ่านยากและแก้ยากหน่อย
+  รูปแบบที่แนะนำคือ จัดโค้ดให้แท็กเปิดกับแท็กปิดอยู่ที่ตำแหน่งเดียวกันครับ
+
+  ![](https://im.dt.in.th/ipfs/bafybeibm7j56cdldjbyrkqnusrhk34rr7buwjw2uzap3cd65nmetg24rz4/image.webp)
 
 ## ตั้งชื่อให้หน้าเว็บ
 
@@ -410,9 +413,14 @@ examples:
   <a href="https://www.google.com/" target="_blank">Go to Google</a>
   ```
 
-  <div><HtmlOutput :html="ex3" height="256" /></div>
+  <div><HtmlOutput :html="ex3" height="256" title="My first web page" /></div>
 
-- พอกดที่คำว่า “Go to Google” ก็จะลิงค์ไปที่หน้า Google ครับ
+- พอกดที่คำว่า “Go to Google” ก็จะลิงค์ไปที่หน้า Google โดยเปิดในแท็บใหม่ครับ
+
+  ::: warning ให้ทดสอบด้วย Preview in a new window
+  เวลา Preview ตรงด้านขวามือ เมื่อคลิกลิงค์จะไม่เกิดอะไรขึ้น ด้วยข้อจำกัดของเว็บ Glitch
+  ดังนั้น ให้ทดสอบในแท็บใหม่ โดยการกดที่ **Preview** > **Preview in a new window**
+  :::
 
 ## รู้จักกับ attributes
 
@@ -423,6 +431,11 @@ examples:
 - โดยแต่ละ attribute ก็จะมีชื่อของมัน และค่าของมัน
 
   ![](https://im.dt.in.th/ipfs/bafybeifk54tvghbm3vz2qgycir455ykxdbbbm7ewnjtzthatgp5ddeowvq/image.webp)
+
+  | ชื่อของ attribute | หน้าที่                                                                   |
+  | ----------------- | ------------------------------------------------------------------------- |
+  | `href`            | กำหนด URL ของลิงค์                                                        |
+  | `target`          | ถ้าตั้งเป็น `_blank` จะเปิดลิงค์ในแท็บใหม่ ถ้าเอาออกจะเปิดลิงค์ในแท็บเดิม |
 
 - แปลว่า **แท็กเปิด (opening tag)** ประกอบไปด้วย:
 
@@ -445,7 +458,7 @@ examples:
   <a href="https://www.google.com/" target="_blank">Go to Google</a>
   ```
 
-  <div><HtmlOutput :html="ex4" height="128" /></div>
+  <div><HtmlOutput :html="ex4" height="128" title="My first web page" /></div>
 
 - ถ้าเราอยากจะขึ้นบรรทัดใหม่ ให้ใช้ element `<br>` ครับ
 
@@ -458,7 +471,7 @@ examples:
   <a href="https://www.google.com/" target="_blank">Go to Google</a>
   ```
 
-  <div><HtmlOutput :html="ex5" height="192" /></div>
+  <div><HtmlOutput :html="ex5" height="192" title="My first web page" /></div>
 
 - **“เอ… เขียนแท็กเปิด `<br>` แล้วไม่ต้องเขียนแท็กปิด `</br>` หรอ?”**
 
@@ -467,6 +480,10 @@ examples:
 
 - โอเค ตอนนี้เราก็รู้จักกับ element ต่างๆ ไปกันพอสมควรแล้ว
 
-  <div><HtmlTagList introduced="html,head,body,h1,a,br,title" /></div>
+  <div><HtmlTagList introduced="html,head,body,h1" acquired="a,br,title" /></div>
 
 - ต่อไป เดี๋ยวลองทำแบบฝึกหัดกันดูนะครับ
+
+[^whitespace-sensitivity]:
+    แต่จะมีบาง element ที่การจัดรูปแบบโค้ดมีผลกับผลลัพธ์ที่เห็นในหน้าเว็บด้วย เช่น `<pre>` และ `<textarea>` เป็นต้น
+    สามารถอ่านรายละเอียดเพิ่มเติมได้ใน[บทความเรื่อง “How whitespace is handled by HTML, CSS, and in the DOM” บนเว็บ MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace)
