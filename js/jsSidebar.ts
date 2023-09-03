@@ -53,6 +53,18 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             text: '⠿ [แบบฝึกหัด] ลำดับของตัวดำเนินการ',
             link: '/js/exercises/operator-precedence.html',
           },
+          {
+            text: '⠶ รู้จักกับ String',
+            link: '/js/string-intro.html',
+          },
+          {
+            text: '⠶ รู้จักกับชนิดข้อมูล (Data Types)',
+            link: '/js/data-types.html',
+          },
+          {
+            text: '⠶ ตัวแปร (Variables)',
+            link: '/js/variables.html',
+          },
         ],
       },
       {
@@ -86,18 +98,6 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
       {
         text: '3. โครงสร้างภาษา',
         items: [
-          {
-            text: '⠤ รู้จักกับ String',
-            link: '/js/string-intro.html',
-          },
-          {
-            text: '⠤ รู้จักกับชนิดข้อมูล (Data Types)',
-            link: '/js/data-types.html',
-          },
-          {
-            text: '⠀ ตัวแปร (Variables)',
-            link: '/js/variables.html',
-          },
           {
             text: '⠀ ฟังก์ชัน (Functions)',
             // link: '/js/function.html',
