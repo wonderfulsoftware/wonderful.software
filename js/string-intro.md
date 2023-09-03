@@ -41,7 +41,7 @@ draft: true
   <div><JsConsole input="'&quot;Who are you?&quot; said the Caterpillar.'" /></div>
 
 - …แล้วถ้าข้อความของเรา มีทั้ง double quotes และ single quotes ล่ะ จะทำยังไงดี?
-  เดี๋ยวคำถามนี้ และคำถามอื่นๆ ที่เกี่ยวกับ string เราจะมาตอบกันในหัวข้อ “Strings in depth” ครับ
+  เดี๋ยวคำถามนี้ และคำถามอื่นๆ ที่เกี่ยวกับ string เราจะมาตอบกันในบทหลังๆ เมื่อเราเรียนรู้ภาษา JavaScript ในระดับลึกขึ้นครับ
 
 [^singlequotes]:
     ภาษา JavaScript อนุญาตให้ใช้ double quotes หรือ single quotes ครอบข้อความได้ทั้งคู่ (สื่อความหมายเดียวกัน)
