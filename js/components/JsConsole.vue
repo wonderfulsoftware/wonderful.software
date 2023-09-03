@@ -1,6 +1,6 @@
 <template>
   <div class="language-js-console root">
-    <pre class="pre"><code class="code-line"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <pre class="pre"><code class="code-line" v-if="props.input"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2 1L6 5L2 9" stroke="#919191" stroke-width="1.5"/>
 </svg><span class="code-text"><InputCode :code="props.input" /></span></code><code class="code-line" v-if="props.output"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6 9L2 5L6 1" stroke="#919191" stroke-width="1.5"/>
@@ -16,7 +16,7 @@ import InputCode from './InputCode.vue';
 import OutputValue from './OutputValue.vue';
 
 const props = defineProps<{
-  input: string
+  input?: string
   error?: string
   output?: { value: any }
 }>()

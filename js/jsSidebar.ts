@@ -71,7 +71,12 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/hello-html-exercises.html',
           },
           {
-            text: '⠀ Input',
+            text: '⠿ ใส่ JavaScript บนหน้าเว็บ',
+            link: '/js/script.html',
+          },
+          {
+            text: '⠿ โต้ตอบกับผู้ใช้งานด้วย input',
+            link: '/js/input.html',
           },
           {
             text: '⠀ สร้างเว็บไซต์ของตัวเองบน Neocities',
