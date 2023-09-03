@@ -75,7 +75,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/script.html',
           },
           {
-            text: '⠿ โต้ตอบกับผู้ใช้งานด้วย input',
+            text: '⠀ โต้ตอบกับผู้ใช้งานด้วย input',
             link: '/js/input.html',
           },
           {
