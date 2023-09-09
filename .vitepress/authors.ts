@@ -14,6 +14,9 @@ export const authors: Record<string, Author> = {
   phoneee: {
     name: 'Dollapak Suwanpunya',
   },
+  heypoom: {
+    name: 'Phoomparin Mano',
+  },
 }
 
 interface Author {

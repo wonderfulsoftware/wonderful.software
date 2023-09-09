@@ -1,17 +1,22 @@
 ---
 title: How to learn almost anything
 head:
+  - - link
+    - rel: canonical
+      href: https://poom.dev/how-to-learn
   - - meta
     - name: description
       content: 
 #   - - meta
 #     - property: og:image
-#       content: /share-images/programming-and-motivation.png
+#       content: /share-images/TODO.png
 authors:
   - heypoom
 ---
 
 # How to learn almost anything
+
+<author-list></author-list>
 
 :::info Webmaster’s foreword
 ผมรู้จักกับ [น้องภูมิ][poom] เมื่อปี 2017 ตอนที่เขาอายุ 15 ปี
@@ -55,8 +60,6 @@ authors:
 [sideprojectshowdown]: https://creatorsgarten.org/event/sideproject
 [le-penseur]: https://en.wikipedia.org/wiki/The_Thinker
 [bkkoss]: https://creatorsgarten.org/event/bangkok
-
----
 
 <!-- original post from https://poom.dev/how-to-learn -->
 
