@@ -4,14 +4,164 @@ draft: true
 
 <script setup>
   import HtmlTagList from './components/HtmlTagList.vue'
+  import HtmlOutput from './components/HtmlOutput.vue'
   import CodeTemplate from './components/CodeTemplate.vue'
   import JsConsole from './components/JsConsole.vue'
+
+  const ex1 = `<input type="button" value="Click me">`
+  const ex2 = `<input type="text">`
+
+  const ex3 = `myButton.onclick = () => {
+  alert('hi')
+}`
+
+  const ex4 = `<input id="my-button" type="button" value="Click me">
+<script>
+let myButton = document.getElementById('my-button')
+${ex3}
+<\/script>`
 </script>
 
 # โต้ตอบกับผู้ใช้งานด้วย input
 
-## Next up
-
-- …
+- ในตอนนี้ เราจะมารู้จักกับ HTML element ตัวใหม่คือ `<input>` กันครับ
 
   <HtmlTagList introduced="html,head,body,h1,a,br,title,h2,h3,h4,h5,h6,strong,em,img,mark,del,ul,ol,li,hr,script" acquired="input" />
+
+- เวลาใช้ element `input` จะมี attribute ที่สำคัญคือ `type` ซึ่งบอกว่าเราจะใช้ input แบบไหน
+
+- ถ้าตั้ง `type="button"` ก็จะได้ปุ่ม
+  กำหนดข้อความที่จะแสดงบนปุ่มได้โดยตั้งค่า attribute `value`:
+
+  <!-- prettier-ignore -->
+  ```html
+  <input type="button" value="Click me">
+  ```
+
+  <HtmlOutput :html="ex1" height="128" />
+
+- ถ้าตั้ง `type="text"` ก็จะได้กล่องข้อความ
+
+  <!-- prettier-ignore -->
+  ```html
+  <input type="text">
+  ```
+
+  <HtmlOutput :html="ex2" height="128" />
+
+- [ถ้าอยากรู้ว่า element `input` มีชนิดอะไรอีกบ้าง ลองเข้าไปดูได้บนเว็บ MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+
+## ใช้งาน JavaScript กับ input
+
+- เดี๋ยวเราจะลองใช้ JavaScript กับ input กัน
+  เริ่มจากการสร้างปุ่มขึ้นมา
+
+  <!-- prettier-ignore -->
+  ```html
+  <input type="button" value="Click me">
+  ```
+
+- ก่อนอื่นเราต้องทำให้โค้ด JavaScript หาตัว input เจอก่อน
+  เริ่มจากการใส่ attribute `id` ให้กับ input ก่อน
+
+  <!-- prettier-ignore -->
+  ```html
+  <input id="my-button" type="button" value="Click me">
+  ```
+
+- แล้วเราก็สามารถใช้คำสั่ง `document.getElementById` ใน JavaScript
+  เพื่อหา element ที่มี `id="my-button"`
+
+  เดี๋ยวเราจะลองทำใน JavaScript Console ดูก่อนครับ
+
+  <JsConsole input="let myButton = document.getElementById('my-button')" :output="{value: undefined}" />
+
+  คำสั่งข้างบนจะหา element ที่มี `id="my-button"` แล้วเก็บไว้ในตัวแปรชื่อ `myButton`
+
+  :::tip การดึง element บนหน้าเว็บมาเก็บไว้ในตัวแปร
+  <CodeTemplate template="'let ' :: [placeholder] ชื่อตัวแปร :: ' = document.getElementById('' :: [placeholder] id :: '')'" />
+  :::
+
+  หลังจากนั้นเราสามารถหาตัวแปร `myButton` ได้ด้วยการพิมพ์ชื่อตัวแปรนั้นใน JavaScript Console
+
+  <JsConsole input="myButton" :output="{value: {$tagName: 'input'}}" />
+
+## ทำให้โค้ดทำงานเมื่อปุ่มถูกกด
+
+- เราทำให้เวลาคลิกแล้วขึ้นป๊อปอัพขึ้นมา โดยการกำหนดฟังก์ชั่น `onclick` บนตัวปุ่ม (โค้ดหน้าตาแปลกๆ มาอีกแล้ว… เดี๋ยวจะอธิบายในบทต่อๆ ไปครับ)
+
+  <JsConsole :input="ex3" :output="{value: undefined}" />
+
+  เมื่อคลิกที่ปุ่ม ก็จะมีหน้าต่าง alert ป๊อปอัพขึ้นมา
+
+  :::tip การรันโค้ดเมื่อปุ่มถูกคลิก
+  <CodeTemplate template="[placeholder] ชื่อตัวแปร :: '.onclick' :: ' = ' :: '() => {' :: [placeholder] โค้ดที่ต้องการให้ทำงาน :: '}'" />
+  :::
+
+  :::tip การแสดงข้อความในกล่องป๊อปอัพ
+  <CodeTemplate template="'alert(' :: [placeholder] expression :: ')'" />
+  :::
+
+- โค้ดที่พิมพ์ใน console
+  จะมีผลแค่เท่าที่เปิดหน้าเว็บนั้นอยู่เท่านั้น
+  พอกด refresh แล้วกดปุ่มใหม่ ก็จะไม่มีป๊อปอัพขึ้นมาอีก เพราะหน้าเว็บถูกโหลดใหม่แล้ว
+
+- เมื่อเรามีโค้ดที่ใช้งานได้แล้ว
+  ก็เอามาใส่ใน `<script>` เพื่อให้โค้ดทำงานเมื่อเราเปิดหน้าเว็บครั้งต่อไป
+
+  <!-- prettier-ignore -->
+  ```html
+  <script>
+    let myButton = document.getElementById('my-button')
+    myButton.onclick = () => {
+      alert('hi')
+    }
+  </script>
+  ```
+
+  <HtmlOutput :html="ex4" height="128" />
+
+  :::warning เอา script ไว้หลังตัว input
+  ต้องเอา script ไว้หลังตัว input
+  เพราะถ้าเอาไว้ก่อน โค้ดจะถูกทำงานก่อนที่ input จะถูกสร้างขึ้นมา
+  ทำให้หาตัว input ไม่เจอ
+  :::
+
+## อ่านหรือแก้ข้อความในกล่องข้อความ
+
+- สมมติว่าเรามีกล่องข้อความนี้:
+
+  ```html
+  <input type="text" id="your-name" />
+  ```
+
+- และเราเอากล่องนี้มาเก็บในตัวแปร `yourName`:
+
+  ```js
+  let yourName = document.getElementById('your-name')
+  ```
+
+- เราสามารถอ่านข้อความโดยดึงค่า `value` ออกมาได้ โดยการพิมพ์ใน console:
+
+  ```js
+  yourName.value
+  ```
+
+  ใน console จะแสดงข้อความที่เราพิมพ์ลงไปในกล่องข้อความ
+
+  ลองแก้ข้อความแล้วรันโค้ดเดิมใหม่ดู
+  จะเห็นว่าค่าของ `yourName.value` ก็เปลี่ยนไปตามที่เราแก้ในกล่องข้อความ
+
+  :::tip การอ่านข้อความในกล่อง input
+  <CodeTemplate template="[placeholder] ชื่อตัวแปร :: '.value'" />
+  :::
+
+- นอกจากอ่านข้อความออกมาแล้ว เราสามารถเขียนข้อความเข้าไปในกล่องได้ด้วย:
+
+  ```js
+  yourName.value = 'Brendan'
+  ```
+
+  :::tip การแก้ข้อความในกล่อง input
+  <CodeTemplate template="[placeholder] ชื่อตัวแปร :: '.value = ' :: [placeholder] expression ข้อความที่จะใส่ในกล่องข้อความ" />
+  :::

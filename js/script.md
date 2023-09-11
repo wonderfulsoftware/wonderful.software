@@ -85,7 +85,9 @@ draft: true
 
   เขียนรูปแบบนี้[^iceberg]
 
-  <CodeTemplate template="console.log( :: [placeholder] ค่าที่เราให้แสดงผลออกมา :: );" />
+  :::tip แสดงข้อความใน console
+  <CodeTemplate template="console.log( :: [placeholder] ค่าที่ต้องการให้แสดงผลออกมา :: );" />
+  :::
 
   แค่นี้ เราก็จะเห็นผลลัพธ์ออกมาใน console แล้ว
 
