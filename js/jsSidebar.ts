@@ -87,8 +87,12 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/script.html',
           },
           {
-            text: '⠀ โต้ตอบกับผู้ใช้งานด้วย input',
+            text: '⠿ โต้ตอบกับผู้ใช้งานด้วย input',
             link: '/js/input.html',
+          },
+          {
+            text: '⠀ Mini-projects #1',
+            link: '/js/mini-projects-1.html',
           },
           {
             text: '⠀ สร้างเว็บไซต์ของตัวเองบน Neocities',

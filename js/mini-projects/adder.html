@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adder</title>
+  </head>
+  <body>
+    <h1>Adder</h1>
+    <input id="a" size="8" /> + <input id="b" size="8" />
+    <input type="button" value="=" id="btn" />
+    <input id="c" size="8" readonly />
+    <script>
+      let a = document.getElementById('a')
+      let b = document.getElementById('b')
+      let c = document.getElementById('c')
+      let btn = document.getElementById('btn')
+      btn.onclick = () => {
+        c.value = a.value * 1 + b.value * 1
+      }
+    </script>
+  </body>
+</html>

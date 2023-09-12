@@ -497,9 +497,36 @@ draft: true
   คำตอบคือ **ไม่ต้องครับ** เพราะว่า `<br>` เรียกว่าเป็น [“void element”](https://developer.mozilla.org/en-US/docs/Glossary/Void_element)
   ที่มีแค่ตัวแท็กอย่างเดียว ไม่มีเนื้อหาข้างใน และไม่มีแท็กปิด
 
-- โอเค ตอนนี้เราก็รู้จักกับ element ต่างๆ ไปกันพอสมควรแล้ว
+## เรียนรู้ภาษา HTML เพิ่มเติม
+
+- ตอนนี้เราก็รู้จักกับ element ต่างๆ ไปกันพอสมควรแล้ว
 
   <div><HtmlTagList introduced="html,head,body,h1" acquired="a,br,title" /></div>
+
+- เวลาเราอยากศึกษาเกี่ยวกับ element HTML ชนิดอื่นๆ เขาทำกันยังไง?
+
+- ปกติผมก็จะหาใน Google ครับ
+  โดยพิมพ์ “html” ตามด้วยชื่อ element ที่เราอยากรู้
+  โดยส่วนมาก เว็บที่โผล่ขึ้นมาจะเป็นเว็บ MDN หรือ W3Schools
+
+  ![](https://im.dt.in.th/ipfs/bafybeia732qgzrcotr26ia4qzuowovwqvgphs6nugcb2gnej53cifhuwvm/Screenshot_20230902_154452.webp)
+
+- บนเว็บ MDN จะมี [“HTML elements reference”](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+  สำหรับเรียนรู้เกี่ยวกับ element แต่ละชนิด
+  และในหลายๆ หน้า จะมีตัวอย่างให้เราลองแก้โค้ดเพื่อทดสอบผลลัพธ์ดูได้ด้วย
+
+  เว็บ MDN เนื้อหาจะค่อนข้างครบถ้วนและละเอียด แต่อาจจะเข้าใจยากกว่า W3Schools
+
+  ![](https://im.dt.in.th/ipfs/bafybeibqsgwvchoyngkcd5y4nk6je5l6d4xvha4etsxszjpcoyu6mjn2q4/image.webp)
+
+- บนเว็บ W3schools
+  สามารถกดที่ **Try it Yourself** เพื่อลองแก้โค้ดและดูผลลัพธ์ได้เช่นกัน
+
+  เว็บ W3Schools ส่วนมากจะอธิบายง่ายกว่าเว็บ MDN
+  แต่เว็บ [W3Schools บางคนไม่ค่อยแนะนำ](https://meta.stackoverflow.com/questions/280478/why-not-w3schools-com) เพราะข้อมูลบางส่วนอาจจะไม่อัพเดทตามมาตรฐานล่าสุด
+  และบนเว็บมีโฆษณาค่อนข้างเยอะ
+
+  ![](https://im.dt.in.th/ipfs/bafybeifpjva5zsyjtt5zvce634xpv4ncjqfwhrxmwwpdwlzi2oaswtb774/image.webp)
 
 - ต่อไป เดี๋ยวลองทำแบบฝึกหัดกันดูนะครับ
 
