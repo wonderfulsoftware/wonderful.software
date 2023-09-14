@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    Your name: <input id="your-name" type="text">
+    <input type="button" value="Say hi!" id="my-button">
+    <script>
+      let myButton = document.getElementById('my-button')
+      let yourName = document.getElementById('your-name')
+      myButton.onclick = () => {
+        alert('Hi ' + yourName.value + '!')
+      }
+    </script>
+  </body>
+</html>

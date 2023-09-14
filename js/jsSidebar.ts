@@ -42,7 +42,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/basic-calculation.html',
           },
           {
-            text: '⠿ [แบบฝึกหัด] การคำนวณเบื้องต้น',
+            text: '⠿ แบบฝึกหัด: การคำนวณเบื้องต้น',
             link: '/js/exercises/basic-calculation.html',
           },
           {
@@ -50,7 +50,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/expressions-and-operators.html',
           },
           {
-            text: '⠿ [แบบฝึกหัด] ลำดับของตัวดำเนินการ',
+            text: '⠿ แบบฝึกหัด: ลำดับของตัวดำเนินการ',
             link: '/js/exercises/operator-precedence.html',
           },
           {
@@ -79,7 +79,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/hello-html.html',
           },
           {
-            text: '⠿ [แบบฝึกหัด] HTML เบื้องต้น',
+            text: '⠿ แบบฝึกหัด: HTML เบื้องต้น',
             link: '/js/hello-html-exercises.html',
           },
           {
@@ -91,7 +91,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/input.html',
           },
           {
-            text: '⠀ Mini-projects #1',
+            text: '⠀ มินิโปรเจค: โปรแกรมบวกเลข',
             link: '/js/mini-projects-1.html',
           },
           {

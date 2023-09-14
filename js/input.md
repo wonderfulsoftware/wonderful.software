@@ -7,6 +7,7 @@ draft: true
   import HtmlOutput from './components/HtmlOutput.vue'
   import CodeTemplate from './components/CodeTemplate.vue'
   import JsConsole from './components/JsConsole.vue'
+  import greeter from './mini-projects/greeter.html?raw'
 
   const ex1 = `<input type="button" value="Click me">`
   const ex2 = `<input type="text">`
@@ -131,8 +132,9 @@ ${ex3}
 
 - สมมติว่าเรามีกล่องข้อความนี้:
 
+  <!-- prettier-ignore -->
   ```html
-  <input type="text" id="your-name" />
+  <input type="text" id="your-name">
   ```
 
 - และเราเอากล่องนี้มาเก็บในตัวแปร `yourName`:
@@ -165,3 +167,24 @@ ${ex3}
   :::tip การแก้ข้อความในกล่อง input
   <CodeTemplate template="[placeholder] ชื่อตัวแปร :: '.value = ' :: [placeholder] expression ข้อความที่จะใส่ในกล่องข้อความ" />
   :::
+
+## Putting it together
+
+- เดี๋ยวลองเอาความรู้ทั้งหมดจากตอนนี้มารวมกันดู
+  ก็สามารถสร้างโปรแกรมที่ถามชื่อ
+  แล้วพอกดทักทาย โปรแกรมก็จะแสดงข้อความทักทายกลับมาได้
+
+  <!-- prettier-ignore -->
+  ```html
+  Your name: <input id="your-name" type="text">
+  <input type="button" value="Say hi!" id="my-button">
+  <script>
+    let myButton = document.getElementById('my-button')
+    let yourName = document.getElementById('your-name')
+    myButton.onclick = () => {
+      alert('Hi ' + yourName.value + '!')
+    }
+  </script>
+  ```
+
+  <HtmlOutput :html="greeter" height="128" />

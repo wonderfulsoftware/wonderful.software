@@ -33,6 +33,10 @@ draft: true
 
   ![](https://im.dt.in.th/ipfs/bafybeiausn5wricqd7hiz7yd3samhee4hdnsqruqsegu7ppxnwe6phxrdu/image.webp)
 
+  :::tip ใส่ JavaScript ในหน้าเว็บ
+  <CodeTemplate template="&lt;script&gt; :: [placeholder] โค้ดภาษา JavaScript :: &lt;/script&gt;" />
+  :::
+
 - **แต่ถ้ามีข้อผิดพลาด**
   จะเห็นข้อความ Error เป็นสีแดง
   และมีลิงค์ให้กดเพื่อไปยังจุดที่คอมพิวเตอร์คิดว่าเกิดข้อผิดพลาดขึ้น
