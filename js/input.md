@@ -27,7 +27,7 @@ ${ex3}
 
 - ในตอนนี้ เราจะมารู้จักกับ HTML element ตัวใหม่คือ `<input>` กันครับ
 
-  <HtmlTagList introduced="html,head,body,h1,a,br,title,h2,h3,h4,h5,h6,strong,em,img,mark,del,ul,ol,li,hr,script" acquired="input" />
+  <HtmlTagList introduced="html,head,body,h1,a,br,title,h2,h3,h4,h5,h6,strong,em,img,mark,del,ul,ol,li,hr,script,p" acquired="input" />
 
 - เวลาใช้ element `input` จะมี attribute ที่สำคัญคือ `type` ซึ่งบอกว่าเราจะใช้ input แบบไหน
 

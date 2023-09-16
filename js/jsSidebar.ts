@@ -91,17 +91,22 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/input.html',
           },
           {
-            text: '⠀ มินิโปรเจค: โปรแกรมบวกเลข',
-            link: '/js/mini-projects-1.html',
+            text: '⠿ มินิโปรเจค: โปรแกรมบวกเลข',
+            link: '/js/adder.html',
           },
           {
-            text: '⠀ สร้างเว็บไซต์ของตัวเองบน Neocities',
+            text: '⠀ เรื่องน่ารู้เกี่ยวกับ HTML',
+            link: '/js/html-tips.html',
           },
         ],
       },
       {
         text: '3. โครงสร้างภาษา',
         items: [
+          {
+            text: '⠀ รู้จักกับ Boolean',
+            link: '/js/boolean-intro.html',
+          },
           {
             text: '⠀ ฟังก์ชัน (Functions)',
             // link: '/js/function.html',

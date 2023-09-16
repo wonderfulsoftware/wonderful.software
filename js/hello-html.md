@@ -32,7 +32,7 @@ draft: true
     <br>
     <a href="https://www.google.com/" target="_blank">Go to Google</a>`
 
-  const html1 = `<button id="clickMe">Click me</button>`
+  const html1 = `<input type="button" id="clickMe" value="Click me">`
   const html2 = `<style>
       #clickMe {
         font-size: 24px;
@@ -151,7 +151,7 @@ draft: true
     <head>
     </head>
     <body>
-      <button id="clickMe">Click me</button>
+      <input type="button" id="clickMe" value="Click me">
     </body>
   </html>
   ```
@@ -186,7 +186,7 @@ draft: true
       </style>
     </head>
     <body>
-      <button id="clickMe">Click me</button>
+      <input type="button" id="clickMe" value="Click me">
     </body>
   </html>
   ```
@@ -226,7 +226,7 @@ draft: true
       <style>/* ... (CSS ที่เขียนไว้ก่อนหน้านี้) ... */</style>
     </head>
     <body>
-      <button id="clickMe">Click me</button>
+      <input type="button" id="clickMe" value="Click me">
       <script>
         let button = document.getElementById('clickMe')
         let count = 0

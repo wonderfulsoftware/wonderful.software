@@ -157,6 +157,6 @@ draft: true
 
 - ตอนนี้เราก็ได้เรียนรู้ element `<script>` เพิ่มอีกตัวนึงแล้ว
 
-  <HtmlTagList introduced="html,head,body,h1,a,br,title,h2,h3,h4,h5,h6,strong,em,img,mark,del,ul,ol,li,hr" acquired="script" />
+  <HtmlTagList introduced="html,head,body,h1,a,br,title,h2,h3,h4,h5,h6,strong,em,img,mark,del,ul,ol,li,hr,p" acquired="script" />
 
 - ในตอนต่อไปเราจะลองสร้างปุ่มและกล่องข้อความ และเขียนโค้ดเพื่อให้หน้าเว็บของเรา โต้ตอบกับผู้ใช้งานได้ครับ
