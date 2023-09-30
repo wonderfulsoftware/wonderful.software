@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <input id="number" readonly size="8" value="0" />
+    <input id="add" type="button" value="+" />
+    <input id="reset" type="button" value="Reset" />
+    <script>
+      let count = 0
+      let number = document.getElementById('number')
+      let add = document.getElementById('add')
+      let reset = document.getElementById('reset')
+      add.onclick = () => {
+        count = count + 1
+        number.value = count
+      }
+      reset.onclick = () => {
+        count = 0
+        number.value = count
+      }
+    </script>
+  </body>
+</html>

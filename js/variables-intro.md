@@ -32,6 +32,10 @@ draft: true
   จากเดิมที่เกิด Error ตอนนี้เราจะเห็นคำว่า `undefined` แทน
   เพราะว่าตอนนี้มีตัวแปร “a” แล้ว แต่ยังไม่มีค่าใดๆ ในตัวแปรนั้น
 
+  และ `undefined` ก็เป็น Data type อีกชนิดนึงครับ:
+
+  ![](https://im.dt.in.th/ipfs/bafybeigtdfu5hq4abbfrrteeurfdnqeg5eeyggdiacuqpdqpq5h33wlahm/image.webp)
+
 - ลองกำหนดค่าให้ตัวแปร:
 
   <div><JsConsole input='a = 123' :output="{value: 123}" /></div>

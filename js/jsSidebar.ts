@@ -95,18 +95,39 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/adder.html',
           },
           {
-            text: '⠀ เรื่องน่ารู้เกี่ยวกับ HTML',
+            text: '⠶ เรื่องน่ารู้เกี่ยวกับ HTML',
             link: '/js/html-tips.html',
+          },
+          {
+            text: '⠿ มินิโปรเจค: โปรแกรมนับเลข',
+            link: '/js/counter.html',
           },
         ],
       },
       {
-        text: '3. โครงสร้างภาษา',
+        text: '3. เงื่อนไข',
         items: [
           {
-            text: '⠀ รู้จักกับ Boolean',
+            text: '⠤ คอมเม้นต์ในภาษา JavaScript',
+            link: '/js/comment.html',
+          },
+          {
+            text: '⠤ การแปลงชนิดข้อมูล',
+            link: '/js/explicit-type-conversion.html',
+          },
+          {
+            text: '⠶ รู้จักกับ Boolean',
             link: '/js/boolean-intro.html',
           },
+          {
+            text: '⠤ การซ่อน/แสดง element',
+            link: '/js/dom-hidden.html',
+          },
+        ],
+      },
+      {
+        text: '4. …',
+        items: [
           {
             text: '⠀ ฟังก์ชัน (Functions)',
             // link: '/js/function.html',
