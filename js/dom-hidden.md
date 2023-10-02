@@ -2,13 +2,14 @@
 draft: true
 ---
 
-# การแสดง/ซ่อน element
+# การซ่อน/แสดง element
 
 <script setup>
   import { reactive } from 'vue'
-  import {HtmlOutput,} from './components/HtmlOutput.vue'
+  import HtmlOutput from './components/HtmlOutput.vue'
   import JsConsole from './components/JsConsole.vue'
   import BooleanValue from './components/BooleanValue.vue'
+  import CodeTemplate from './components/CodeTemplate.vue'
   
   const ex1 = `<p>Text 1</p>
 <p hidden>Text 2</p>
@@ -46,8 +47,10 @@ draft: true
 
   <JsConsole input="text.hidden = true" />
 
-- ถ้าต้องการจะแสดง:
+  ถ้าต้องการจะแสดง:
 
   <JsConsole input="text.hidden = false" />
 
-## test
+  :::tip ซ่อน/แสดง element
+  <CodeTemplate template="[placeholder] element :: . :: hidden :: ' = ' :: [placeholder] boolean" />
+  :::

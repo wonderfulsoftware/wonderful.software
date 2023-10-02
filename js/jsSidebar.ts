@@ -95,12 +95,12 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/adder.html',
           },
           {
-            text: '⠶ เรื่องน่ารู้เกี่ยวกับ HTML',
-            link: '/js/html-tips.html',
-          },
-          {
             text: '⠿ มินิโปรเจค: โปรแกรมนับเลข',
             link: '/js/counter.html',
+          },
+          {
+            text: '⠶ เรื่องน่ารู้เกี่ยวกับ HTML',
+            link: '/js/html-tips.html',
           },
         ],
       },

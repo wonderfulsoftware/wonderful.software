@@ -14,11 +14,11 @@ draft: true
   เราพบว่าเวลาดึงข้อความหรือตัวเลขจากกล่อง `<input>` ออกมา
   จะได้ข้อมูลชนิด string ออกมาเสมอ
 
-  <JsConsole input="num.value" :output="{value: '42'}" />
+  <JsConsole input="a.value" :output="{value: '42'}" />
 
   และเราเอาสตริงมาคูณด้วย 1 เพื่อแปลงเป็นตัวเลข:
 
-  <JsConsole input="num.value * 1" :output="{value: 42}" />
+  <JsConsole input="a.value * 1" :output="{value: 42}" />
 
 - แต่คนอื่นที่มาเห็นโค้ดนี้อาจจะงง และสงสัยว่า
   “ทำไมต้องเอามาคูณด้วย 1 ด้วยล่ะ?”
@@ -44,7 +44,7 @@ draft: true
 
 - ในภาษา JavaScript เราสามารถแปลงค่าต่างๆ เป็นตัวเลข โดยครอบด้วย `Number()`
 
-  <JsConsole input="Number(num.value)" :output="{value: 42}" />
+  <JsConsole input="Number(a.value)" :output="{value: 42}" />
 
   :::tip แปลงค่าเป็น number
   <CodeTemplate template="Number( :: [placeholder] expression :: )" />

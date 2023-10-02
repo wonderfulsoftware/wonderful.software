@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Quiz</title>
+  </head>
+  <body>
+    <h1>Simple Quiz</h1>
+
+    <section id="beforeAnswer">
+      <p><b>คำถาม:</b> JavaScript ถูกสร้างในปีไหน?</p>
+      <button id="answerA">(A) 1993</button>
+      <button id="answerB">(B) 1994</button>
+      <button id="answerC">(C) 1995</button>
+      <button id="answerD">(D) 1996</button>
+    </section>
+
+    <section id="correct" hidden>
+      <p><b>ถูกต้อง!</b></p>
+    </section>
+
+    <section id="incorrect" hidden>
+      <p><b>ยังไม่ถูก!</b></p>
+      <button id="tryAgain">ลองอีกครั้ง</button>
+    </section>
+
+    <script>
+      let beforeAnswer = document.getElementById('beforeAnswer');
+      let answerA = document.getElementById('answerA');
+      let answerB = document.getElementById('answerB');
+      let answerC = document.getElementById('answerC');
+      let answerD = document.getElementById('answerD');
+      let correct = document.getElementById('correct');
+      let incorrect = document.getElementById('incorrect');
+      let tryAgain = document.getElementById('tryAgain');
+
+      answerA.onclick = () => {
+        beforeAnswer.hidden = true;
+        incorrect.hidden = false;
+      }
+      answerB.onclick = () => {
+        beforeAnswer.hidden = true;
+        incorrect.hidden = false;
+      }
+      answerC.onclick = () => {
+        beforeAnswer.hidden = true;
+        correct.hidden = false;
+      }
+      answerD.onclick = () => {
+        beforeAnswer.hidden = true;
+        incorrect.hidden = false;
+      }
+      tryAgain.onclick = () => {
+        beforeAnswer.hidden = false;
+        incorrect.hidden = true;
+      }
+    </script>
+  </body>
+</html>
