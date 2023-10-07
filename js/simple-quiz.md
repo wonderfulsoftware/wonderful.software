@@ -4,7 +4,6 @@ draft: true
 
 <script setup>
   import HtmlOutput from './components/HtmlOutput.vue'
-  import simpleQuiz from './mini-projects/simple-quiz.html?raw'
 </script>
 
 # มินิโปรเจค: ควิซอย่างง่าย
@@ -16,7 +15,7 @@ draft: true
   เมื่อกดปุ่มที่ตรงกับคำตอบที่ถูกต้อง จะแสดงข้อความว่า “ถูกต้อง”
   แต่ถ้ากดปุ่มอื่นๆ จะแสดงข้อความว่า “ยังไม่ถูก” และมีปุ่มให้กดเพื่อลองตอบใหม่
 
-  <HtmlOutput :html="simpleQuiz" :height="256" />
+  <HtmlOutput src="/js/mini-projects/simple-quiz.html" :height="256" />
 
 - ในโปรเจคนี้
 

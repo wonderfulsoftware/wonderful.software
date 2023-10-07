@@ -7,7 +7,6 @@ draft: true
   import HtmlOutput from './components/HtmlOutput.vue'
   import CodeTemplate from './components/CodeTemplate.vue'
   import JsConsole from './components/JsConsole.vue'
-  import greeter from './mini-projects/greeter.html?raw'
 
   const ex1 = `<input type="button" value="Click me">`
   const ex2 = `<input type="text">`
@@ -187,4 +186,4 @@ ${ex3}
   </script>
   ```
 
-  <HtmlOutput :html="greeter" height="128" />
+  <HtmlOutput src="/js/mini-projects/greeter.html" height="128" />

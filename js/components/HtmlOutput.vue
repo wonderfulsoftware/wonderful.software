@@ -3,7 +3,8 @@
     <div class="title-bar">
       {{ props.title || 'index.html' }}
     </div>
-    <iframe :srcdoc="props.html" style="width: 100%; height: 100%; border: none;"></iframe>
+    <iframe v-if="props.html" :srcdoc="props.html" style="width: 100%; height: 100%; border: none;"></iframe>
+    <iframe v-else-if="props.src" :src="props.src" style="width: 100%; height: 100%; border: none;"></iframe>
   </div>
 </template>
 
@@ -11,7 +12,8 @@
 import { computed } from 'vue';
 
 const props = defineProps<{
-  html: string
+  html?: string
+  src?: string
   title?: string
   height?: number
 }>()

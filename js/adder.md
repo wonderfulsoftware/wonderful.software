@@ -4,7 +4,6 @@ draft: true
 
 <script setup>
   import HtmlOutput from './components/HtmlOutput.vue'
-  import adder from './mini-projects/adder.html?raw'
 </script>
 
 # มินิโปรเจค: โปรแกรมบวกเลข
@@ -40,7 +39,7 @@ draft: true
 
 ## โปรแกรมบวกเลข
 
-<HtmlOutput :html="adder" :height="192" />
+<HtmlOutput src="/js/mini-projects/adder.html" :height="192" />
 
 - สร้างหน้าเว็บที่มีกล่องข้อความ 3 กล่อง
   และปุ่ม 1 ปุ่ม

@@ -4,7 +4,6 @@ draft: true
 
 <script setup>
   import HtmlOutput from './components/HtmlOutput.vue'
-  import counter from './mini-projects/counter.html?raw'
 </script>
 
 # มินิโปรเจค: โปรแกรมนับเลข
@@ -17,4 +16,4 @@ draft: true
 
 - ตัวอย่าง:
 
-  <HtmlOutput :html="counter" :height="192" />
+  <HtmlOutput src="/js/mini-projects/counter.html" :height="192" />
