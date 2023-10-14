@@ -108,11 +108,11 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         text: '3. เงื่อนไข',
         items: [
           {
-            text: '⠤ คอมเม้นต์ในภาษา JavaScript',
+            text: '⠶ คอมเม้นต์ในภาษา JavaScript',
             link: '/js/comment.html',
           },
           {
-            text: '⠤ การแปลงชนิดข้อมูล',
+            text: '⠶ การแปลงชนิดข้อมูล',
             link: '/js/explicit-type-conversion.html',
           },
           {
@@ -120,8 +120,28 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/boolean-intro.html',
           },
           {
-            text: '⠤ การซ่อน/แสดง element',
+            text: '⠶ การซ่อน/แสดง element',
             link: '/js/dom-hidden.html',
+          },
+          {
+            text: '⠶ มินิโปรเจค: ควิซอย่างง่าย',
+            link: '/js/simple-quiz.html',
+          },
+          {
+            text: '⠶ มินิโปรเจค: โปรแกรมสุ่มเลข',
+            link: '/js/randomizer.html',
+          },
+          {
+            text: '⠤ การเรียกใช้งานฟังก์ชัน',
+            link: '/js/call.html',
+          },
+          {
+            text: '⠶ มินิโปรเจค: หัวหรือก้อย',
+            link: '/js/coin-flipper.html',
+          },
+          {
+            text: '⠀ if และ else',
+            link: '/js/if-else.html',
           },
         ],
       },

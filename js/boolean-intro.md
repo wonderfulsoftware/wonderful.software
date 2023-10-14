@@ -9,13 +9,27 @@ draft: true
 
 const values = reactive({
   str: 'hello',
+  strA: 'apple',
+  strB: 'apricot',
   num: 42,
   bool: false,
   a: 5,
   b: 3,
 })
 
+const charCodes = (str) => Array.from({ length: str.length }, (_, i) => str.charCodeAt(i)).join(', ')
+
 const tf = (v) => v ? 'จริง' : 'เท็จ'
+const strCmp = (a, b) => {
+  if (a < b) {
+    return 'a < b'
+  } else if (a > b) {
+    return 'a > b'
+  } else if (a == b) {
+    return 'a == b'
+  }
+  return '???'
+}
 </script>
 
 <style scoped>
@@ -32,7 +46,7 @@ const tf = (v) => v ? 'จริง' : 'เท็จ'
 
 - ในตอนนี้เราจะมาทำความรู้จักกับ Data type ชนิดต่อไป ที่มีชื่อว่า “Boolean” ครับ
 
-  ![](https://im.dt.in.th/ipfs/bafybeiezljefpp4am7koa27iesbecx7wms2cznbswxfgsujguogbnyg3ty/image.webp)
+  ![](https://im.dt.in.th/ipfs/bafybeihoinyo3odbmie2msxjzkgkbwz7sb7kswie27vhqfepvqqc6ibjl4/image.webp)
 
 ## Boolean คืออะไร
 
@@ -103,8 +117,35 @@ const tf = (v) => v ? 'จริง' : 'เท็จ'
   <JsConsole input='"apple" < "Banana"' :output="{value: false}" />
 
   กรณีที่ตัวอักษรตัวแรกเหมือนกัน จะเปรียบเทียบตัวอักษรตัวที่สอง
+  และถ้ายังเหมือนกันอีก ก็เปรียบเทียบตัวอักษรตัวที่สาม และต่อๆ ไป
 
   <JsConsole input='"apple" < "apricot"' :output="{value: true}" />
+
+  ลองเล่นดู:
+
+  <table>
+    <thead>
+      <tr><th></th><th>a</th><th>b</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">ข้อความ</th>
+        <td><input v-model="values.strA" size="16" class="n-input-text"></td>
+        <td><input v-model="values.strB" size="16" class="n-input-text"></td>
+      </tr>
+      <tr>
+        <th scope="row">charCode</th>
+        <td style="width: 256px">{{ charCodes(values.strA) }}</td>
+        <td style="width: 256px">{{ charCodes(values.strB) }}</td>
+      </tr>
+      <tr>
+        <th scope="row">ผลการเทียบ</th>
+        <td colspan="2" style="text-align: center">
+          <strong>{{ strCmp(values.strA, values.strB) }}</strong>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 - นอกจาก `==` กับ `!=`
   ยังมี `===` กับ `!==`

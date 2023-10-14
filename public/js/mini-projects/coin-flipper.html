@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Coin Flipper</title>
+  </head>
+  <body>
+
+    <h1>
+      Coin Flipper
+    </h1>
+    
+    <input type="button" id="flip" value="Flip a coin">
+
+    <script>
+      let flip = document.getElementById('flip')
+      flip.onclick = () => {
+        let randomNumber = Math.random()
+
+        // console.log(randomNumber)
+
+        if (randomNumber < 0.5) {
+          alert('Heads')
+        } else {
+          alert('Tails')
+        }
+      }
+    </script>
+    
+  </body>
+</html>
