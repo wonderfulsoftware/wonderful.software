@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Examples of using logical operators</title>
+  </head>
+  <body>
+    <p>
+      <input id="acceptTerms" type="checkbox" />
+      <label for="acceptTerms">I agree to the Terms and Conditions</label>
+    </p>
+    <p>
+      <input id="acceptPrivacyPolicy" type="checkbox" />
+      <label for="acceptPrivacyPolicy">I agree to the Privacy Policy</label>
+    </p>
+    <p>
+      <input disabled type="button" id="signUpButton" value="Sign Up" />
+    </p>
+
+    <script>
+      let acceptTerms = document.getElementById('acceptTerms')
+      let acceptPrivacyPolicy = document.getElementById('acceptPrivacyPolicy')
+      let signUpButton = document.getElementById('signUpButton')
+
+      acceptTerms.onchange = () => {
+        if (acceptTerms.checked) {
+          if (acceptPrivacyPolicy.checked) {
+            signUpButton.disabled = false
+          } else {
+            signUpButton.disabled = true
+          }
+        } else {
+          signUpButton.disabled = true
+        }
+      }
+      acceptPrivacyPolicy.onchange = () => {
+        if (acceptTerms.checked) {
+          if (acceptPrivacyPolicy.checked) {
+            signUpButton.disabled = false
+          } else {
+            signUpButton.disabled = true
+          }
+        } else {
+          signUpButton.disabled = true
+        }
+      }
+      signUpButton.onclick = () => {
+        alert('Sign up button clicked!')
+      }
+    </script>
+  </body>
+</html>

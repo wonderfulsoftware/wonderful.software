@@ -140,17 +140,29 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/coin-flipper.html',
           },
           {
-            text: '⠀ if และ else',
+            text: '⠤ if และ else',
             link: '/js/if-else.html',
+          },
+          {
+            text: '⠀ ตัวดำเนินการทางตรรกศาสตร์',
+            link: '/js/logical-operators.html',
           },
         ],
       },
       {
-        text: '4. …',
+        text: '4. ฟังก์ชัน',
         items: [
           {
-            text: '⠀ ฟังก์ชัน (Functions)',
-            // link: '/js/function.html',
+            text: '⠀ การสร้างฟังก์ชัน',
+            link: '/js/function-intro.html',
+          },
+          {
+            text: '⠀ ลดโค้ดซ้ำซ้อนด้วยฟังก์ชัน',
+            link: '/js/dry.html',
+          },
+          {
+            text: '⠀ รับค่าด้วย Parameters และคืนค่าด้วย Return',
+            link: '/js/parameters-and-return-values.html',
           },
           {
             text: '⠿ ลงลึกเรื่องตัวเลข',
