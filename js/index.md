@@ -32,29 +32,35 @@ This is the list of topics that should be covered in this course. It is more lik
 - [x] บูลีน (Boolean)
 - [x] การแปลงประเภทข้อมูล
 - [x] การเขียนโปรแกรมแบบมีเงื่อนไข
-- [ ] นิพจน์ตรรกะ (Logical Expression)
-- [ ] การเขียนโปรแกรมแบบมีเงื่อนไขด้วย if
-- [ ] การเขียนโปรแกรมแบบมีเงื่อนไขด้วย if else
-- [ ] การเขียนโปรแกรมแบบมีเงื่อนไขซ้อน (Nested Conditional Statements)
+- [x] นิพจน์ตรรกะ (Logical Expression)
+- [x] การเขียนโปรแกรมแบบมีเงื่อนไขด้วย if
+- [x] การเขียนโปรแกรมแบบมีเงื่อนไขด้วย if else
+- [x] การเขียนโปรแกรมแบบมีเงื่อนไขซ้อน (Nested Conditional Statements)
 - [x] Flowchart
 - [ ] การเขียนโปรแกรมแบบมีเงื่อนไขด้วย switch
 - [ ] การเขียนโปรแกรมวนซ้ำ (Loop) คืออะไร
 - [ ] การเขียนโปรแกรมวนซ้ำด้วย for
 - [ ] การเขียนโปรแกรมวนซ้ำด้วย while
-- [ ] อาเรย์ (Array) คืออะไร
-- [ ] การสร้างอาเรย์ (Array)
-- [ ] การเพิ่มข้อมูลในอาเรย์ (Array)
+- [x] อาเรย์ (Array) คืออะไร
+- [x] การสร้างอาเรย์ (Array)
+- [x] การเพิ่มข้อมูลในอาเรย์ (Array)
 - [ ] การลบข้อมูลในอาเรย์ (Array)
-- [ ] การใช้ดัชนี (Index) ในอาเรย์ (Array)
+- [x] การใช้ดัชนี (Index) ในอาเรย์ (Array)
 - [ ] การใช้อาเรย์ (Array) กับคำสั่งโปรแกรมวนซ้ำ (Loop)
-- [ ] ฟังก์ชัน (Function) คืออะไร
-- [ ] การสร้างและเรียกใช้ฟังก์ชัน (Function)
-- [ ] การสร้างตัวแปรเรียกใช้ในฟังก์ชัน (Function)
-- [ ] การคืนค่าออกมาจากฟังก์ชัน (Function)
+- [x] ฟังก์ชัน (Function) คืออะไร
+- [x] การสร้างและเรียกใช้ฟังก์ชัน (Function)
+- [x] การสร้างตัวแปรเรียกใช้ในฟังก์ชัน (Function)
+- [x] การคืนค่าออกมาจากฟังก์ชัน (Function)
 - [ ] การสร้างฟังก์ชั่นนิรนาม (Anonymous Functions)
 - [ ] Object ในภาษา Javascript คืออะไร
 - [ ] การสร้าง Object
 - [ ] การเข้าถึงข้อมูลใน Object
 - [ ] การแก้ไขข้อมูลใน Object
+
+:::
+
+:::details Scratchpad
+
+- maybe talk about onsubmit on a form vs onclick on a button
 
 :::

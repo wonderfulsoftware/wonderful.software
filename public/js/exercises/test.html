@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Suite</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/qunit/qunit-2.20.0.css"
+    />
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.20.0.js"></script>
+    <script>
+      let test = QUnit.test
+
+      QUnit.module('functions', () => {
+        let add = (a, b) => {
+          return a + b
+        }
+        test('add - adds 2 numbers', (assert) => {
+          assert.equal(add(1, 2), 3)
+          assert.equal(add(20, 30), 50)
+          assert.equal(add(5, 5), 10)
+          assert.equal(add(10, -5), 5)
+          assert.equal(add(-10, -20), -30)
+        })
+
+        let max = (a, b) => {
+          if (a > b) {
+            return a
+          } else {
+            return b
+          }
+        }
+        test('max - returns the larger of 2 numbers', (assert) => {
+          assert.equal(max(1, 2), 2)
+          assert.equal(max(20, 30), 30)
+          assert.equal(max(5, 5), 5)
+          assert.equal(max(-10, -5), -5)
+          assert.equal(max(0, 100), 100)
+          assert.equal(max(-50, 0), 0)
+        })
+      })
+
+      QUnit.module('arrays', () => {
+        let first = (arr) => {
+          return arr[0]
+        }
+        test('first - returns the first element of an array', (assert) => {
+          assert.equal(first([1, 2, 3]), 1)
+          assert.equal(first([10, 20, 30]), 10)
+          assert.equal(first(['a', 'b', 'c']), 'a')
+          assert.equal(first(['hello', 'world']), 'hello')
+        })
+        test('first - should not remove items from the array', (assert) => {
+          let arr = [true, 99, false]
+          assert.equal(first(arr), true)
+          assert.equal(arr.length, 3)
+        })
+
+        let last = (arr) => {
+          return arr[arr.length - 1]
+        }
+        test('last - returns the last element of an array', (assert) => {
+          assert.equal(last([1, 2, 3]), 3)
+          assert.equal(last([10, 20, 30]), 30)
+          assert.equal(last(['a', 'b', 'c']), 'c')
+          assert.equal(last(['hello', 'world']), 'world')
+        })
+        test('last - should not remove items from the array', (assert) => {
+          let arr = [true, 99, false]
+          assert.equal(last(arr), false)
+          assert.equal(arr.length, 3)
+        })
+
+        let sum = (arr) => {
+          let total = 0
+          for (let value of arr) {
+            total += value
+          }
+          return total
+        }
+        test('sum - returns the sum of all numbers in an array', (assert) => {
+          assert.equal(sum([1, 2, 3]), 6)
+          assert.equal(sum([10, 20, 30]), 60)
+          assert.equal(sum([1, 2, 3, 4, 5]), 15)
+          assert.equal(sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), 55)
+        })
+        test('sum - returns 0 for an empty array', (assert) => {
+          assert.equal(sum([]), 0)
+        })
+
+        let countWords = (str) => {
+          let words = str.split(' ')
+          return words.length
+        }
+        test('countWords - returns the number of words in a string', (assert) => {
+          // Assume that words are always separated by spaces and strings are not empty
+          assert.equal(countWords('hello world'), 2)
+          assert.equal(countWords('hello'), 1)
+          assert.equal(countWords('hello world how are you'), 5)
+        })
+
+        let countExclamationMarks = (str) => {
+          let count = 0
+          for (let char of str) {
+            if (char === '!') {
+              count++
+            }
+          }
+          return count
+        }
+        test('countExclamationMarks - returns the number of exclamation marks in a string', (assert) => {
+          assert.equal(countExclamationMarks('hello world'), 0)
+          assert.equal(countExclamationMarks('hello!'), 1)
+          assert.equal(countExclamationMarks('hello! how are you!'), 2)
+          assert.equal(countExclamationMarks('hello!!!!!!!!'), 8)
+        })
+      })
+    </script>
+  </body>
+</html>

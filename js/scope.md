@@ -13,11 +13,20 @@ draft:
 - Learn to use the JavaScript Console
 - Learn to create simple web pages / web application with HTML
   - Prototype it online with Glitch
-- **Project:** Create a personal tutor web application
-- Learn to create a web site with multiple pages and publish it online with Neocities
-- Learn to use a text editor (VS Code)
+- **Project:** Create a personal tutor web application (Flashcard)
+
+<!-- - Learn to create a web site with multiple pages and publish it online with -->
 
 ## เรื่องที่ไม่ได้สอนในคอร์สนี้
+
+- Not all JS concepts
+
+  - Example - for strings we will teach just single quote and double quote, but not backtick. for variables, we can use var, let, const, but we will only use `let` in this course. for functions, there are 3 ways to define a function, but we will only use the arrow function with let in this course.
+  - If you learn this course in conjunction with other courses, expect to see some differences in the way they teach you. Some people may even have opinions on which way is better, and they may be correct. But for this course, we will just use the simplest way that works. You can expect to unlearn and relearn some things in the future, but that's okay. It's part of the learning process.
+
+- **Video version:** Text editor shenanigans
+
+  - Throughout the course I will type at full speed and use all kind of keyboard shortcuts and text editor features, so you can see how professional programmers use shortcuts to save time and effort. However, I will not teach you in this course. It is up to you to learn them yourself. You can search for "vscode keyboard shortcuts." Some shortcuts can be used with Glitch.
 
 - Best practices — ด้วยความที่คอร์สนี้เป็นคอร์สเบื้องต้น
   เราจึงออกแบบคอร์สนี้ให้คุณได้เริ่มต้นลองหัดเขียนโปรแกรม
