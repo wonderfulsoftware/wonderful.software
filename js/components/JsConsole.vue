@@ -30,7 +30,7 @@ const props = defineProps<{
 }
 
 .root {
-  background: #202124;
+  background: #202124 !important;
 }
 
 .root .code-line {
