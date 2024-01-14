@@ -1,5 +1,6 @@
 @import './fonts/cschatthaiui.css';
 @import '@fontsource/cousine/400.css';
+@import '@fontsource/cousine/700.css';
 
 /**
  * Customize default theme styling by overriding CSS variables:
@@ -21,6 +22,10 @@
   --vp-c-bg-alt: #f5f4f3;
   --vp-font-family-mono: Cousine, ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
     Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --vp-code-block-bg: #fff;
+  --vp-code-line-highlight-color: rgba(255, 248, 197, 0.6);
+  --vp-code-block-divider-color: rgba(0, 0, 0, 0.1);
+  --vp-code-line-number-color: rgb(101, 109, 118);
 }
 
 html:root {
@@ -166,4 +171,13 @@ figure.figure figcaption {
   font-weight: inherit;
   text-decoration: underline;
   text-decoration-color: color-mix(in srgb, currentColor 32%, white);
+}
+
+.vp-doc .custom-block a:hover {
+  -webkit-text-stroke: 0.016em currentColor;
+}
+
+.vp-doc div[class*='language-'] {
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
 }

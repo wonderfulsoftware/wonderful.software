@@ -170,6 +170,7 @@ export default defineConfig({
   },
 
   markdown: {
+    theme: 'github-light',
     config: (md) => {
       md.use(require('markdown-it-footnote'))
       md.renderer.rules.softbreak = () =>

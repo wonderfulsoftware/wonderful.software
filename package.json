@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/node": "^20.11.0",
     "dotenv": "^8.2.0",
     "fkill-cli": "^7.1.0",
     "remark-cli": "^7.0.0",
