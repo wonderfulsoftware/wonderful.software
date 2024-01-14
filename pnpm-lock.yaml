@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/cousine':
+    specifier: ^5.0.18
+    version: 5.0.18
   jsonwebtoken:
     specifier: ^8.5.1
     version: 8.5.1
@@ -457,6 +460,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/cousine@5.0.18:
+    resolution: {integrity: sha512-rIugeDL2TMWIoAutR9RYTRpvKABcc2sI1FwEZyEd9ISO3DrTx/zYPb7uEkPFx3AffwtdhCFUMBjq/K/CwVVoqw==}
+    dev: false
 
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}

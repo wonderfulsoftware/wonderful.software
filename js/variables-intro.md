@@ -53,10 +53,13 @@ draft: true
   <div><JsConsole input='a * b' :output="{value: 56088}" /></div>
 
 - ตัวแปรที่เราสร้างใน JavaScript Console จะอยู่แค่ภายในหน้าเว็บนั้นๆ
-  ถ้ากดปุ่ม Refresh หน้าเว็บ
+
+  ถ้ากดปุ่ม Refresh เพื่อโหลดหน้าเว็บใหม่
   ตัวแปรที่สร้างไว้ก่อนหน้านี้ ก็จะหายไป
 
-- นอกจากนี้ ตัวแปร เราสามารถเขียนค่าทับมันได้ครับ
+  <div><JsConsole input='a * b' error="Uncaught ReferenceError: a is not defined" /></div>
+
+- นอกจากนี้ ตัวแปร เราสามารถกำหนดค่าใหม่ให้กับมันได้ครับ
 
   <div><JsConsole input='let x = 20' :output="{value: undefined}" /></div>
 
