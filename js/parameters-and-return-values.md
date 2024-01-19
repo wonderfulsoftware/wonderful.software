@@ -7,3 +7,7 @@ draft: true
 </script>
 
 # รับค่าด้วย Parameters และคืนค่าด้วย Return
+
+```js
+
+```
