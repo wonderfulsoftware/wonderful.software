@@ -184,7 +184,8 @@ figure.figure figcaption {
   -webkit-text-stroke: 0.016em currentColor;
 }
 
-.vp-doc div[class*='language-'] {
+.vp-doc div[class*='language-'],
+.rounded-with-shadow {
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
 }

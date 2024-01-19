@@ -98,15 +98,15 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/input.html',
           },
           {
-            text: '⠿ มินิโปรเจค: โปรแกรมบวกเลข',
+            text: 'มินิโปรเจค: โปรแกรมบวกเลข',
             link: '/js/adder.html',
           },
           {
-            text: '⠿ มินิโปรเจค: โปรแกรมนับเลข',
+            text: 'มินิโปรเจค: โปรแกรมนับเลข',
             link: '/js/counter.html',
           },
           {
-            text: '⠶ เรื่องน่ารู้เกี่ยวกับ HTML',
+            text: 'เรื่องน่ารู้เพิ่มเติมเกี่ยวกับ HTML',
             link: '/js/html-tips.html',
           },
         ],
