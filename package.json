@@ -13,7 +13,6 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@fontsource/cousine": "^5.0.18",
     "jsonwebtoken": "^8.5.1",
     "littlefoot": "^3.4.1",
     "markdown-it-footnote": "^3.0.1",

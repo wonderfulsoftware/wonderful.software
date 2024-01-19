@@ -1,6 +1,5 @@
 @import './fonts/cschatthaiui.css';
-@import '@fontsource/cousine/400.css';
-@import '@fontsource/cousine/700.css';
+@import './fonts/FragmentMono.css';
 
 /**
  * Customize default theme styling by overriding CSS variables:
@@ -20,12 +19,18 @@
   --vp-c-brand-darker: #b7004d;
   --vp-c-brand-dimm: rgba(218, 53, 103, 0.08);
   --vp-c-bg-alt: #f5f4f3;
-  --vp-font-family-mono: Cousine, ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
-    Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --vp-font-family-mono: Fragment Mono, ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', CS ChatThai, monospace;
   --vp-code-block-bg: #fff;
   --vp-code-line-highlight-color: rgba(255, 248, 197, 0.6);
   --vp-code-block-divider-color: rgba(0, 0, 0, 0.1);
   --vp-code-line-number-color: rgb(101, 109, 118);
+
+  --vp-custom-block-info-text: inherit;
+
+  --vp-custom-block-warning-text: rgb(93, 88, 45);
+  --vp-custom-block-warning-border: rgb(219, 213, 169);
+  --vp-custom-block-warning-bg: rgba(255, 248, 197, 0.6);
 }
 
 html:root {
@@ -165,6 +170,8 @@ figure.figure figcaption {
 
 .vp-doc :not(pre) > code {
   line-height: 1.25;
+  color: inherit;
+  border: 1px solid var(--vp-c-border);
 }
 
 .vp-doc .custom-block a {
@@ -180,4 +187,9 @@ figure.figure figcaption {
 .vp-doc div[class*='language-'] {
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
+}
+
+.vp-doc code {
+  /* disable ligatures as they may be unfriendly to beginners */
+  font-variant-ligatures: none;
 }

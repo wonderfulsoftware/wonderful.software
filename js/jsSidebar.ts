@@ -2,26 +2,33 @@ import type { DefaultTheme } from 'vitepress'
 export const jsSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: '[DRAFT] Intro to Programming with JavaScript',
-    link: '/js/',
     // Progress -> ⠀ ⠤ ⠶ ⠿
     items: [
+      {
+        text: 'หน้าแรก',
+        link: '/js/',
+      },
+      {
+        text: 'ยินดีต้อนรับ',
+        link: '/js/welcome.html',
+      },
       {
         text: '0. Introduction',
         items: [
           {
-            text: '⠿ เขียนโปรแกรมเป็นแล้วทำอะไรได้',
+            text: 'เขียนโปรแกรมเป็นแล้วทำอะไรได้',
             link: '/js/intro.html',
           },
           {
-            text: '⠿ ตัวอย่างการใช้ JavaScript Console ในชีวิตประจำวัน',
+            text: 'ตัวอย่างการใช้ JavaScript Console ในชีวิตประจำวัน',
             link: '/js/daily-life-console.html',
           },
           {
-            text: '⠿ การเขียนโปรแกรมคืออะไร',
+            text: 'การเขียนโปรแกรมคืออะไร',
             link: '/js/programming.html',
           },
           {
-            text: '⠿ พื้นฐานที่ควรมี',
+            text: 'พื้นฐานที่ควรมี',
             link: '/js/prerequisites.html',
           },
           {
@@ -29,7 +36,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/scope.html',
           },
           {
-            text: '⠿ การเรียนรู้การเขียนโปรแกรม',
+            text: 'การเรียนรู้การเขียนโปรแกรม',
             link: '/js/learning.html',
           },
         ],
@@ -38,31 +45,31 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         text: '1. ทำความรู้จักกับภาษา JavaScript',
         items: [
           {
-            text: '⠿ การคำนวณเบื้องต้น',
+            text: 'การคำนวณเบื้องต้น',
             link: '/js/basic-calculation.html',
           },
           {
-            text: '⠿ แบบฝึกหัด: การคำนวณเบื้องต้น',
+            text: 'แบบฝึกหัด: การคำนวณเบื้องต้น',
             link: '/js/exercises/basic-calculation.html',
           },
           {
-            text: '⠿ เอกซ์เพรสชันและตัวดำเนินการ (Expressions and Operators)',
+            text: 'เอกซ์เพรสชันและตัวดำเนินการ (Expressions and Operators)',
             link: '/js/expressions-and-operators.html',
           },
           {
-            text: '⠿ แบบฝึกหัด: ลำดับของตัวดำเนินการ',
+            text: 'แบบฝึกหัด: ลำดับของตัวดำเนินการ',
             link: '/js/exercises/operator-precedence.html',
           },
           {
-            text: '⠶ รู้จักกับ String',
+            text: 'รู้จักกับ String',
             link: '/js/string-intro.html',
           },
           {
-            text: '⠶ รู้จักกับชนิดข้อมูล (Data Types)',
+            text: 'รู้จักกับชนิดข้อมูล (Data Types)',
             link: '/js/data-types.html',
           },
           {
-            text: '⠶ รู้จักกับตัวแปร (Variables)',
+            text: 'รู้จักกับตัวแปร (Variables)',
             link: '/js/variables-intro.html',
           },
         ],
@@ -71,23 +78,23 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         text: '2. ลองสร้างเว็บแอปพลิเคชัน',
         items: [
           {
-            text: '⠿ แนะนำเว็บ Glitch',
+            text: 'แนะนำเว็บ Glitch',
             link: '/js/hello-glitch.html',
           },
           {
-            text: '⠿ HTML แบบเบื้องต้นสุดๆ',
+            text: 'HTML แบบเบื้องต้นสุดๆ',
             link: '/js/hello-html.html',
           },
           {
-            text: '⠿ แบบฝึกหัด: HTML เบื้องต้น',
+            text: 'แบบฝึกหัด: HTML เบื้องต้น',
             link: '/js/hello-html-exercises.html',
           },
           {
-            text: '⠿ ใส่ JavaScript บนหน้าเว็บ',
+            text: 'ใส่ JavaScript บนหน้าเว็บ',
             link: '/js/script.html',
           },
           {
-            text: '⠿ โต้ตอบกับผู้ใช้งานด้วย input',
+            text: 'โต้ตอบกับผู้ใช้งานด้วย input',
             link: '/js/input.html',
           },
           {

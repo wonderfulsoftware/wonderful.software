@@ -60,13 +60,15 @@ const segments = computed(() => {
 
 .code-template-segment.is-literal {
   font-family: var(--vp-font-family-mono);
-  background: #E296AD80;
+  font-variant-ligatures: none;
+  background: rgba(60, 60, 67, 0.12);
   font-weight: bold;
   white-space: pre;
 }
 
 .code-template-segment.is-filled {
   font-family: var(--vp-font-family-mono);
+  font-variant-ligatures: none;
   background: rgba(60, 60, 67, 0.12);
   font-weight: bold;
   white-space: pre;

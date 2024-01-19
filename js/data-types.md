@@ -17,10 +17,12 @@ questions:
   import JsExercise from './exercises/JsExercise.vue'
 </script>
 
-- ตอนนี้เราได้ลองใช้งานข้อมูล 2 ชนิดแล้วในภาษา JavaScript
-  ก็คือตัวเลข (Number) กับข้อความ (String)
+ตอนนี้เราได้ลองใช้งานข้อมูล 2 ชนิดแล้วในภาษา JavaScript
+ก็คือตัวเลข (Number) กับข้อความ (String)
 
-  ![](https://im.dt.in.th/ipfs/bafybeigmlktpfvuujjwio3q6fqw6apb6ifpltejncdsuc2oen2sfgzq7le/image.webp)
+![](https://im.dt.in.th/ipfs/bafybeigmlktpfvuujjwio3q6fqw6apb6ifpltejncdsuc2oen2sfgzq7le/image.webp)
+
+และเดี๋ยวเราจะได้เจอกับชนิดอื่นๆ ในบทต่อๆ ไป
 
 ## typeof
 
@@ -32,9 +34,9 @@ questions:
 
 ## การแปลงชนิดข้อมูล (Type Coercion)
 
-- จำได้ใช่ไหมครับว่าในตอนก่อนหน้า เครื่องหมาย `+` สามารถใช้ได้ทั้งสำหรับการบวกเลข และต่อ string
+- จำได้ใช่ไหมครับว่าในตอนก่อนหน้า เครื่องหมาย `+` สามารถใช้ได้ทั้งสำหรับการบวกเลข และต่อ string เข้าด้วยกัน?
 
-- แต่จะเกิดอะไรขึ้น ถ้าเอาเลข กับ string มา `+` กัน?
+- แต่จะเกิดอะไรขึ้น ถ้าเอาข้อมูลชนิด number กับ string มา `+` กัน?
 
   - ใน[เอกสารอ้างอิงของเครื่องหมายบวก](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition)ได้ระบุไว้ว่า
     ในการเอาค่าสองค่ามาบวกกัน

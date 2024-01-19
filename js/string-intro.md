@@ -8,10 +8,12 @@ draft: true
   import JsConsole from './components/JsConsole.vue'
 </script>
 
-## ข้อความ (String)
+ในตอนก่อนหน้า เราได้เขียนโค้ดเพื่อให้คอมพิวเตอร์ทำงานกับตัวเลขได้แล้ว
+ในตอนนี้ เราจะมาเรียนรู้วิธีการทำงานกับข้อความ (หรือที่เรียกกันว่า String) กันบ้าง
 
-- ในตอนก่อนหน้า เราได้เขียนโค้ดเพื่อให้คอมพิวเตอร์ทำงานกับตัวเลขได้แล้ว
-  ในตอนนี้ เราจะมาเรียนรู้วิธีการทำงานกับข้อความกันบ้าง
+![](https://im.dt.in.th/ipfs/bafybeicpuqhtjkudazisehuw556fnybyz4gbv44kmb6x74pdaogfxica3m/image.webp)
+
+## ข้อความ (String)
 
 - ลองเปิด JavaScript Console แล้วพิมพ์ `"Hello, world!"` ดูครับ
 
@@ -30,17 +32,30 @@ draft: true
 
 - นอกจาก double quotes แล้ว เรายังสามารถใช้ single quotes `'` ครอบข้อความได้เช่นกันครับ[^singlequotes]
 
-  <div><JsConsole input="'Hello, world!'" :output="{value: 'Hello, world!'}"  /></div>
+  ```js
+  // ใช้ single quote
+  'Hello, world!'
+
+  // ใช้ double quote
+  'Hello, world!'
+  ```
 
 - แปลว่า ถ้าข้อความของเรามี single quotes อยู่ในนั้น ก็สามารถใช้ double quotes ครอบข้อความได้
 
-  <div><JsConsole input="&quot;It's dangerous to go alone! Take this.&quot;" /></div>
+  ```js
+  "It's dangerous to go alone! Take this."
+  ```
 
 - และถ้าข้อความของเรามี double quotes อยู่ในนั้น ก็สามารถใช้ single quotes ครอบข้อความได้
 
-  <div><JsConsole input="'&quot;Who are you?&quot; said the Caterpillar.'" /></div>
+  ```js
+  '"Who are you?" said the Caterpillar.'
+  ```
 
 - …แล้วถ้าข้อความของเรา มีทั้ง double quotes และ single quotes ล่ะ จะทำยังไงดี?
+
+  ![](https://im.dt.in.th/ipfs/bafybeiecx2j722c4g72jxszudvlimzepxmuy7vsqikm5fasyhzqrki7g34/image.webp)
+
   เดี๋ยวคำถามนี้ และคำถามอื่นๆ ที่เกี่ยวกับ string เราจะมาตอบกันในบทหลังๆ เมื่อเราเรียนรู้ภาษา JavaScript ในระดับลึกขึ้นครับ
 
 [^singlequotes]:
@@ -56,13 +71,19 @@ draft: true
 
 - จะเห็นว่า ในภาษา JavaScript เครื่องหมาย + มีได้สองความหมาย[^plus]
 
-  1. ใช้ “บวก” เลข
+  1. ใช้ “บวก” เลข (Addition)
 
       <div><JsConsole input='1 + 2' :output="{value: 3}" /></div>
 
-  2. ใช้ “ต่อ” สตริงเข้าด้วยกัน
+  2. ใช้ “ต่อ” สตริงเข้าด้วยกัน (Concatenation)
 
       <div><JsConsole input='"Hello, " + "world!"' :output="{value: 'Hello, world!'}" /></div>
+
+## Up next
+
+ก็จะเห็นว่า JavaScript ไม่ได้มีแค่ตัวเลข
+แต่มีข้อความ และมีข้อมูลชนิดอื่นๆ ด้วย
+คำว่า “ชนิดข้อมูล” ภาษาอังกฤษคือ “data type” เป็นหัวข้อของตอนต่อไปครับ
 
 [^plus]:
     ในภาษาอย่าง JavaScript, Java, Python, Ruby, Swift, C#, Go ใช้เครื่องหมายบวก `+` สำหรับทั้งการบวกเลขและต่อสตริงเข้าด้วยกัน

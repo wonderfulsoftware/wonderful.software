@@ -8,62 +8,12 @@ draft: true
   import HtmlOutput from './components/HtmlOutput.vue'
   import HtmlTagList from './components/HtmlTagList.vue'
   import CodeTemplate from './components/CodeTemplate.vue'
-
-  const ex1 = `hello`
-
-  const ex2 = `<h1>
-      big text
-    </h1>
-    hello
-    welcome to my website`
-
-  const ex3 = `${ex2}
-    <a href="https://www.google.com/" target="_blank">Go to Google</a>`
-
-  const ex4 = `
-    hello
-    welcome to my website
-    <a href="https://www.google.com/" target="_blank">Go to Google</a>`
-
-  const ex5 = `
-    hello
-    <br>
-    welcome to my website
-    <br>
-    <a href="https://www.google.com/" target="_blank">Go to Google</a>`
-
-  const html1 = `<input type="button" id="clickMe" value="Click me">`
-  const html2 = `<style>
-      #clickMe {
-        font-size: 24px;
-        padding: 8px 12px;
-        background: linear-gradient(to bottom, #da3567, #ba1547);
-        color: white;
-        cursor: pointer;
-        border: none;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      }
-      #clickMe:hover {
-        text-shadow: 0 0 4px #fff;
-      }
-    <\/style>${html1}`
-  const html3 = `
-    ${html2}
-    <script>
-      let button = document.getElementById('clickMe')
-      let count = 0
-      button.addEventListener('click', () => {
-        count++
-        alert('You clicked ' + count + ' times!')
-      })
-    <\/script>`
 </script>
 
-- ในตอนนี้เราจะมาเรียนรู้การสร้างหน้าเว็บด้วยภาษา HTML กันครับ
+ในตอนนี้เราจะมาเรียนรู้การสร้างหน้าเว็บด้วยภาษา HTML กันครับ
 
-- มาถึงจุดนี้บางคนอาจจะยกมือถามว่า “HTML คืออะไร?”
-  แต่เดี๋ยวเราลองทำตามขั้นตอนกันดูก่อนครับ แล้วเดี๋ยวผมจะอธิบายให้ฟังทีหลัง
+มาถึงจุดนี้บางคนอาจจะยกมือถามว่า **“HTML คืออะไร?”**
+แต่เดี๋ยวเราลองทำตามขั้นตอนกันดูก่อนครับ แล้วเดี๋ยวผมจะอธิบายให้ฟังทีหลัง
 
 ## โปรเจคหน้าเว็บเปล่าๆ
 
@@ -102,7 +52,7 @@ draft: true
   </html>
   ```
 
-  <div><HtmlOutput :html="ex1" height="128" /></div>
+  <div><HtmlOutput src="/js/examples/hello-html/step1.html" height="128" /></div>
 
 - ลองใส่โค้ดเพิ่มเข้าไปดู
 
@@ -125,7 +75,7 @@ draft: true
   </html>
   ```
 
-  <div><HtmlOutput :html="ex2" height="256" /></div>
+  <div><HtmlOutput src="/js/examples/hello-html/step2.html" height="256" /></div>
 
   ::: tip ขอแนะนำให้พิมพ์โค้ดด้วยตัวเอง
   บางทีก๊อบโค้ดอาจจะเร็วกว่า แต่ขอแนะนำว่าให้พิมพ์โค้ดทั้งหมดด้วยตัวเองในระหว่างที่เรียน
@@ -156,7 +106,7 @@ draft: true
   </html>
   ```
 
-  <div><HtmlOutput :html="html1" height="128" /></div>
+  <div><HtmlOutput src="/js/examples/hello-html/html-only.html" height="128" /></div>
 
   ตัวอย่างเช่น โค้ดด้านบนนี้ กำหนดให้มีปุ่ม “Click me” อยู่บนหน้าเว็บ
 
@@ -191,7 +141,7 @@ draft: true
   </html>
   ```
 
-  <div><HtmlOutput :html="html2" height="128" /></div>
+  <div><HtmlOutput src="/js/examples/hello-html/html-css.html" height="128" /></div>
 
   ตอนนี้ปุ่มก็ดูสวยขึ้นแล้ว~
 
@@ -239,7 +189,7 @@ draft: true
   </html>
   ```
 
-  <div><HtmlOutput :html="html3" height="128" /></div>
+  <div><HtmlOutput src="/js/examples/hello-html/html-css-js.html" height="128" /></div>
 
   จากโค้ดตัวอย่าง เราสามารถตั้งโปรแกรมได้ว่า เมื่อกดปุ่มแล้ว จะเกิดอะไรขึ้น (ลองกดดูนะครับ)
 
@@ -324,11 +274,11 @@ draft: true
 
   ![](https://im.dt.in.th/ipfs/bafybeif2kjoxbwhmohjydhihkf5y3v4nsgxoidejdq46lgndwwbzm4h3re/image.webp)
 
-  1. **แท็กเปิด (opening tag)** เขียนรูปแบบนี้
+  1. **แท็กเปิด (opening tag)** `<html>` `<head>` `<body>` `<h1>` เขียนรูปแบบนี้
 
      <CodeTemplate template="< :: [placeholder] ชื่อของ element :: >" />
 
-  2. **แท็กปิด (closing tag)** เขียนรูปแบบนี้
+  2. **แท็กปิด (closing tag)** `</head>` `</h1>` `</body>` `</html>` เขียนรูปแบบนี้
 
      <CodeTemplate template="</ :: [placeholder] ชื่อของ element :: >" />
 
@@ -426,7 +376,7 @@ draft: true
   <a href="https://www.google.com/" target="_blank">Go to Google</a>
   ```
 
-  <div><HtmlOutput :html="ex3" height="256" title="My first web page" /></div>
+  <div><HtmlOutput src="/js/examples/hello-html/step3.html" height="256" /></div>
 
 - พอกดที่คำว่า “Go to Google” ก็จะลิงค์ไปที่หน้า Google โดยเปิดในแท็บใหม่ครับ
 
@@ -456,7 +406,9 @@ draft: true
 
   ตัวอย่างเช่น
 
-  <CodeTemplate template="[filled] href :: = :: '&quot;' :: [filled] https://www.google.com/ :: '&quot;'" />
+  ```html
+  href="https://www.google.com/"
+  ```
 
 - แปลว่า **แท็กเปิด (opening tag)** สามารถเขียนในรูปแบบนี้
 
@@ -464,7 +416,10 @@ draft: true
 
   ตัวอย่างเช่น
 
-  <CodeTemplate template="< :: [filled] a :: ' ' :: [filled] href=&quot;https://www.google.com/&quot; :: ' ' :: [filled] target=&quot;_blank&quot; :: >" />
+  <!-- prettier-ignore -->
+  ```html
+  <a href="https://www.google.com/" target="_blank">
+  ```
 
 ## ขึ้นบรรทัดใหม่ด้วย `<br>`
 
@@ -477,7 +432,7 @@ draft: true
   <a href="https://www.google.com/" target="_blank">Go to Google</a>
   ```
 
-  <div><HtmlOutput :html="ex4" height="128" title="My first web page" /></div>
+  <div><HtmlOutput src="/js/examples/hello-html/step4.html" height="256" /></div>
 
 - ถ้าเราอยากจะขึ้นบรรทัดใหม่ ให้ใช้ element `<br>` ครับ
 
@@ -490,12 +445,24 @@ draft: true
   <a href="https://www.google.com/" target="_blank">Go to Google</a>
   ```
 
-  <div><HtmlOutput :html="ex5" height="192" title="My first web page" /></div>
+  <div><HtmlOutput src="/js/examples/hello-html/step5.html" height="256" /></div>
 
 - **“เอ… เขียนแท็กเปิด `<br>` แล้วไม่ต้องเขียนแท็กปิด `</br>` หรอ?”**
 
   คำตอบคือ **ไม่ต้องครับ** เพราะว่า `<br>` เรียกว่าเป็น [“void element”](https://developer.mozilla.org/en-US/docs/Glossary/Void_element)
   ที่มีแค่ตัวแท็กอย่างเดียว ไม่มีเนื้อหาข้างใน และไม่มีแท็กปิด
+
+  ::: tip วิธีเขียน void element อีกรูปแบบ
+
+  แท็กของ void element สามารถเขียนในรูปแบบนี้ได้เช่นกัน `<br />`
+  เพื่อให้ดูเหมือนภาษา XML มากขึ้น[^xml]
+
+  :::
+
+[^xml]:
+    ในภาษา XML, `<x />` จะมีความหมายเหมือนกับ `<x></x>` (เรียกว่า self-closing tag)
+    แต่ในภาษา HTML ไม่ได้ทำงานแบบนั้น ([ภาษา HTML ไม่มีสิ่งที่เรียกว่า self-closing tag](https://developer.mozilla.org/en-US/docs/Glossary/Void_element#self-closing_tags))
+    นักพัฒนาบางคนอาจจะคุ้นชินกับการเขียนภาษา XML จึงเขียนพวก void element ให้ดูหน้าตาคล้ายๆ self-closing tag ของ XML มากขึ้น
 
 ## เรียนรู้ภาษา HTML เพิ่มเติม
 
@@ -507,6 +474,7 @@ draft: true
 
 - ปกติผมก็จะหาใน Google ครับ
   โดยพิมพ์ “html” ตามด้วยชื่อ element ที่เราอยากรู้
+  อย่างเช่นถ้าสงสัยว่า `<img>` ใช้ยังไง ก็จะเสิร์ชในกูเกิลว่า “html img”
   โดยส่วนมาก เว็บที่โผล่ขึ้นมาจะเป็นเว็บ MDN หรือ W3Schools
 
   ![](https://im.dt.in.th/ipfs/bafybeia732qgzrcotr26ia4qzuowovwqvgphs6nugcb2gnej53cifhuwvm/Screenshot_20230902_154452.webp)

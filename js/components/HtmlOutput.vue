@@ -1,15 +1,19 @@
 <template>
   <div class="html-output" :style="style">
     <div class="title-bar">
-      {{ props.title || 'index.html' }}
+      {{ props.title || iframeTitle || 'index.html' }}
     </div>
     <iframe v-if="props.html" :srcdoc="props.html" style="width: 100%; height: 100%; border: none;"></iframe>
-    <iframe v-else-if="props.src" :src="props.src" style="width: 100%; height: 100%; border: none;"></iframe>
+    <iframe ref="iframe" v-else-if="props.src" :src="props.src" style="width: 100%; height: 100%; border: none;"
+      @load="frameLoaded"></iframe>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
+
+let iframe = ref<HTMLIFrameElement | null>(null)
+let iframeTitle = ref('')
 
 const props = defineProps<{
   html?: string
@@ -21,6 +25,14 @@ const props = defineProps<{
 const style = computed(() => ({
   height: props.height ? `${props.height}px` : '320px'
 }))
+
+const frameLoaded = () => {
+  try {
+    iframeTitle.value = iframe.value?.contentDocument?.title ?? ''
+  } catch (error) {
+    console.error(error)
+  }
+}
 </script>
 
 <style scoped>

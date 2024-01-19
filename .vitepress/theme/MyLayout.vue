@@ -45,9 +45,9 @@ const feedback = computed(() => {
 
 <style scoped>
 .draft-alert {
-  background-color: #fffbe6;
-  border: 1px solid #ffe58f;
-  color: #54492f;
+  background-color: var(--vp-custom-block-warning-bg);
+  border: 1px solid var(--vp-custom-block-warning-border);
+  color: var(--vp-custom-block-warning-text);
   border-radius: 4px;
   font-size: 14px;
   margin-bottom: 16px;
