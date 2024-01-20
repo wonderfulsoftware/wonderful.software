@@ -34,7 +34,7 @@ const strCmp = (a, b) => {
 
 <style scoped>
   .n-input-text {
-    border: 1px solid var(--vp-c-divider);
+    border: 1px solid var(--vp-c-border);
     padding: 0 0.25em;
     border-radius: 4px;
     font: inherit;
@@ -44,13 +44,13 @@ const strCmp = (a, b) => {
 
 # รู้จักกับ Boolean
 
-- ในตอนนี้เราจะมาทำความรู้จักกับ Data type ชนิดต่อไป ที่มีชื่อว่า “Boolean” ครับ
+ในตอนนี้เราจะมาทำความรู้จักกับ data type ชนิดต่อไป ที่มีชื่อว่า “Boolean” ครับ
 
-  ![](https://im.dt.in.th/ipfs/bafybeihoinyo3odbmie2msxjzkgkbwz7sb7kswie27vhqfepvqqc6ibjl4/image.webp)
+![](https://im.dt.in.th/ipfs/bafybeihoinyo3odbmie2msxjzkgkbwz7sb7kswie27vhqfepvqqc6ibjl4/image.webp)
 
 ## Boolean คืออะไร
 
-- Boolean คือ Data type ที่มีค่าเพียง 2 ค่า คือ `true` และ `false` เท่านั้น
+- Boolean คือ data type ที่มีค่าเพียง 2 ค่า คือ `true` และ `false` เท่านั้น
   โดยที่ “true” แปลว่า “จริง” ส่วน “false” แปลว่า “เท็จ”
 
   <JsConsole input="true" :output="{value: true}" />
@@ -66,6 +66,10 @@ const strCmp = (a, b) => {
   | string     | <input v-model="values.str" size="16" maxlength="20" class="n-input-text"> | <code>{{JSON.stringify(values.str)}}</code> |
   | number     | <input v-model="values.num" type="range" min="0" max="100">                | <code>{{values.num}}</code>                 |
   | boolean    | <input v-model="values.bool" type="checkbox">                              | <BooleanValue :value="values.bool" />       |
+
+  :::tip ลองเล่นดู
+  ลองเล่นกับอินพุตข้างบนดู แล้วสังเกตค่าที่เปลี่ยนแปลง
+  :::
 
 ## ตัวดำเนินการเปรียบเทียบ (Comparison operators)
 
@@ -101,20 +105,26 @@ const strCmp = (a, b) => {
 
 - ถ้าทั้งสองฝั่งเป็น string ก็จะเปรียบเทียบตามลำดับของตัวอักษร
 
-  <JsConsole input='"apple" < "banana"' :output="{value: true}" />
+  <figure class="figure">
+    <JsConsole input='"apple" < "banana"' :output="{value: true}" />
+    <figcaption>ตัว a (ในคำว่า apple) มาก่อนตัว b (ในคำว่า banana) จึงได้คำตอบเป็น true</figcaption>
+  </figure>
 
-  โดยในคอมพิวเตอร์ ตัวอักษรแต่ละตัว มีเลขประจำตัวอยู่
+  โดยในคอมพิวเตอร์ ตัวอักษรแต่ละตัว มีเลขประจำตัวของมันอยู่
 
-  | ตัวอักษร | เลข Unicode |
-  | -------- | ----------: |
-  | 1        |          49 |
-  | A        |          65 |
-  | a        |          97 |
-  | ก        |        3585 |
+  | ตัวอักษร | หมายเลขประจำตัวอักษร<br>(charCode) |
+  | -------- | ---------------------------------: |
+  | 1        |                                 49 |
+  | A        |                                 65 |
+  | a        |                                 97 |
+  | ก        |                               3585 |
 
-  แปลว่าตัวอักษรพิมพ์ใหญ่ จะถือว่า “น้อยกว่า” ตัวอักษรพิมพ์เล็ก
+  แปลว่าตัวอักษรพิมพ์ใหญ่ จะถือว่า “มีค่าน้อยกว่า” ตัวอักษรพิมพ์เล็ก
 
-  <JsConsole input='"apple" < "Banana"' :output="{value: false}" />
+  <figure class="figure">
+    <JsConsole input='"apple" < "Banana"' :output="{value: false}" />
+    <figcaption>ตัว a มีหมายเลข 97 ส่วนตัว B เป็นหมายเลข 66<br>เนื่องจาก 97 ไม่ได้น้อยกว่า 66 จึงได้คำตอบเป็น false</figcaption>
+  </figure>
 
   กรณีที่ตัวอักษรตัวแรกเหมือนกัน จะเปรียบเทียบตัวอักษรตัวที่สอง
   และถ้ายังเหมือนกันอีก ก็เปรียบเทียบตัวอักษรตัวที่สาม และต่อๆ ไป
@@ -172,11 +182,21 @@ const strCmp = (a, b) => {
 ## หน้าที่ของ Boolean
 
 - เราใช้ข้อมูลชนิด Boolean เพื่อให้คอมพิวเตอร์เลือกว่าจะทำอะไรต่อไป
+
+  ![](https://im.dt.in.th/ipfs/bafybeiao6fktd2qhjuoki7p6hffmtpzax7qbxqql7q7is3to5ypdibxjbu/image.webp)
+
   ตัวอย่างเช่น
   ถ้าเราเขียนโปรแกรมเกี่ยวกับร้านค้าออนไลน์
   แล้วต้องการกำหนดโปรโมชั่น เช่น ซื้อ 200 บาท ได้ลด 20 บาท
-  ก็อาจจะเขียน logic แบบนี้
+  ก็อาจจะเขียนเป็นเงื่อนไขแบบนี้
 
-  - ยอดเงินที่ซื้อ ≥ 200 บาท?
-    - true &rarr; ลดราคา 20 บาท
-    - false &rarr; ไม่ลดราคา
+  <div class="rounded-with-shadow" style="padding: 1px 20px">
+
+  ยอดเงินที่ซื้อ ≥ 200 บาท?
+
+  - true &rarr; ลดราคา 20 บาท
+  - false &rarr; ไม่ลดราคา
+
+  </div>
+
+  ![](https://im.dt.in.th/ipfs/bafybeibz7i7f43kf542vw7xovnehkvpdzf2to2ioerpm3qie4asxiw5e3m/image.webp)

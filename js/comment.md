@@ -30,17 +30,35 @@ draft: true
 
 - เราสามารถใช้คอมเม้นต์เพื่ออธิบายโค้ดที่อาจจะไม่ตรงไปตรงมาได้
 
-  ```js{7}
+  ```js{8}
   let a = document.getElementById('a')
   let b = document.getElementById('b')
   let c = document.getElementById('c')
   let btn = document.getElementById('btn')
 
-  btn.onclick = () => {
-    //        ใช้ `* 1` เพื่อแปลงค่าจาก string เป็น number
-    c.value = (a.value * 1) + (b.value * 1)
+  calculate.onclick = () => {
+    //           ใช้ `* 1` เพื่อแปลงค่าจาก string เป็น number
+    let answer = (a.value * 1) + (b.value * 1)
+    c.value = answer
   }
   ```
+
+  เวลาคอมพิวเตอร์รันโค้ดที่เราเขียน
+  มันก็จะอ่านข้ามคอมเม้นต์ครับ
+
+- หรือบางทีเราต้องการให้โค้ดบางบรรทัดไม่ทำงาน แต่ยังอยากเก็บโค้ดนั้นไว้ชั่วคราว
+  ก็สามารถใส่ `//` ไว้ข้างหน้าบรรทัด
+  เพื่อให้คอมพิวเตอร์ทำงานข้ามบรรทัดนั้นไปได้ครับ
+
+  ```js{3}
+  calculate.onclick = () => {
+    let answer = (a.value * 1) + (b.value * 1)
+    // console.log(answer)
+    c.value = answer
+  }
+  ```
+
+  ในตัวอย่างนี้ โค้ด `console.log(answer)` จะไม่ทำงาน เพราะกลายเป็นคอมเม้นต์ไปแล้ว
 
 ## คอมเม้นต์หลายบรรทัด (multi-line comment)
 

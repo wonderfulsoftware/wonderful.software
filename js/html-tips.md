@@ -109,7 +109,7 @@
   ค่อยๆ แก้
   จนเราพอใจกับผลลัพธ์ — ถ้าอยากรู้ว่าตรงไหนเขาทำยังไง ก็คลิกขวาแล้ว Inspect ดูครับ
 
-  <video class="rounded-with-shadow" src="https://im.dt.in.th/ipfs/bafybeihvccyiwtmmyvpj6r5tlwdrnlwadvm6la5ree2xa3zj3svhhlisaq/css-skooldio-tutorials.mp4" muted loop controls></video>
+  <video class="rounded-with-shadow" src="https://im.dt.in.th/ipfs/bafybeidpyysl7mqwbv532jvf2f32vqjpfsnquj4z65czbfiet7hfve73my/css-skooldio-tutorials-1440p.mp4" muted loop controls></video>
 
   :::tip การสร้างหน้าเว็บตามแบบ ต้องใช้เวลาและความใจเย็น
   ในคลิปนี้ผมเร่งความเร็วแบบสุดๆ เลย — แต่เวลาทำจริง อาจจะต้องใจเย็นกับมันหน่อยนะครับ

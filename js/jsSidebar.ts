@@ -112,22 +112,22 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         ],
       },
       {
-        text: '3. เงื่อนไข',
+        text: '3. การเขียนเงื่อนไข',
         items: [
           {
-            text: '⠶ คอมเม้นต์ในภาษา JavaScript',
+            text: 'คอมเม้นต์ในภาษา JavaScript',
             link: '/js/comment.html',
           },
           {
-            text: '⠶ การแปลงชนิดข้อมูล',
+            text: 'การแปลงชนิดข้อมูล',
             link: '/js/explicit-type-conversion.html',
           },
           {
-            text: '⠶ รู้จักกับ Boolean',
+            text: 'รู้จักกับ Boolean',
             link: '/js/boolean-intro.html',
           },
           {
-            text: '⠶ การซ่อน/แสดง element',
+            text: 'การซ่อน/แสดง element',
             link: '/js/dom-hidden.html',
           },
           {

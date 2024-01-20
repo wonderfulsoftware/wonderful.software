@@ -10,6 +10,7 @@ const props = defineProps<{
 }>()
 
 const STRING_COLOR = '#6FD1C7'
+const NUMBER_COLOR = '#9980FF'
 const UNDEFINED_COLOR = '#81868B'
 const ELEMENT_COLOR = '#7cacf8'
 const ATTRIBUTE_NAME_COLOR = '#a8c7fa'
@@ -34,7 +35,7 @@ const segments = computed(() => {
   if (value && typeof value === 'object' && value.$tagName) {
     return generateElementSegments(value)
   }
-  return [{ text: JSON.stringify(value), style: { color: STRING_COLOR } }]
+  return [{ text: JSON.stringify(value), style: { color: typeof value === 'number' || typeof value === 'boolean' ? NUMBER_COLOR : STRING_COLOR } }]
 })
 
 const generateElementSegments = (element: ElementDescription) => {
