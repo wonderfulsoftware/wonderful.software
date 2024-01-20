@@ -171,7 +171,7 @@ figure.figure figcaption {
 .vp-doc :not(pre) > code {
   line-height: 1.25;
   color: inherit;
-  border: 1px solid var(--vp-c-border);
+  box-shadow: inset 0 0 0 1px var(--vp-c-border);
 }
 
 .vp-doc .custom-block a {

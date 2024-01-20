@@ -98,6 +98,10 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/input.html',
           },
           {
+            text: 'รู้จักกับมินิโปรเจค',
+            link: '/js/mini-projects.html',
+          },
+          {
             text: 'มินิโปรเจค: โปรแกรมบวกเลข',
             link: '/js/adder.html',
           },
