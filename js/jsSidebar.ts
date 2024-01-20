@@ -139,19 +139,19 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/simple-quiz.html',
           },
           {
-            text: '⠶ มินิโปรเจค: โปรแกรมสุ่มเลข',
+            text: 'มินิโปรเจค: โปรแกรมสุ่มเลข',
             link: '/js/randomizer.html',
           },
           {
-            text: '⠤ การเรียกใช้งานฟังก์ชัน',
+            text: 'การเรียกใช้งานฟังก์ชัน',
             link: '/js/call.html',
           },
           {
-            text: '⠶ มินิโปรเจค: หัวหรือก้อย',
+            text: 'มินิโปรเจค: หัวหรือก้อย',
             link: '/js/coin-flipper.html',
           },
           {
-            text: '⠤ if และ else',
+            text: 'if และ else',
             link: '/js/if-else.html',
           },
           {

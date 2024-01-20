@@ -12,6 +12,6 @@ const props = defineProps<{
 // const STRING_COLOR = '#E3905E'
 
 const segments = computed(() => {
-  return [{ text: props.code, style: { color: '#fff', fontWeight: 'bold' } }]
+  return [{ text: props.code, style: { color: '#ffff88', fontWeight: 'bold' } }]
 })
 </script>

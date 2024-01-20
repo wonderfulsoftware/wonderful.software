@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        padding: 2em;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+      }
+      code {
+        font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+      }
+      td {
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    Your score:
+    <input id="scoreInput" value="100" type="number" max="100" min="0">
+    <input id="calculateGrade" value="Calculate grade" type="button">
+
+    <script>
+      let scoreInput = document.getElementById('scoreInput')
+      let calculateGrade = document.getElementById('calculateGrade')
+
+      calculateGrade.onclick = () => {
+        let score = Number(scoreInput.value)
+        let grade
+        if (score >= 80) {
+          grade = 'A'
+        } else {
+          if (score >= 70) {
+            grade = 'B'
+          } else {
+            if (score >= 60) {
+              grade = 'C'
+            } else {
+              if (score >= 50) {
+                grade = 'D'
+              } else {
+                grade = 'F'
+              }
+            }
+          }
+        }
+        alert('Your grade is ' + grade)
+      }
+    </script>
+
+  </body>
+</html>

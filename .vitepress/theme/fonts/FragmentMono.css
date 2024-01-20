@@ -24,6 +24,14 @@
 
 @font-face {
     font-family: 'Fragment Mono';
+    src: url('./FragmentMono-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fragment Mono';
     src: url('./FragmentMono-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;

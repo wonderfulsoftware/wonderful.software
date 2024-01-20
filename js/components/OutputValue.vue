@@ -11,10 +11,12 @@ const props = defineProps<{
 
 const STRING_COLOR = '#6FD1C7'
 const NUMBER_COLOR = '#9980FF'
+const FUNCTION_COLOR = '#fe8d59'
 const UNDEFINED_COLOR = '#81868B'
 const ELEMENT_COLOR = '#7cacf8'
 const ATTRIBUTE_NAME_COLOR = '#a8c7fa'
 const ATTRIBUTE_VALUE_COLOR = '#fe8d59'
+
 type Segment = {
   text: string
   style: Record<string, string>
@@ -22,6 +24,9 @@ type Segment = {
 type ElementDescription = {
   $tagName: string
   attributes?: Record<string, string>
+}
+type FunctionDescription = {
+  $fn: string
 }
 
 const segments = computed(() => {
@@ -32,8 +37,13 @@ const segments = computed(() => {
   if (value === null) {
     return [{ text: 'null', style: { color: UNDEFINED_COLOR } }]
   }
-  if (value && typeof value === 'object' && value.$tagName) {
-    return generateElementSegments(value)
+  if (value && typeof value === 'object') {
+    if (value.$tagName) {
+      return generateElementSegments(value)
+    }
+    if (value.$fn) {
+      return generateFunctionSegments(value)
+    }
   }
   return [{ text: JSON.stringify(value), style: { color: typeof value === 'number' || typeof value === 'boolean' ? NUMBER_COLOR : STRING_COLOR } }]
 })
@@ -51,6 +61,13 @@ const generateElementSegments = (element: ElementDescription) => {
     }
   }
   segments.push({ text: '>', style: { color: ELEMENT_COLOR } })
+  return segments
+}
+
+const generateFunctionSegments = (fn: FunctionDescription) => {
+  const segments: Segment[] = []
+  segments.push({ text: 'ƒ ', style: { color: FUNCTION_COLOR, 'font-style': 'italic' } })
+  segments.push({ text: fn.$fn, style: { 'font-style': 'italic' } })
   return segments
 }
 </script>
