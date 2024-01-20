@@ -265,7 +265,12 @@ draft: true
 
 - ก่อนจะไปที่หัวข้อถัดไป ต้องขอบอกไว้ก่อนว่า
   ตัวอย่างต่างๆ ที่โชว์ให้ดู คืออยากให้เห็นว่าถ้าเขียนโปรแกรมเป็นจนชำนาญมากๆ จะสามารถช่วยให้ประหยัดเวลาในชีวิตประจำวันได้ขนาดไหน
-  ในตัวอย่างมีการใช้งานโค้ดที่เป็นศาสตร์ขั้นสูงหลายๆ เรื่อง[^advanced]
+  ในตัวอย่างมีการใช้งานโค้ดที่เป็นศาสตร์ขั้นสูงหลายๆ เรื่อง
+
+  :::info ศาสตร์ขั้นสูงต่างๆ ที่ใช้ในตัวอย่าง
+  ตัวอย่างข้างต้น ใช้ความรู้เกี่ยวกับ [Iterators and iterables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators), [Higher-order functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function), [DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) และ [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll)
+  :::
+
   ถ้าเปรียบกับการเล่นดนตรีก็คงคล้ายๆ กับเพลงที่ต้องชำนาญระดับนึงถึงจะเล่นได้ครับ
 
   ![](https://im.dt.in.th/ipfs/bafybeihq22tmexbev7tghpqwqxvxs56cytucig2fey6zpeeoqi4evqvbae/image.webp)
@@ -279,5 +284,3 @@ draft: true
   (ซึ่งเดี๋ยวจะลงรายละเอียดเพิ่มเติมกันในหัวข้อ “คอร์สนี้จะได้เรียนรู้อะไรบ้าง”)
 
 - พอจะเห็นตัวอย่างกันไปแล้ว เดี๋ยวเรามาให้คำจำกัดความกันดีกว่า ว่าตกลงแล้วการเขียนโปรแกรมมันคืออะไร
-
-[^advanced]: ตัวอย่างเช่น Iterators and iterables, Higher-order functions, DOM APIs, CSS selectors และ Regular expressions

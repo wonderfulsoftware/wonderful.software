@@ -15,11 +15,11 @@
       <input id="choiceD" type="button" value="(D) 1996">
     </div>
     
-    <p id="correctFeedback" hidden>
+    <p id="correctFeedback">
       <b>ถูกต้อง!</b> 🎉
     </p>
 
-    <div id="incorrectFeedback" hidden>
+    <div id="incorrectFeedback">
       <p>
         <b>ยังไม่ถูก</b>
       </p>
@@ -36,28 +36,7 @@
       let choiceB = document.getElementById('choiceB')
       let choiceC = document.getElementById('choiceC')
       let choiceD = document.getElementById('choiceD')
-
-      choiceA.onclick = () => {
-        beforeAnswer.hidden = true
-        incorrectFeedback.hidden = false
-      }
-      choiceB.onclick = () => {
-        beforeAnswer.hidden = true
-        incorrectFeedback.hidden = false
-      }
-      choiceC.onclick = () => {
-        beforeAnswer.hidden = true
-        correctFeedback.hidden = false
-      }
-      choiceD.onclick = () => {
-        beforeAnswer.hidden = true
-        incorrectFeedback.hidden = false
-      }
-      tryAgain.onclick = () => {
-        incorrectFeedback.hidden = true
-        beforeAnswer.hidden = false
-      }
     </script>
-    
+
   </body>
 </html>

@@ -194,3 +194,9 @@ figure.figure figcaption {
   /* disable ligatures as they may be unfriendly to beginners */
   font-variant-ligatures: none;
 }
+
+.vp-doc .ws-inverse-highlight [class*='language-'] code .highlighted {
+  background-color: transparent;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}

@@ -135,7 +135,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/dom-hidden.html',
           },
           {
-            text: '⠶ มินิโปรเจค: ควิซอย่างง่าย',
+            text: 'มินิโปรเจค: ควิซอย่างง่าย',
             link: '/js/simple-quiz.html',
           },
           {
