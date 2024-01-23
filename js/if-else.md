@@ -188,7 +188,7 @@ if (เงื่อนไข) {
 
 - ส่วนค่าอื่นๆ จะถูกแปลงเป็น `true`
 
-<div class="rounded-with-shadow" style="padding: 1px 20px">
+<div class="ws-rounded-with-shadow" style="padding: 1px 20px">
 
 ![](https://im.dt.in.th/ipfs/bafybeiekcarsh7tr5eq32o4nxavd4otrzygcnjayq7dzvwp6rbout7m2y4/image.webp)
 

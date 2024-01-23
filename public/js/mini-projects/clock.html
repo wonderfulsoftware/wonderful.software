@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Clock</title>
+
+    <!-- Font from Google Fonts - https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS to style the clock -->
+    <style>
+      html {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: Space Mono;
+      }
+      body {
+        background: #001122;
+        color: #ffffff;
+        margin: 0;
+        text-align: center;
+      }
+      #time {
+        font-size: 16vw;
+        text-shadow: 0 0 0.25em #003366,
+                     0 0 0.125em #0066cc,
+                     0 0 0.0625em #0077ee;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="time">
+      --:--:--
+    </div>
+
+    <script>
+      
+      let time = document.getElementById('time')
+
+      let addLeadingZero = (number) => {
+        let s = String(number)
+        if (s.length === 1) {
+          s = '0' + s
+        }
+        return s
+      }
+      let updateClock = () => {
+        let date = new Date()
+        let hours = addLeadingZero(date.getHours())
+        let minutes = addLeadingZero(date.getMinutes())
+        let seconds = addLeadingZero(date.getSeconds())
+        time.innerText = `${hours}:${minutes}:${seconds}`
+        time.innerText = `12:34:56`
+      }
+      setInterval(updateClock, 500)
+      updateClock()
+
+    </script>
+
+  </body>
+</html>

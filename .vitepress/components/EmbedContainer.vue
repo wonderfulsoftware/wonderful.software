@@ -1,5 +1,5 @@
 <template>
-  <div class="dtinth-embed-container rounded-with-shadow" :style="style">
+  <div class="dtinth-embed-container ws-rounded-with-shadow" :style="style">
     <slot />
   </div>
 </template>

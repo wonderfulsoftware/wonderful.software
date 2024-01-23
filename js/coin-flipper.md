@@ -56,7 +56,7 @@ draft: true
 
 - เราสามารถเขียนเงื่อนไขได้แบบนี้
 
-  <div class="rounded-with-shadow" style="padding: 1px 20px">
+  <div class="ws-rounded-with-shadow" style="padding: 1px 20px">
 
   `Math.random() < 0.5`?
 

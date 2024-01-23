@@ -190,7 +190,7 @@ const strCmp = (a, b) => {
   แล้วต้องการกำหนดโปรโมชั่น เช่น ซื้อ 200 บาท ได้ลด 20 บาท
   ก็อาจจะเขียนเป็นเงื่อนไขแบบนี้
 
-  <div class="rounded-with-shadow" style="padding: 1px 20px">
+  <div class="ws-rounded-with-shadow" style="padding: 1px 20px">
 
   ยอดเงินที่ซื้อ ≥ 200 บาท?
 

@@ -20,7 +20,7 @@ draft: true
   <input id="a" value="42" size="8" />
   ```
 
-  <div class="rounded-with-shadow" style="padding: 20px;">
+  <div class="ws-rounded-with-shadow" style="padding: 20px;">
     <input class="n-input-text" id="a" v-model="a" size="8" />
   </div>
 
@@ -67,7 +67,7 @@ draft: true
 
 - ในภาษา JavaScript เราสามารถแปลงค่าต่างๆ เป็นตัวเลข โดยครอบด้วย `Number()`
 
-  <div class="rounded-with-shadow" style="padding: 20px;">
+  <div class="ws-rounded-with-shadow" style="padding: 20px;">
     <input class="n-input-text" id="a" v-model="a" size="8" />
   </div>
 
