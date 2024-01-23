@@ -1,23 +1,10 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import { ulid } from 'ulid'
 
 const feedbackEmojis = ['😀', '😮', '😐', '😞', '😍', '🤔', '😴', '🤩'];
-let reactionStatus = ref('waiting');
-let messageStatus = ref('waiting');
-
-let message = ref('');
-let name = ref('');
-
-onMounted(() => {
-  // Restore the name from localStorage
-  name.value = localStorage.getItem('wondersoftUserName') ?? '';
-})
-
-// reactionStatus.value = 'sent' // for debugging
-// messageStatus.value = 'sending' // for debugging
-
-const url = 'https://wonderful-software-feedback-collector-production.up.railway.app/feedback'
+let sent = ref(false);
+let moreLink = ref('');
 
 function getUserId() {
   let userId = localStorage.getItem('wondersoftUserId')
@@ -28,65 +15,22 @@ function getUserId() {
   return userId
 }
 
-async function sendReaction(emoji) {
+function sendReaction(emoji) {
   try {
-    reactionStatus.value = 'sending'
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        type: 'reaction',
-        reaction: emoji,
-        userId: getUserId(),
-        entity: window.location.pathname
-      })
-    })
-    if (response.ok) {
-      reactionStatus.value = 'sent'
-    } else {
-      reactionStatus.value = 'error'
-    }
+    const url = `https://docs.google.com/forms/d/e/1FAIpQLSfGoffFITUQ1qncl8n5C4lBK8FBpO4_at2Rwn7Mf-GPpBy9WQ/viewform?${new URLSearchParams({
+      usp: 'pp_url',
+      'entry.818157458': location.href,
+      'entry.799811132': emoji
+    })}`
+    moreLink.value = url
+    navigator.sendBeacon('https://wonderfeedback.lovely.workers.dev/feedback', new URLSearchParams({
+      reaction: emoji,
+      path: location.pathname,
+      uid: getUserId()
+    }))
+    sent.value = true
   } catch (error) {
     console.error(error)
-    reactionStatus.value = 'error'
-  }
-}
-
-async function sendMessage() {
-  // Store the name in localStorage
-  localStorage.setItem('wondersoftUserName', name.value)
-
-  // Don't send empty messages
-  if (!message.value.trim()) {
-    messageStatus.value = 'sent'
-    return
-  }
-
-  try {
-    messageStatus.value = 'sending'
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        type: 'feedback',
-        feedback: message.value,
-        name: name.value,
-        userId: getUserId(),
-        entity: window.location.pathname
-      })
-    })
-    if (response.ok) {
-      messageStatus.value = 'sent'
-    } else {
-      messageStatus.value = 'error'
-    }
-  } catch (error) {
-    console.error(error)
-    messageStatus.value = 'error'
   }
 }
 
@@ -94,48 +38,25 @@ async function sendMessage() {
 
 <template>
   <div class="feedback-form">
-    <p>How was your experience on this page?</p>
+    <p v-if="!sent">
+      คลิกที่ไอคอนข้างล่างเพื่อส่งฟีดแบ็ค
+    </p>
+    <p v-else>
+      <strong>ขอบคุณสำหรับฟีดแบ็ค! 🙏</strong>
+    </p>
     <div class="feedback-emojis">
-      <template v-if="reactionStatus === 'waiting'">
+      <template v-if="!sent">
         <button v-for="emoji in feedbackEmojis" :key="emoji" :class="{ 'selected': selectedEmoji === emoji }"
           @click="sendReaction(emoji)">
           {{ emoji }}
         </button>
       </template>
-      <template v-else-if="reactionStatus === 'sending'">
-        <p><strong>Sending feedback…</strong></p>
-      </template>
-      <template v-else-if="reactionStatus === 'sent'">
-        <p><strong>Thank you for your feedback!</strong></p>
-      </template>
       <template v-else>
-        <p><strong>Oops, something went wrong. Please try again later.</strong></p>
+        <p>
+          <a :href="moreLink" target="_blank">&gt;&gt; คลิกที่นี่เพื่อส่งความคิดเห็นเพิ่มเติม &lt;&lt;</a>
+        </p>
       </template>
     </div>
-    <template v-if="reactionStatus === 'sent'">
-      <template v-if="messageStatus === 'waiting' || messageStatus === 'sending'">
-        Is there anything else you'd like to tell me? (Optional)
-        <div class="message-form">
-          <textarea
-            placeholder="Type your message here, e.g. what you liked or disliked about this page, or anything that confused you.?"
-            :disabled="messageStatus === 'sending'" v-model="message"></textarea>
-          <div style="display: flex; gap: 8px; margin-top: 8px">
-            <input type="text" placeholder="Your name (optional)" v-model="name" :disabled="messageStatus === 'sending'">
-            <button @click="sendMessage()" :disabled="messageStatus === 'sending'">
-              {{ messageStatus === 'sending' ? 'Sending…' : 'Send feedback' }}
-            </button>
-          </div>
-        </div>
-      </template>
-      <template v-else-if="messageStatus === 'sent'">
-        <p>{{ message.trim() !== ''
-          ? '…and thank you for the extra message!'
-          : 'Feel free to send me a message next time!' }}</p>
-      </template>
-      <template v-else>
-        <p><strong>Oops, something went wrong. Please try again later.</strong></p>
-      </template>
-    </template>
   </div>
 </template>
 
@@ -172,43 +93,5 @@ async function sendMessage() {
     font-size: 28px;
     padding: 8px 6px;
   }
-}
-
-.message-form {
-  margin-top: 16px;
-}
-
-.message-form input[type="text"],
-.message-form textarea {
-  display: block;
-  flex: 1;
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background: white;
-  font-family: inherit;
-}
-
-.message-form input[type="text"]:disabled,
-.message-form textarea:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.message-form button {
-  flex: none;
-  background-color: var(--vp-c-brand);
-  font-weight: bold;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-.message-form button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 </style>
