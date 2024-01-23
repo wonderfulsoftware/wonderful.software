@@ -193,6 +193,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
       },
       {
         text: 'บทเสริม',
+        link: '/js/extras/',
         items: [
           {
             text: '🚧 การพิมพ์ดีด',
