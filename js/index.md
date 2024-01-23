@@ -3,6 +3,7 @@ draft: true
 feedback: false
 sidebar: false
 aside: false
+comments: false
 ---
 
 <script setup>

@@ -13,6 +13,7 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
+    "@giscus/vue": "^2.4.0",
     "jsonwebtoken": "^8.5.1",
     "littlefoot": "^3.4.1",
     "markdown-it-footnote": "^3.0.1",
