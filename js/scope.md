@@ -1,5 +1,6 @@
 ---
 draft: true
+outline: [2, 3]
 ---
 
 <script setup>

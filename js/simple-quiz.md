@@ -138,8 +138,8 @@ draft: true
   ให้ซ่อน `beforeAnswer` และแสดง `incorrectFeedback`
 
   <!-- prettier-ignore -->
-  ```js{1-4,9-16}
-  choiceA.onclick = () => {
+  ```js
+  choiceA.onclick = () => { // [!code focus:4]
     beforeAnswer.hidden = true
     incorrectFeedback.hidden = false
   }
@@ -147,11 +147,11 @@ draft: true
     beforeAnswer.hidden = true
     incorrectFeedback.hidden = false
   }
-  choiceC.onclick = () => {
+  choiceC.onclick = () => { // [!code focus:4]
     beforeAnswer.hidden = true
     correctFeedback.hidden = false
   }
-  choiceD.onclick = () => {
+  choiceD.onclick = () => { // [!code focus:4]
     beforeAnswer.hidden = true
     incorrectFeedback.hidden = false
   }
