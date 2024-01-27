@@ -17,6 +17,14 @@ export default defineConfig({
         async: '',
       },
     ],
+    [
+      'script',
+      {
+        defer: '',
+        src: 'https://static.cloudflareinsights.com/beacon.min.js',
+        'data-cf-beacon': '{"token": "4f95ad66bda34896b8c3147ecc0510ca"}',
+      },
+    ],
   ],
   appearance: false,
   srcExclude: ['README.md'],
@@ -164,7 +172,7 @@ export default defineConfig({
     search: {
       provider: 'local',
       options: {
-        exclude: (path) => path.startsWith('/js/'),
+        // exclude: (path) => path.startsWith('/js/'),
       },
     },
   },
