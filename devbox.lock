@@ -14,10 +14,24 @@
       "version": "18.16.1"
     },
     "process-compose@latest": {
-      "last_modified": "2023-06-30T04:44:22Z",
-      "resolved": "github:NixOS/nixpkgs/3c614fbc76fc152f3e1bc4b2263da6d90adf80fb#process-compose",
+      "last_modified": "2024-01-22T00:24:37Z",
+      "resolved": "github:NixOS/nixpkgs/5f5210aa20e343b7e35f40c033000db0ef80d7b9#process-compose",
       "source": "devbox-search",
-      "version": "0.51.4"
+      "version": "0.80.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/g90iw5ipdmp8d8hfrbcklq73gpafjqy2-process-compose-0.80.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/v4lhswyfv53ygssb2zb9pxwwglkh8wmi-process-compose-0.80.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/h3kh6x8h064m93g0ns9z6winyhwidxqn-process-compose-0.80.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/d8zkvcmlssmlvhgwj68z2wdjc3jyg1d6-process-compose-0.80.0"
+        }
+      }
     }
   }
 }
