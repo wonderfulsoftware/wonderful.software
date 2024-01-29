@@ -155,7 +155,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/if-else.html',
           },
           {
-            text: '🚧 ตัวดำเนินการทางตรรกศาสตร์',
+            text: 'ตัวดำเนินการทางตรรกศาสตร์',
             link: '/js/logical-operators.html',
           },
         ],

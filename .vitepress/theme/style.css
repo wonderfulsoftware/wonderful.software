@@ -11,13 +11,13 @@
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-brand: #da3567;
-  --vp-c-brand-light: #e64d75;
-  --vp-c-brand-lighter: #f67591;
-  --vp-c-brand-lightest: #f9b5c0;
+  --vp-c-brand-1: #da3567;
+  --vp-c-brand-2: #e64d75;
+  --vp-c-brand-3: #f67591;
   --vp-c-brand-dark: #cd285d;
   --vp-c-brand-darker: #b7004d;
-  --vp-c-brand-dimm: rgba(218, 53, 103, 0.08);
+  /* --vp-c-brand-soft: #f9b5c0; */
+  --vp-c-brand-soft: rgba(218, 53, 103, 0.08);
   --vp-c-bg-alt: #f5f4f3;
   --vp-font-family-mono: Fragment Mono, ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
     Consolas, 'Liberation Mono', 'Courier New', CS ChatThai, monospace;
@@ -25,6 +25,8 @@
   --vp-code-line-highlight-color: rgba(255, 248, 197, 0.6);
   --vp-code-block-divider-color: rgba(0, 0, 0, 0.1);
   --vp-code-line-number-color: rgb(101, 109, 118);
+
+  --vp-custom-block-tip-border: var(--vp-c-brand-soft);
 
   --vp-custom-block-info-text: inherit;
 
@@ -99,15 +101,6 @@ html:root {
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
-}
-
-.dark {
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
 }
 
 /**
@@ -174,7 +167,7 @@ figure.figure figcaption {
   box-shadow: inset 0 0 0 1px var(--vp-c-border);
 }
 
-.vp-doc .custom-block a {
+/* .vp-doc .custom-block a {
   font-weight: inherit;
   text-decoration: underline;
   text-decoration-color: color-mix(in srgb, currentColor 32%, white);
@@ -182,7 +175,7 @@ figure.figure figcaption {
 
 .vp-doc .custom-block a:hover {
   -webkit-text-stroke: 0.016em currentColor;
-}
+} */
 
 .vp-doc div[class*='language-'],
 .ws-rounded-with-shadow {
@@ -199,4 +192,8 @@ figure.figure figcaption {
   background-color: transparent;
   filter: grayscale(100%);
   opacity: 0.5;
+}
+
+.vp-doc [class*='language-'] code .diff.remove {
+  opacity: 0.36;
 }

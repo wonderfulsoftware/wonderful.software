@@ -1,6 +1,7 @@
 import { HeadConfig, defineConfig } from 'vitepress'
-import twemoji from 'twemoji'
 import { jsSidebar } from '../js/jsSidebar'
+import { createRequire } from 'node:module'
+const require = createRequire(import.meta.url)
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -179,6 +180,7 @@ export default defineConfig({
 
   markdown: {
     theme: 'github-light',
+    math: true,
     config: (md) => {
       md.use(require('markdown-it-footnote'))
       md.renderer.rules.softbreak = () =>

@@ -5,7 +5,7 @@
     "fkill-cli": "^7.1.0",
     "remark-cli": "^7.0.1",
     "remark-lint-thai": "github:dtinth/remark-lint-thai",
-    "vitepress": "1.0.0-beta.7"
+    "vitepress": "1.0.0-rc.40"
   },
   "scripts": {
     "dev": "vitepress dev --port=${PORT:-7747}",
@@ -17,6 +17,7 @@
     "jsonwebtoken": "^8.5.1",
     "littlefoot": "^3.4.1",
     "markdown-it-footnote": "^3.0.3",
+    "markdown-it-mathjax3": "^4.3.2",
     "rss": "^1.2.2",
     "twemoji": "^14.0.2",
     "ulid": "^2.3.0",
@@ -25,5 +26,6 @@
   "engines": {
     "node": "18.x"
   },
-  "packageManager": "pnpm@8.6.7"
+  "packageManager": "pnpm@8.6.7",
+  "type": "module"
 }

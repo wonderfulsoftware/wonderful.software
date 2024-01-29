@@ -33,15 +33,15 @@ const props = defineProps<{
   font-size: 16px;
 }
 
-.preview-item-content.preview-item-content>>>p {
+.preview-item-content.preview-item-content :deep(p) {
   line-height: 28px;
 }
 
-.preview-item-content.preview-item-content>>>p:first-child {
+.preview-item-content.preview-item-content :deep(p:first-child) {
   margin-top: 0;
 }
 
-.preview-item-content.preview-item-content>>>p:last-child {
+.preview-item-content.preview-item-content :deep(p:last-child) {
   margin-bottom: 0;
 }
 </style>

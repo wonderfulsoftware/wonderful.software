@@ -15,12 +15,12 @@ code {
 }
 
 code[data-value="true"] {
-  background: var(--vp-c-green-dimm-2);
-  color: var(--vp-c-green-darker);
+  background: var(--vp-c-green-soft);
+  color: var(--vp-c-green-1);
 }
 
 code[data-value="false"] {
-  background: var(--vp-c-red-dimm-2);
-  color: var(--vp-c-red-darker);
+  background: var(--vp-c-red-soft);
+  color: var(--vp-c-red-1);
 }
 </style>
