@@ -15,7 +15,7 @@ draft: true
 
 # โต้ตอบกับผู้ใช้งานด้วย input
 
-- ในตอนนี้ เราจะมารู้จักกับ HTML element ตัวใหม่คือ `<input>` กันครับ
+- ในตอนนี้ เราจะมารู้จักกับ HTML element ตัวใหม่คือ [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) กันครับ
 
   <HtmlTagList introduced="html,head,body,h1,a,br,title,h2,h3,h4,h5,h6,strong,em,img,mark,del,ul,ol,li,hr,script,p" acquired="input" />
 
@@ -59,15 +59,15 @@ draft: true
   ```
 
 - ก่อนอื่นเราต้องทำให้โค้ด JavaScript หาตัว input เจอก่อน
-  เริ่มจากการใส่ attribute `id` ให้กับ input ก่อน
+  เริ่มจากการใส่ [attribute `id=""`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id) ให้กับ input ก่อน
 
   <!-- prettier-ignore -->
   ```html
   <input id="my-button" type="button" value="Click me">
   ```
 
-- แล้วเราก็สามารถใช้คำสั่ง `document.getElementById` ใน JavaScript
-  เพื่อหา element ที่มี `id="my-button"`
+- แล้วเราก็สามารถใช้คำสั่ง [`document.getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) ใน JavaScript
+  เพื่อให้เบราว์เซอร์ทำการค้นหา element บนหน้าเว็บ[^dom] ที่มี `id="my-button"`
 
   เดี๋ยวเราจะลองทำใน JavaScript Console ดูก่อนครับ
 
@@ -79,17 +79,24 @@ draft: true
   <CodeTemplate template="'let ' :: [placeholder] ชื่อตัวแปร :: ' = document.getElementById('' :: [placeholder] id :: '')'" />
   :::
 
-  หลังจากนั้นเราสามารถหาตัวแปร `myButton` ได้ด้วยการพิมพ์ชื่อตัวแปรนั้นใน JavaScript Console
+  หลังจากนั้นเราสามารถเช็คค่าของตัวแปร `myButton` ได้
+  โดยการพิมพ์ชื่อตัวแปรนั้นใน JavaScript Console
 
   <JsConsole input="myButton" :output="{value: {$tagName: 'input', attributes: {id: 'my-button', type: 'button', value: 'Click me'}}}" />
 
+[^dom]:
+    เวลาที่เราเปิดเว็บด้วยเว็บเบราว์เซอร์
+    ตัวเบราว์เซอร์จะประมวลผลโค้ด HTML ที่เราเขียน
+    เพื่อสร้างเป็น**โครงสร้างของหน้าเว็บ**ซึ่งเรียกกันว่า [**“DOM”**](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (ย่อมาจาก Document Object Model)
+    ซึ่งเป็นสิ่งที่ทำให้โค้ด JavaScript สามารถทำงานกับเนื้อหาบนหน้าเว็บนั้นได้ ผ่านตัวแปรที่ชื่อว่า [`document`](https://developer.mozilla.org/en-US/docs/Web/API/Window/document)
+
 ## ทำให้โค้ดทำงานเมื่อปุ่มถูกกด
 
-- เราทำให้เวลาคลิกแล้วขึ้นป๊อปอัพขึ้นมา โดยการกำหนดฟังก์ชัน `onclick` บนตัวปุ่ม (โค้ดหน้าตาแปลกๆ มาอีกแล้ว… เดี๋ยวจะอธิบายในบทต่อๆ ไปครับ)
+- เราทำให้เวลาคลิกแล้วขึ้นป๊อปอัพขึ้นมา โดยการกำหนดฟังก์ชัน [`onclick`](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) บนตัวปุ่ม (โค้ดหน้าตาแปลกๆ มาอีกแล้ว… เดี๋ยวจะอธิบายในบทต่อๆ ไปครับ)
 
   <JsConsole :input="ex3" :output="{value: undefined}" />
 
-  เมื่อคลิกที่ปุ่ม ก็จะมีหน้าต่าง alert ป๊อปอัพขึ้นมา
+  เมื่อคลิกที่ปุ่ม ก็จะมีหน้าต่าง [alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) ป๊อปอัพขึ้นมา
 
   :::info การรันโค้ดเมื่อปุ่มถูกคลิก
   <CodeTemplate template="[placeholder] ชื่อตัวแปร :: '.onclick' :: ' = ' :: '() => {' :: [placeholder] โค้ดที่ต้องการให้ทำงาน :: '}'" />

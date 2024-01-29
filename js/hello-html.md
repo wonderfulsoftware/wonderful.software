@@ -84,7 +84,7 @@ draft: true
 
 ## HTML, CSS, JavaScript
 
-- โค้ดที่คุณกำลังเขียนอยู่นี้ คือโค้ดที่อยู่ในภาษา HTML[^html] ซึ่งเป็นภาษาที่ใช้สร้างหน้าเว็บ
+- โค้ดที่คุณกำลังเขียนอยู่นี้ คือโค้ดที่อยู่ในภาษา [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)[^html] ซึ่งเป็นภาษาที่ใช้สร้างหน้าเว็บ
 
 - “แต่นี่คอร์ส JavaScript ไม่ใช่หรอ?”
   ใช่ครับ แต่เวลาเราสร้างเว็บแอพพลิเคชั่น รู้แค่ JavaScript อย่างเดียวไม่เพียงพอ
@@ -116,7 +116,7 @@ draft: true
 
 ### CSS
 
-- ต่อมา ภาษา CSS มีหน้าที่กำหนดรูปร่างหน้าตาของหน้าเว็บ หน้าที่หลักๆ คือทำให้เว็บดูสวยงามครับ
+- ต่อมา ภาษา [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) มีหน้าที่กำหนดรูปร่างหน้าตาของหน้าเว็บ หน้าที่หลักๆ คือทำให้เว็บดูสวยงามครับ
 
   <!-- prettier-ignore -->
   ```html{4-18}
@@ -170,7 +170,7 @@ draft: true
 
 ### JavaScript
 
-- ภาษา JavaScript มีหน้าที่เพิ่มความสามารถให้กับเว็บไซต์
+- ภาษา [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) มีหน้าที่เพิ่มความสามารถให้กับเว็บไซต์
 
   <!-- prettier-ignore -->
   ```html{8-15}
@@ -222,8 +222,8 @@ draft: true
   </html>
   ```
 
-- บรรทัดแรกของไฟล์ HTML จะเขียนว่า `<!doctype html>`
-  หน้าที่ของบรรทัดนี้คือ เอาไว้บอกเว็บเบราว์เซอร์ว่า เราต้องการใช้ HTML เวอร์ชั่น 5
+- บรรทัดแรกของไฟล์ HTML จะเขียนว่า `<!doctype html>` (เรียกว่า [doctype](https://developer.mozilla.org/en-US/docs/Glossary/Doctype))
+  หน้าที่ของมันคือ เอาไว้บอกเว็บเบราว์เซอร์ว่า เราต้องการใช้ HTML เวอร์ชั่น 5
 
   ::: details doctype ของ HTML รุ่นก่อนหน้า
 
@@ -263,7 +263,7 @@ draft: true
 
   :::
 
-- บรรทัดที่เหลือ จะเห็นว่าประกอบไปด้วยสิ่งที่เรียกว่า element ซ้อนๆ กัน
+- บรรทัดที่เหลือ จะเห็นว่าประกอบไปด้วยสิ่งที่เรียกว่า [element](https://developer.mozilla.org/en-US/docs/Glossary/Element) ซ้อนๆ กัน
 
   ![](https://im.dt.in.th/ipfs/bafybeidxfdojdwgo2r5y7qlzagnjbydg7j4numeldaqsxs2zj6tqdonpea/image.webp)
 
@@ -277,6 +277,8 @@ draft: true
   (3) เนื้อหา:
 
   ![](https://im.dt.in.th/ipfs/bafybeif2kjoxbwhmohjydhihkf5y3v4nsgxoidejdq46lgndwwbzm4h3re/image.webp)
+
+  โดยโค้ดที่อยู่ระหว่าง `<` กับ `>` จะเรียกว่าแท็ก ([tag](https://developer.mozilla.org/en-US/docs/Glossary/Tag))
 
   1. **แท็กเปิด (opening tag)** `<html>` `<head>` `<body>` `<h1>` เขียนรูปแบบนี้
 
@@ -294,14 +296,15 @@ draft: true
 
   <div><HtmlTagList acquired="html,head,body,h1" /></div>
 
-  | ชื่อ element | หน้าที่                                                                             |
-  | ------------ | ----------------------------------------------------------------------------------- |
-  | `html`       | เป็น element ที่เอาไว้ครอบทุกๆ อย่างที่อยู่ในหน้าเว็บ                               |
-  | `head`       | เป็น element ที่เอาไว้ใส่ข้อมูลที่เกี่ยวกับหน้าเว็บ แต่ไม่ใช่เนื้อหา                |
-  | `body`       | เป็น element ที่เอาไว้ใส่เนื้อหาของหน้าเว็บ                                         |
-  | `h1`         | มาจาก “Heading 1” เอาไว้ใส่ข้อความที่เป็นหัวข้อหลัก แสดงผลเป็นข้อความตัวหนาขนาดใหญ่ |
+  <!-- prettier-ignore -->
+  | ชื่อ element | หน้าที่ |
+  | --- | --- |
+  | [`<html>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) | เป็น element ที่เอาไว้ครอบทุกๆ อย่างที่อยู่ในหน้าเว็บ                               |
+  | [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) | เป็น element ที่เอาไว้ใส่ข้อมูลที่เกี่ยวกับหน้าเว็บ แต่ไม่ใช่เนื้อหา                |
+  | [`<body>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body) | เป็น element ที่เอาไว้ใส่เนื้อหาของหน้าเว็บ                                         |
+  | [`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1) | มาจาก “Heading 1” เอาไว้ใส่ข้อความที่เป็นหัวข้อหลัก แสดงผลเป็นข้อความตัวหนาขนาดใหญ่ |
 
-- อีกอย่างนึงที่เห็นในโค้ดนี้คือสิ่งที่เรียกว่า comment ครับ
+- อีกอย่างนึงที่เห็นในโค้ดนี้คือสิ่งที่เรียกว่า [comment](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_comments) ครับ
   สิ่งที่เขียนอยู่ใน comment จะไม่ถูกนำไปประมวลผลครับ
   ดังนั้นเราสามารถใช้ comment เพื่อเขียนข้อความเพิ่มเติมในโค้ดได้
 
@@ -355,7 +358,7 @@ draft: true
 
 - คราวนี้ กลับไปที่โค้ด
   ไปที่ element `<head>`
-  แล้วเพิ่ม element `<title>` ลงไปครับ
+  แล้วเพิ่ม element [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) ลงไปครับ
 
   <!-- prettier-ignore -->
   ```html{2}
@@ -370,7 +373,7 @@ draft: true
 
 ## สร้างลิงก์ไปยังหน้าอื่น
 
-- คราวนี้ข้างใน `<body>` ลองใส่ element `<a>` เข้าไปดู
+- คราวนี้ข้างใน `<body>` ลองใส่ element [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) เข้าไปดู
   เขียนตามนี้ครับ
 
   <!-- prettier-ignore -->
@@ -391,7 +394,7 @@ draft: true
 
 ## รู้จักกับ attributes
 
-- จะเห็นว่าตอนเราสร้างลิงก์ ในแท็กเปิด `<a>` มีสิ่งที่เรียกว่า “attribute” เอาไว้กำหนดค่าต่างๆ ให้กับ element
+- จะเห็นว่าตอนเราสร้างลิงก์ ในแท็กเปิด `<a>` มีสิ่งที่เรียกว่า “[attribute](https://developer.mozilla.org/en-US/docs/Glossary/Attribute)” เอาไว้กำหนดค่าต่างๆ ให้กับ element
 
   ![](https://im.dt.in.th/ipfs/bafybeih7uwabne2cocuj5h5ni3d3yy6mwpkskjetyylsk7ld3nwvqwpsx4/image.webp)
 
@@ -399,10 +402,11 @@ draft: true
 
   ![](https://im.dt.in.th/ipfs/bafybeifk54tvghbm3vz2qgycir455ykxdbbbm7ewnjtzthatgp5ddeowvq/image.webp)
 
-  | ชื่อของ attribute | หน้าที่                                                                   |
-  | ----------------- | ------------------------------------------------------------------------- |
-  | `href`            | กำหนด URL ของลิงก์                                                        |
-  | `target`          | ถ้าตั้งเป็น `_blank` จะเปิดลิงก์ในแท็บใหม่ ถ้าเอาออกจะเปิดลิงก์ในแท็บเดิม |
+  <!-- prettier-ignore -->
+  | ชื่อของ attribute | หน้าที่ |
+  | --- | --- |
+  | [`href=""`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href) | กำหนด URL ของลิงก์                                                        |
+  | [`target=""`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#target) | ถ้าตั้งเป็น `_blank` จะเปิดลิงก์ในแท็บใหม่ ถ้าเอาออกจะเปิดลิงก์ในแท็บเดิม |
 
 - เขียนในรูปแบบนี้
 
@@ -438,7 +442,7 @@ draft: true
 
   <div><HtmlOutput src="/js/examples/hello-html/step4.html" height="256" /></div>
 
-- ถ้าเราอยากจะขึ้นบรรทัดใหม่ ให้ใช้ element `<br>` ครับ
+- ถ้าเราอยากจะขึ้นบรรทัดใหม่ ให้ใช้ element [`<br>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br) ครับ
 
   <!-- prettier-ignore -->
   ```html{2,4}

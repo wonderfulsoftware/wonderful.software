@@ -9,7 +9,7 @@ draft: true
 </script>
 
 ในตอนก่อนหน้า เราได้เขียนโค้ดเพื่อให้คอมพิวเตอร์ทำงานกับตัวเลขได้แล้ว
-ในตอนนี้ เราจะมาเรียนรู้วิธีการทำงานกับข้อความ (หรือที่เรียกกันว่า String) กันบ้าง
+ในตอนนี้ เราจะมาเรียนรู้วิธีการทำงานกับข้อความ (หรือที่เรียกกันว่า [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)) กันบ้าง
 
 ![](https://im.dt.in.th/ipfs/bafybeicpuqhtjkudazisehuw556fnybyz4gbv44kmb6x74pdaogfxica3m/image.webp)
 

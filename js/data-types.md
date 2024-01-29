@@ -26,7 +26,7 @@ questions:
 
 ## typeof
 
-- เราสามารถตรวจสอบชนิดข้อมูล โดยการใช้โอเปอเรเตอร์ `typeof` ได้
+- เราสามารถตรวจสอบชนิดข้อมูล โดยการใช้โอเปอเรเตอร์ [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) ได้
 
   <div><JsConsole input='typeof 123' :output="{value: 'number'}" /></div>
 

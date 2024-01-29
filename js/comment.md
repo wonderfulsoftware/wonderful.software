@@ -14,13 +14,13 @@ draft: true
   <!-- คอมเม้นต์ -->
   ```
 
-- ในภาษา JavaScript ก็มีคอมเม้นต์เช่นกัน
+- ในภาษา JavaScript ก็มี[คอมเม้นต์](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#comments)เช่นกัน
   มีอยู่ 2 รูปแบบ
 
-  1. คอมเม้นต์บรรทัดเดียว (single-line comment)
-  2. คอมเม้นต์หลายบรรทัด (multi-line comment)
+  1. คอมเม้นต์บรรทัดเดียว (single-line comment หรือ [line comment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#line_comments))
+  2. คอมเม้นต์หลายบรรทัด (multi-line comment หรือ [block comment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#block_comments))
 
-## คอมเม้นต์บรรทัดเดียว (single-line comment)
+## คอมเม้นต์บรรทัดเดียว (line comment)
 
 - คอมเม้นต์บรรทัดเดียว เริ่มด้วยการพิมพ์ `//` คอมเม้นต์จะยาวไปจนถึงจุดสิ้นสุดของบรรทัด
 
@@ -60,7 +60,7 @@ draft: true
 
   ในตัวอย่างนี้ โค้ด `console.log(answer)` จะไม่ทำงาน เพราะกลายเป็นคอมเม้นต์ไปแล้ว
 
-## คอมเม้นต์หลายบรรทัด (multi-line comment)
+## คอมเม้นต์หลายบรรทัด (block comment)
 
 - คอมเม้นต์หลายบรรทัด เริ่มด้วยการพิมพ์ `/*` และจบด้วยการพิมพ์ `*/`
 

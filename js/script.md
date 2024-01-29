@@ -12,7 +12,7 @@ draft: true
 
 ภายในเว็บที่เราเขียนขึ้นมา
 เราสามารถใส่ JavaScript ลงไปในนั้นได้ด้วย
-โดยใช้ element `<script>` ครอบโค้ด JavaScript ไว้
+โดยใช้ element [`<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ครอบโค้ด JavaScript ไว้
 
 - **ลองใส่โค้ดนี้เพิ่มเข้าไปในหน้าเว็บ**
   ในโค้ดตัวอย่างนี้ จะมีภาษาของ JavaScript ใหม่ที่ยังไม่เคยเจอ
@@ -44,7 +44,7 @@ draft: true
 
   ![](https://im.dt.in.th/ipfs/bafybeifm26yjag44mqwxgxrl55dhc24nkyig557kvymu7nm6bd6z45lrry/image.webp)
 
-- เมื่อกดเข้าไปแล้ว ตัว Dev Tools จะพาเราไปยังแท็บ **Sources**
+- เมื่อกดเข้าไปแล้ว ตัว Dev Tools จะพาเราไปยังแท็บ [**Sources**](https://developer.chrome.com/docs/devtools/sources)
   และจะมีการไฮไลท์จุดที่เกิดข้อผิดพลาดขึ้นครับ
 
   ![](https://im.dt.in.th/ipfs/bafybeicbv6tb76xay2oycxksdwlpb3ypy7k7qjatp4fuxgxcfifdnj46lu/image.webp)
@@ -78,7 +78,7 @@ draft: true
   คำตอบจึงถูกโยนทิ้งไปครับ
 
 - ถ้าอยากให้มันแสดงผลออกมา
-  ก็ใช้คำสั่ง `console.log()`[^command]
+  ก็ใช้คำสั่ง [`console.log()`](https://developer.mozilla.org/en-US/docs/Web/API/console/log_static)[^command]
 
   <!-- prettier-ignore -->
   ```html

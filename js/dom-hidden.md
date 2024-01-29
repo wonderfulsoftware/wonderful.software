@@ -12,7 +12,7 @@ draft: true
   import CodeTemplate from './components/CodeTemplate.vue'
 </script>
 
-- ในตอนนี้ เราจะมารู้จักกับ attribute ที่ชื่อว่า `hidden` ครับ
+- ในตอนนี้ เราจะมารู้จักกับ attribute ที่ชื่อว่า [`hidden`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden) ครับ
 
 - ถ้าเราใส่ `hidden` เข้าไปใน element ใดๆ
   จะทำให้ element นั้นถูกซ่อนไว้

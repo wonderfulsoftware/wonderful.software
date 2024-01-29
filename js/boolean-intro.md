@@ -50,7 +50,7 @@ const strCmp = (a, b) => {
 
 ## Boolean คืออะไร
 
-- Boolean คือ data type ที่มีค่าเพียง 2 ค่า คือ `true` และ `false` เท่านั้น
+- [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean) คือ data type ที่มีค่าเพียง 2 ค่า คือ `true` และ `false` เท่านั้น
   โดยที่ “true” แปลว่า “จริง” ส่วน “false” แปลว่า “เท็จ”
 
   <JsConsole input="true" :output="{value: true}" />
@@ -76,14 +76,15 @@ const strCmp = (a, b) => {
 - สมมติเรามีตัวเลข ที่เก็บไว้ในตัวแปร `a` กับ `b`
   เราสามารถเอาข้อมูลที่เป็นตัวเลขมาเทียบกันด้วย operator พวกนี้ได้
 
-  | ตัวดำเนินการ | ความหมาย            |
-  | ------------ | ------------------- |
-  | `>`          | มากกว่า             |
-  | `<`          | น้อยกว่า            |
-  | `>=`         | มากกว่าหรือเท่ากับ  |
-  | `<=`         | น้อยกว่าหรือเท่ากับ |
-  | `==`         | เท่ากับ             |
-  | `!=`         | ไม่เท่ากับ          |
+  <!-- prettier-ignore -->
+  | ตัวดำเนินการ | ความหมาย            | ชื่อภาษาอังกฤษ |
+  | ------------ | ------------------- | -------------- |
+  | `>`          | มากกว่า             | [Greater than](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than) |
+  | `<`          | น้อยกว่า            | [Less than](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than) |
+  | `>=`         | มากกว่าหรือเท่ากับ  | [Greater than or equal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal) |
+  | `<=`         | น้อยกว่าหรือเท่ากับ | [Less than or equal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal) |
+  | `==`         | เท่ากับ             | [Equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality) |
+  | `!=`         | ไม่เท่ากับ          | [Inequality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality) |
 
 - ตัวอย่าง
 
@@ -110,7 +111,7 @@ const strCmp = (a, b) => {
     <figcaption>ตัว a (ในคำว่า apple) มาก่อนตัว b (ในคำว่า banana) จึงได้คำตอบเป็น true</figcaption>
   </figure>
 
-  โดยในคอมพิวเตอร์ ตัวอักษรแต่ละตัว มีเลขประจำตัวของมันอยู่
+  โดยในคอมพิวเตอร์ [ตัวอักษรแต่ละตัว มีเลขประจำตัวของมันอยู่](https://developer.mozilla.org/en-US/docs/Glossary/Code_unit)
 
   | ตัวอักษร | หมายเลขประจำตัวอักษร<br>(charCode) |
   | -------- | ---------------------------------: |

@@ -14,7 +14,7 @@ draft: true
 
   ![](https://im.dt.in.th/ipfs/bafybeig2o4tt4xxpipuqx5q73er2ynwokt37i34himcr4iwdqt7i7pt27i/image.webp)
 
-- ตัวเครื่องมือสำหรับนักพัฒนา หรือที่เราเรียกกันว่า **Dev Tools** จะโผล่ขึ้นมา
+- ตัวเครื่องมือสำหรับนักพัฒนา หรือที่เราเรียกกันว่า [**Dev Tools**](https://developer.chrome.com/docs/devtools/open) จะโผล่ขึ้นมา
 
   ![](https://im.dt.in.th/ipfs/bafybeie747xcok6xcabadlwus3fjpv3xxh46xc7lvfvnpuhqjevwwn4mty/image.webp)
 
@@ -29,12 +29,12 @@ draft: true
 
   ![](https://im.dt.in.th/ipfs/bafybeidgkkn26jakffbfpxdjlf5bpcu5wennqfoh7i5rpwn5nu6gfvsoqu/image.webp)
 
-- ในแท็บ **Elements**
+- ในแท็บ [**Elements**](https://developer.chrome.com/docs/devtools/dom)
   เราสามารถใช้ตรวจสอบองค์ประกอบต่างๆ ที่อยู่บนหน้าเว็บได้
   ซึ่งเดี๋ยวเราจะมาเรียนรู้กันอีกที ตอนที่เราสร้างเว็บแอปพลิเคชั่นครับ
   แต่สำหรับตอนนี้…
 
-- ให้เราไปที่แท็บ **Console** กันครับ
+- ให้เราไปที่แท็บ [**Console**](https://developer.chrome.com/docs/devtools/console/javascript) กันครับ
 
   1. แท็บ Console จะเป็นที่ที่เราสามารถพิมพ์คำสั่งภาษา JavaScript เข้าไป
   2. เมื่อเรากดปุ่ม enter โค้ดของเราก็จะทำงาน หรือที่เรียกว่าเป็นการ “run” โค้ด
@@ -70,7 +70,7 @@ draft: true
   4. **Loop** — วนกลับไปข้อ 1
      ก็คือรอให้เราพิมพ์โค้ดบรรทัดต่อไปครับ
 
-  กระบวนการนี้ เรียกกันสั้นๆ ว่า REPL หรือ Read–eval–print loop ครับ
+  กระบวนการนี้ เรียกกันสั้นๆ ว่า REPL หรือ [Read–eval–print loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) ครับ
 
 [^js-engine]:
     ซอฟต์แวร์เว็บเบราว์เซอร์ที่เราใช้กัน ประกอบไปด้วยชิ้นส่วนย่อยหลายๆ ส่วน
@@ -138,14 +138,15 @@ draft: true
 
 - แต่สำหรับตอนนี้ เราจะมาทำความรู้จักกันสัก 6 ตัวก่อน
 
+  <!-- prettier-ignore -->
   | เครื่องหมาย | หน้าที่   | ชื่อภาษาอังกฤษ |
   | ----------- | --------- | -------------- |
-  | `+`         | บวก       | Addition       |
-  | `-`         | ลบ        | Subtraction    |
-  | `*`         | คูณ       | Multiplication |
-  | `/`         | หาร       | Division       |
-  | `%`         | หารเอาเศษ | Modulo         |
-  | `**`        | ยกกำลัง   | Exponentiation |
+  | `+`         | บวก       | [Addition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition)       |
+  | `-`         | ลบ        | [Subtraction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction)    |
+  | `*`         | คูณ       | [Multiplication](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication) |
+  | `/`         | หาร       | [Division](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division)       |
+  | `%`         | หารเอาเศษ | [Remainder](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)        |
+  | `**`        | ยกกำลัง   | [Exponentiation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation) |
 
 ## Exercise time
 

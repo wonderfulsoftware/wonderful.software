@@ -19,6 +19,8 @@
   /* --vp-c-brand-soft: #f9b5c0; */
   --vp-c-brand-soft: rgba(218, 53, 103, 0.08);
   --vp-c-bg-alt: #f5f4f3;
+  --vp-c-gray-soft: #f5f4f3;
+  --vp-c-bg-soft: #f5f4f3;
   --vp-font-family-mono: Fragment Mono, ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
     Consolas, 'Liberation Mono', 'Courier New', CS ChatThai, monospace;
   --vp-code-block-bg: #fff;

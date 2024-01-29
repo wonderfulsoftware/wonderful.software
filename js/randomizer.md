@@ -69,7 +69,7 @@ draft: true
 
 ## รู้จักกับ Math.random
 
-- ใน JavaScript มีฟังก์ชันที่ชื่อว่า `Math.random()`
+- ใน JavaScript มีฟังก์ชันที่ชื่อว่า [`Math.random()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 
 - เมื่อเราเรียกใช้งานฟังก์ชันนี้ คอมพิวเตอร์จะสุ่มเลขมาให้
   โดยเลขที่ได้นั้นจะมีค่ามากกว่าหรือเท่ากับ 0 และน้อยกว่า 1
@@ -84,7 +84,7 @@ draft: true
 
 ## รู้จักกับ Math.floor
 
-- ใน JavaScript มีอีกฟังก์ชันที่ชื่อว่า `Math.floor(…)`
+- ใน JavaScript มีอีกฟังก์ชันที่ชื่อว่า [`Math.floor(…)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 
 - ฟังก์ชันนี้ รับเลขที่เป็นทศนิยมเข้าไป แล้วคืนค่ากลับมาเป็นจำนวนเต็ม
   โดยจะปัดลง

@@ -12,8 +12,9 @@ draft: true
 # if และ else
 
 จากโปรเจกต์ที่แล้ว
-เราได้ลองใช้ `if` กับ `else` กันไปแล้ว
-เรามาดูโครงสร้างของ `if` กับ `else` กัน
+เราได้ลองเล่นกับ `if` กับ `else` กันดูไปแล้ว
+
+ในตอนนีี้ เราจะมาเรียนรู้โครงสร้างของ [`if` กับ `else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) กัน
 
 ```js
 if (เงื่อนไข) {
@@ -178,7 +179,7 @@ if (เงื่อนไข) {
 - **กรณีที่เงื่อนไขมีชนิดข้อมูลที่ไม่ใช่ boolean
   จะถูกแปลงเป็น boolean ก่อน**
 
-- โดยในภาษา JavaScript ค่าต่อไปนี้จะถูกแปลงเป็น `false`:
+- โดยในภาษา JavaScript [ค่าต่อไปนี้จะถูกแปลงเป็น `false`](https://developer.mozilla.org/en-US/docs/Glossary/Falsy):
 
   - `0`
   - `NaN` (Not a Number, เป็นค่าที่ได้จากการคำนวณทางคณิตศาสตร์ที่ผิดพลาด)

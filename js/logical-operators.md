@@ -12,11 +12,11 @@ draft: true
 - ในตอนนี้เราจะได้รู้จักกับตัวดำเนินการ `!` `&&` และ `||` ครับ
 
   <!-- prettier-ignore -->
-  | ตัวดำเนินการ | ชื่อ | สัญลักษณ์ลอจิกเกต | สัญลักษณ์ทางคณิตศาสตร์ |
-  | --- | --- | --- | --- |
-  | `!` | Logical NOT | <iconify-icon icon="mdi:gate-not"></iconify-icon> | $\neg$ |
-  | `&&` | Logical AND | <iconify-icon icon="mdi:gate-and"></iconify-icon> | $\land$ |
-  | <code>\|\|</code> | Logical OR | <iconify-icon icon="mdi:gate-or"></iconify-icon> | $\lor$ |
+  | ตัวดำเนินการ | สัญลักษณ์ลอจิกเกต | สัญลักษณ์ทางคณิตศาสตร์ |
+  | --- | --- | --- |
+  | `!` ([Logical NOT](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)) | <iconify-icon icon="mdi:gate-not"></iconify-icon> | $\neg$ |
+  | `&&` ([Logical AND](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)) | <iconify-icon icon="mdi:gate-and"></iconify-icon> | $\land$ |
+  | <code>&#124;&#124;</code> ([Logical OR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)) | <iconify-icon icon="mdi:gate-or"></iconify-icon> | $\lor$ |
 
 - **Logical NOT** (`!`)
   (เปลี่ยนจาก <BooleanValue :value="true" /> เป็น <BooleanValue :value="false" />, และจาก <BooleanValue :value="false" /> เป็น <BooleanValue :value="true" />)
@@ -226,7 +226,7 @@ draft: true
   }
   ```
 
-## ใช้ `!` เพื่อกลับค่า (v3)
+## ใช้ `!` เพื่อกลับเงื่อนไข และจัดรูปให้โค้ดสั้นลงอีก
 
 - กรณีที่โค้ดอยู่ในรูปแบบนี้:
 
@@ -303,6 +303,43 @@ draft: true
   y = !x
   ```
 
+  ::: info ทำไมถึงเขียนให้สั้นลงได้?
+
+  เนื่องจาก `false` คือ `!true` (เท็จ คือ ไม่จริง) และ `true` คือ `!false` (จริง คือ ไม่เท็จ)…
+
+  - โค้ดของเราจึงสามารถเขียนเป็นแบบนี้ได้:
+
+    ```js
+    if (x) {
+      y = false // [!code --]
+      y = !true // [!code ++]
+    } else {
+      y = true // [!code --]
+      y = !false // [!code ++]
+    }
+    ```
+
+  - และด้วยเหตุผลเดียวกันกับตัวอย่างก่อนหน้า
+    เราสามารถแปลงโค้ดเป็นแบบนี้:
+
+    ```js
+    if (x) {
+      y = !true // [!code --]
+      y = !x // เพราะว่าในบล็อกนี้ x มีค่าเป็น true, !x มีค่าเป็น false // [!code ++]
+    } else {
+      y = !false // [!code --]
+      y = !x // เพราะว่าในบล็อกนี้ x มีค่าเป็น false, !x มีค่าเป็น true // [!code ++]
+    }
+    ```
+
+  - และสุดท้ายก็ย่อเป็น:
+
+    ```js
+    y = !x
+    ```
+
+  :::
+
 - เนื่องจากโค้ดของโปรแกรมเราอยู่ในรูปแบบหลัง
   เราจึงสามารถย่อโค้ดให้สั้นลงได้อีกแบบนี้:
 
@@ -314,6 +351,20 @@ draft: true
     signUpButton.disabled = !(acceptTerms.checked && acceptPrivacyPolicy.checked)
   }
   ```
+
+  :::warning อย่าลืมเครื่องหมายวงเล็บ
+
+  ในบรรทัดที่ 2 และ 5 ของโค้ดข้างต้น
+  จะเห็นว่ามีเครื่องหมายวงเล็บครอบอยู่
+  ซึ่งเป็นเพราะว่า
+  ตัวดำเนินการ `!` มีความสำคัญมากกว่า `&&`
+  ดังนั้นเราจึงต้องใส่วงเล็บเข้าไป
+  เพราะหากไม่ใส่วงเล็บ
+  คอมพิวเตอร์จะจัดกลุ่มโค้ดของเราแบบนี้:
+  `(!acceptTerms.checked) && acceptPrivacyPolicy.checked`
+  ซึ่งไม่ใช่ที่เราต้องการ
+
+  :::
 
 ## ใช้ De Morgan's law เพื่อกลับเงื่อนไข
 
@@ -329,7 +380,7 @@ draft: true
   \neg (p \lor q) \equiv (\neg p) \land (\neg q)
   $$
 
-- เมื่อแปลเป็นภาษา JavaScript หมายความว่า…
+- ซึ่งแปลเป็นภาษา JavaScript ได้ดังนี้:
 
   <!-- prettier-ignore -->
   | โค้ดนี้… | …มีความหมายเหมือนกับโค้ดนี้ |
