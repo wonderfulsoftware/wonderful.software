@@ -1,10 +1,10 @@
 {
   "devDependencies": {
     "@types/node": "^20.11.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "fkill-cli": "^7.1.0",
-    "remark-cli": "^7.0.0",
-    "remark-lint-thai": "dtinth/remark-lint-thai",
+    "remark-cli": "^7.0.1",
+    "remark-lint-thai": "github:dtinth/remark-lint-thai",
     "vitepress": "1.0.0-beta.7"
   },
   "scripts": {
@@ -16,7 +16,7 @@
     "@giscus/vue": "^2.4.0",
     "jsonwebtoken": "^8.5.1",
     "littlefoot": "^3.4.1",
-    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-footnote": "^3.0.3",
     "rss": "^1.2.2",
     "twemoji": "^14.0.2",
     "ulid": "^2.3.0",
