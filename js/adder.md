@@ -7,7 +7,7 @@ draft: true
   import JsConsole from './components/JsConsole.vue'
 </script>
 
-# มินิโปรเจค: โปรแกรมบวกเลข
+# มินิโปรเจกต์: โปรแกรมบวกเลข
 
 ตัวอย่าง:
 

@@ -98,15 +98,15 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/input.html',
           },
           {
-            text: 'รู้จักกับมินิโปรเจค',
+            text: 'รู้จักกับมินิโปรเจกต์',
             link: '/js/mini-projects.html',
           },
           {
-            text: 'มินิโปรเจค: โปรแกรมบวกเลข',
+            text: 'มินิโปรเจกต์: โปรแกรมบวกเลข',
             link: '/js/adder.html',
           },
           {
-            text: 'มินิโปรเจค: โปรแกรมนับเลข',
+            text: 'มินิโปรเจกต์: โปรแกรมนับเลข',
             link: '/js/counter.html',
           },
           {
@@ -135,11 +135,11 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/dom-hidden.html',
           },
           {
-            text: 'มินิโปรเจค: ควิซอย่างง่าย',
+            text: 'มินิโปรเจกต์: ควิซอย่างง่าย',
             link: '/js/simple-quiz.html',
           },
           {
-            text: 'มินิโปรเจค: โปรแกรมสุ่มเลข',
+            text: 'มินิโปรเจกต์: โปรแกรมสุ่มเลข',
             link: '/js/randomizer.html',
           },
           {
@@ -147,7 +147,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/call.html',
           },
           {
-            text: 'มินิโปรเจค: หัวหรือก้อย',
+            text: 'มินิโปรเจกต์: หัวหรือก้อย',
             link: '/js/coin-flipper.html',
           },
           {
