@@ -28,6 +28,9 @@ type ElementDescription = {
 type FunctionDescription = {
   $fn: string
 }
+type ArrowFunctionDescription = {
+  $arrow: string
+}
 
 const segments = computed(() => {
   const value = props.value
@@ -43,6 +46,9 @@ const segments = computed(() => {
     }
     if (value.$fn) {
       return generateFunctionSegments(value)
+    }
+    if (value.$arrow) {
+      return generateArrowFunctionSegments(value)
     }
   }
   return [{ text: JSON.stringify(value), style: { color: typeof value === 'number' || typeof value === 'boolean' ? NUMBER_COLOR : STRING_COLOR } }]
@@ -68,6 +74,12 @@ const generateFunctionSegments = (fn: FunctionDescription) => {
   const segments: Segment[] = []
   segments.push({ text: 'ƒ ', style: { color: FUNCTION_COLOR, 'font-style': 'italic' } })
   segments.push({ text: fn.$fn, style: { 'font-style': 'italic' } })
+  return segments
+}
+
+const generateArrowFunctionSegments = (fn: ArrowFunctionDescription) => {
+  const segments: Segment[] = []
+  segments.push({ text: fn.$arrow, style: { 'font-style': 'italic' } })
   return segments
 }
 </script>

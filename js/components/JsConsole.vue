@@ -5,7 +5,11 @@
         <path d="M2 1L6 5L2 9" stroke="#919191" stroke-width="1.5"/>
       </svg><span class="code-text"><InputCode :code="props.input" /></span
     ></code
-    ><slot /><code class="code-line" v-if="props.output"
+    ><slot /><code class="code-line" v-if="props.log" v-for="logLine of props.log"
+      ><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </svg><span><OutputValue :value="logLine.value" v-if="(typeof logLine === 'object')" /><span class="v-console-log-output" v-else>{{ logLine }}</span></span
+    ></code
+    ><code class="code-line" v-if="props.output"
       ><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 9L2 5L6 1" stroke="#919191" stroke-width="1.5"/>
         <circle cx="8" cy="5" r="1" fill="#919191"/>
@@ -27,6 +31,7 @@ const props = defineProps<{
   input?: string
   error?: string
   output?: { value: any }
+  log?: (string | { value: any })[]
 }>()
 </script>
 
@@ -43,7 +48,7 @@ const props = defineProps<{
 
 .root .code-line {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5em;
 }
 
@@ -53,9 +58,15 @@ code>span {
 
 code>svg {
   flex: none;
+  position: relative;
+  top: 9px;
 }
 
-.code-line.is-error {
+.root .code-line {
+  color: #fff;
+}
+
+.root .code-line.is-error {
   color: #D37067;
   background: #240201;
   border: 1px solid #530B06;

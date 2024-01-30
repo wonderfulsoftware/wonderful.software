@@ -164,7 +164,7 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         text: '4. ฟังก์ชัน',
         items: [
           {
-            text: '🚧 การสร้างฟังก์ชัน',
+            text: 'การสร้างฟังก์ชัน',
             link: '/js/function-intro.html',
           },
           {
