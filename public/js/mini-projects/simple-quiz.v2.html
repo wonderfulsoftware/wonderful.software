@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Quiz (v2)</title>
+  </head>
+  <body>
+
+    <h1>Simple Quiz</h1>
+    
+    <div id="beforeAnswer">
+      <p id="question"><b>คำถาม:</b> JavaScript ถูกสร้างเมื่อปีไหน</p>
+      <input id="choiceA" type="button" value="(A) 1993">
+      <input id="choiceB" type="button" value="(B) 1994">
+      <input id="choiceC" type="button" value="(C) 1995">
+      <input id="choiceD" type="button" value="(D) 1996">
+    </div>
+    
+    <p id="correctFeedback" hidden>
+      <b>ถูกต้อง!</b> 🎉
+    </p>
+
+    <div id="incorrectFeedback" hidden>
+      <p>
+        <b>ยังไม่ถูก</b>
+      </p>
+      <input id="tryAgain" type="button" value="ลองอีกครั้ง">
+    </div>
+
+    <script>
+      let beforeAnswer = document.getElementById('beforeAnswer')
+      let correctFeedback = document.getElementById('correctFeedback')
+      let incorrectFeedback = document.getElementById('incorrectFeedback')
+      let tryAgain = document.getElementById('tryAgain')
+      let question = document.getElementById('question')
+      let choiceA = document.getElementById('choiceA')
+      let choiceB = document.getElementById('choiceB')
+      let choiceC = document.getElementById('choiceC')
+      let choiceD = document.getElementById('choiceD')
+
+      let handleIncorrectAnswer = () => {
+        beforeAnswer.hidden = true
+        incorrectFeedback.hidden = false
+      }
+      let handleCorrectAnswer = () => {
+        beforeAnswer.hidden = true
+        incorrectFeedback.hidden = false
+      }
+      choiceA.onclick = handleIncorrectAnswer 
+      choiceB.onclick = handleIncorrectAnswer 
+      choiceC.onclick = handleCorrectAnswer 
+      choiceD.onclick = handleIncorrectAnswer 
+      tryAgain.onclick = () => {
+        incorrectFeedback.hidden = true
+        beforeAnswer.hidden = false
+      }
+    </script>
+    
+  </body>
+</html>

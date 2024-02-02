@@ -17,7 +17,7 @@ draft: true
 
 ตัวอย่าง:
 
-<HtmlOutput src="/js/mini-projects/simple-quiz.html" :height="256" />
+<HtmlOutput src="/js/mini-projects/simple-quiz.html" :height="192" />
 
 ## เรื่องที่เราจะเรียนรู้ในโปรเจกต์นี้
 
@@ -182,5 +182,15 @@ draft: true
   2. คลิกปุ่มตัวเลือก A, B, หรือ D
   3. คลิกปุ่ม “ลองอีกครั้ง”
   4. ตัวเลือกต่างๆ ควรจะกลับมาแสดงอีกครั้ง
+
+  :::
+
+## โค้ด
+
+- หลังจากที่ทำโปรเจกต์นี้เสร็จแล้ว จะได้โค้ดดังต่อไปนี้:
+
+  ::: details ดูโค้ด
+
+  <<< @/public/js/mini-projects/simple-quiz.html{html:line-numbers}
 
   :::

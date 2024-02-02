@@ -31,7 +31,7 @@ draft: true
 
 ตัวอย่าง:
 
-<HtmlOutput src="/js/mini-projects/randomizer.html" :height="128" />
+<HtmlOutput src="/js/mini-projects/randomizer.html" :height="192" />
 
 :::tip ลองเล่นกับตัวอย่างข้างบนดู
 
@@ -138,6 +138,16 @@ draft: true
     number.value = Math.floor(Math.random() * 10) + 1
   }
   ```
+
+## โค้ด
+
+- หลังจากที่ทำโปรเจกต์นี้เสร็จแล้ว จะได้โค้ดดังต่อไปนี้:
+
+  ::: details ดูโค้ด
+
+  <<< @/public/js/mini-projects/randomizer.html{html:line-numbers}
+
+  :::
 
   :::tip โจทย์ฝึกหัดเพิ่มเติม
 

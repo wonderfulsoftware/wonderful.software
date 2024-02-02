@@ -168,11 +168,11 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/function-intro.html',
           },
           {
-            text: '🚧 ลดโค้ดซ้ำซ้อนด้วยฟังก์ชัน',
+            text: 'ลดโค้ดซ้ำซ้อนด้วยฟังก์ชัน',
             link: '/js/dry.html',
           },
           {
-            text: '🚧 รับค่าด้วย Parameters และคืนค่าด้วย Return',
+            text: 'รับค่าด้วย parameters และคืนค่าด้วย return',
             link: '/js/parameters-and-return-values.html',
           },
           {

@@ -51,7 +51,7 @@ devDependencies:
     version: 7.0.1
   remark-lint-thai:
     specifier: github:dtinth/remark-lint-thai
-    version: github.com/dtinth/remark-lint-thai/1d2bf367b05b73a9e5b91f05db206631a7619533
+    version: github.com/dtinth/remark-lint-thai/f08ec3a3751c28d9992f258c7a34b44245bb0a58
   vitepress:
     specifier: 1.0.0-rc.40
     version: 1.0.0-rc.40(@algolia/client-search@4.22.1)(@types/node@20.11.0)(markdown-it-mathjax3@4.3.2)(search-insights@2.13.0)
@@ -3752,8 +3752,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/dtinth/remark-lint-thai/1d2bf367b05b73a9e5b91f05db206631a7619533:
-    resolution: {tarball: https://codeload.github.com/dtinth/remark-lint-thai/tar.gz/1d2bf367b05b73a9e5b91f05db206631a7619533}
+  github.com/dtinth/remark-lint-thai/f08ec3a3751c28d9992f258c7a34b44245bb0a58:
+    resolution: {tarball: https://codeload.github.com/dtinth/remark-lint-thai/tar.gz/f08ec3a3751c28d9992f258c7a34b44245bb0a58}
     name: remark-lint-thai
     version: 1.0.0
     dependencies:

@@ -25,7 +25,7 @@ export default {
   overflow: hidden;
 }
 
-.dtinth-embed-container :global(iframe) {
+.dtinth-embed-container :deep(iframe) {
   display: block;
   position: absolute;
   top: 0;
