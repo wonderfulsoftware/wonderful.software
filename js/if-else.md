@@ -148,7 +148,13 @@ if (เงื่อนไข) {
   }
   ```
 
-  จะเห็นว่า โค้ดสั้นลง และอ่านง่ายขึ้น
+  จะเห็นว่า โค้ดสั้นลง และอ่านง่ายขึ้นครับ
+
+  ::: details ดูโค้ด
+
+  <<< @/public/js/examples/if-else/grade-calculator.with-else-if.html{18-28 html:line-numbers}
+
+  :::
 
 ## การแปลงข้อมูลเป็น boolean
 

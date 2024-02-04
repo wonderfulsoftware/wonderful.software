@@ -176,6 +176,10 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
             link: '/js/parameters-and-return-values.html',
           },
           {
+            text: 'แยกโค้ดก้อนใหญ่ๆ ให้กลายเป็นชิ้นส่วนเล็กๆ ด้วยฟังก์ชัน',
+            link: '/js/smaller-functions.html',
+          },
+          {
             text: '🚧 ลงลึกเรื่องตัวเลข',
             link: '/js/number.html',
           },

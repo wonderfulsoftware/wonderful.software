@@ -12,26 +12,22 @@
       let scoreInput = document.getElementById('scoreInput')
       let calculateGrade = document.getElementById('calculateGrade')
 
+      let getGrade = (score) => {
+        if (score >= 80) {
+          return 'A'
+        } else if (score >= 70) {
+          return 'B'
+        } else if (score >= 60) {
+          return 'C'
+        } else if (score >= 50) {
+          return 'D'
+        } else {
+          return 'F'
+        }
+      }
       calculateGrade.onclick = () => {
         let score = Number(scoreInput.value)
-        let grade
-        if (score >= 80) {
-          grade = 'A'
-        } else {
-          if (score >= 70) {
-            grade = 'B'
-          } else {
-            if (score >= 60) {
-              grade = 'C'
-            } else {
-              if (score >= 50) {
-                grade = 'D'
-              } else {
-                grade = 'F'
-              }
-            }
-          }
-        }
+        let grade = getGrade(score)
         alert('Your grade is ' + grade)
       }
     </script>
