@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Suite</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.0.css">
+  </head>
+  <body>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.20.0.js"></script>
+    <script>
+
+      let add = (a, b) => {
+        return a + b
+      }
+
+      QUnit.test('add 2 numbers', (assert) => {
+        assert.equal(add(1, 2), 3)
+        assert.equal(add(20, 30), 50)
+      })
+
+    </script>
+
+  </body>
+</html>

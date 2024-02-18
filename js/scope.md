@@ -242,7 +242,7 @@ boolean เป็นข้อมูลชนิดสำคัญที่เร
 
 </PreviewItem>
 
-### อาร์เรย์และออบเจกต์
+### อาร์เรย์และอ็อบเจกต์
 
 <PreviewItem image="https://im.dt.in.th/ipfs/bafybeia4g5vazqibwo2gucc3abagzg243gfallhdxweqrooiwy7yd4pvfy/image.webp">
 
@@ -265,9 +265,9 @@ boolean เป็นข้อมูลชนิดสำคัญที่เร
 
 <PreviewItem image="https://im.dt.in.th/ipfs/bafybeicbpe4oxreqlnptqeveqmvr4yraqera5mdenuclxx75c3btq2g6pm/image.webp">
 
-เราจะมารู้จักกับ**ออบเจกต์** (object)
+เราจะมารู้จักกับ**อ็อบเจกต์** (object)
 ที่เป็นโครงสร้างข้อมูลชนิดหนึ่ง ที่ช่วยให้เราเก็บค่าต่างๆ ที่มีความเกี่ยวข้องกันไว้ด้วยกัน
-และเราจะเอาออบเจกต์มาใช้ปรับปรุงโค้ดของโปรเจกต์ Flashcard ให้ดีขึ้นอีก
+และเราจะเอาอ็อบเจกต์มาใช้ปรับปรุงโค้ดของโปรเจกต์ Flashcard ให้ดีขึ้นอีก
 
 </PreviewItem>
 
@@ -372,8 +372,8 @@ boolean เป็นข้อมูลชนิดสำคัญที่เร
 <PreviewItem image="https://im.dt.in.th/ipfs/bafybeigaqutx2clmdvlrbnyo6t7hclgcrxjdg4cefxqahqliejodj46wby/image.webp">
 
 **Object Oriented Programming (OOP)** — ในคอร์สนี้
-เราจะได้เรียนรู้เกี่ยวกับเรื่องคอนเซปต์ของ “ออบเจกต์” แบบคร่าวๆ
-รวมถึงการใช้งานออบเจกต์ต่างๆ และการสร้างออบเจกต์แบบเบื้องต้น
+เราจะได้เรียนรู้เกี่ยวกับเรื่องคอนเซปต์ของ “อ็อบเจกต์” แบบคร่าวๆ
+รวมถึงการใช้งานอ็อบเจกต์ต่างๆ และการสร้างอ็อบเจกต์แบบเบื้องต้น
 แต่เราจะไม่ลงลึกเกี่ยวกับการเขียนโปรแกรมเชิงวัตถุ (OOP) มากนัก[^oop]
 
 </PreviewItem>

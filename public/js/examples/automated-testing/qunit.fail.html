@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Suite</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.0.css">
+  </head>
+  <body>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.20.0.js"></script>
+    <script>
+
+      let getGrade = (score) => {
+        if (score >= 80) {
+          return 'A'
+        } else if (score >= 70) {
+          return 'B'
+        } else if (score >= 60) {
+          return 'C'
+        } else if (score >= 50) {
+          return 'D'
+        } else {
+          return 'E' // แก้จาก 'F' เป็น 'E'
+        }
+      }
+
+      QUnit.test('getGrade', (assert) => {
+        assert.equal(getGrade(100), 'A')
+        assert.equal(getGrade(90), 'A')
+        assert.equal(getGrade(80), 'A')
+        assert.equal(getGrade(75), 'B')
+        assert.equal(getGrade(64), 'C')
+        assert.equal(getGrade(53), 'D')
+        assert.equal(getGrade(50), 'D')
+        assert.equal(getGrade(49), 'F')
+        assert.equal(getGrade(42), 'F')
+        assert.equal(getGrade(0), 'F')
+      })
+
+    </script>
+
+  </body>
+</html>
