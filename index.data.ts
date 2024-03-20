@@ -2,6 +2,10 @@ import { createContentLoader } from 'vitepress'
 
 const pages: IndexItem[] = [
   {
+    file: 'how-to-learn-almost-anything/index.md',
+    date: '2023-09-12',
+  },
+  {
     file: 'programming-and-motivation/index.md',
     date: '2021-03-14',
   },
