@@ -6,7 +6,7 @@
     "remark": "^15.0.1",
     "remark-cli": "^7.0.1",
     "remark-lint-thai": "github:dtinth/remark-lint-thai",
-    "vitepress": "1.0.0-rc.40"
+    "vitepress": "1.6.3"
   },
   "scripts": {
     "dev": "vitepress dev --port=${PORT:-7747}",
@@ -22,7 +22,7 @@
     "rss": "^1.2.2",
     "twemoji": "^14.0.2",
     "ulid": "^2.3.0",
-    "vue": "^3.3.4"
+    "vue": "^3.5.17"
   },
   "engines": {
     "node": "18.x"

@@ -189,7 +189,8 @@ export const jsSidebar: DefaultTheme.SidebarItem[] = [
         text: '5. คอร์สโปรเจกต์',
         items: [
           {
-            text: '🚧 คอร์สโปรเจกต์: Flashcard',
+            text: 'คอร์สโปรเจกต์: Flashcard',
+            link: '/js/project-flashcard.html',
           },
         ],
       },
