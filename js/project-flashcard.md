@@ -37,6 +37,8 @@ draft: true
 - `getQuestionText(questionNumber)`: รับหมายเลขคำถาม แล้วคืนค่าเป็นข้อความคำถาม
 - `getAnswerText(questionNumber)`: รับหมายเลขคำถาม แล้วคืนค่าเป็นข้อความคำตอบ
 
+![A system architecture diagram showing three yellow rounded rectangular function boxes connected by data flow arrows. The left box labeled getRandomQuestionNumber outputs questionNumber through an orange connection point. This connects to two boxes on the right: getQuestionText at the top and getAnswerText at the bottom, both receiving questionNumber as input through orange circles on their left sides. getQuestionText outputs text showing the character 山 in a black box labeled String, while getAnswerText outputs text showing Mountain in a black box labeled String. Orange arrows indicate the flow of data between the functions, illustrating how a random question number generates both question and answer text in the flashcard system.](https://im.dt.in.th/ipfs/bafybeibgnpeblj23sjtu3dxoggjyvhszs3mmyu2zwe6jrr2krloxpmcleq/image.webp)
+
 ## โค้ดตั้งต้น
 
 เรามีโค้ดตั้งต้นให้ที่โปรเจกต์ [hello-flashcard-starter](https://github.com/wonderfulsoftware/hello-flashcard-starter/blob/master/index.html) บน GitHub ครับ
